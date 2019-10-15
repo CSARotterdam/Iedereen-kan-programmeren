@@ -1,0 +1,13 @@
+title: Iedereen-kan-programmeren
+language: English
+summary: Lesstof voor iedereen kan programmeren.
+programming_language: Python
+environment: unittest
+content:
+- Week 2 - Variabele en operatoren
+- Week 3 - Branching
+- Week 4 - Arrays en functies
+- Week 5 - While loops
+- Week 6 - For loops
+- Week 7 - Problem solving
+- Eindopdrachten - Python
