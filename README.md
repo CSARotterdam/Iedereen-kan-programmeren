@@ -1,1 +1,1 @@
-# Iedereen-kan-programmeren
+# Iedereen kan programmeren
