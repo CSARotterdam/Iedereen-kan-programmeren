@@ -98,10 +98,16 @@ class regex_helper:
 
     def splitspace(self, stringIn):
         PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\+|\*|\+=|\*=|\|=|\^=|\||\^|\*\*|\*\*=)''')
-        arrout = []
+        arrOut = []
         for el in PATTERN.split(stringIn):
-            arrout.append(el.strip())
-        return arrout
+            arrOut.append(el.strip())
+
+        strOut = ""
+        for index in range(len(arrOut)-1):
+            strOut += arrOut[index] + " "
+
+        strOut += arrOut[-1]
+        return strOut
 
     def CheckAbstractAbstraction(self, input):
         self.baseExecute(input, )
