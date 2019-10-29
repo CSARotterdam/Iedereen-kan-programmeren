@@ -3,15 +3,15 @@ y = 21
 #Keyword: if
 #Uitgevoerd: Ja
 #Conditie variabele(n): x
-#Conditie: x *2 <= 14
-#Conditie uitkomst: True
+#Conditie: x < 0
+#Conditie uitkomst: False
 if(x < 0):
     print("Stap 1.")
     #Keyword: if
     #Uitgevoerd: Nee
     #Conditie variabele(n): x, y
-    #Conditie: x *2 <= 14
-    #Conditie uitkomst: True
+    #Conditie: y ** x <= 456
+    #Conditie uitkomst: False
     if(y ** x <= 456):
         print("Stap 2.")
 print("Stap 3.")
