@@ -1,0 +1,1816 @@
+{
+  "environment" : "unittest",
+  "summary" : "Lesstof voor iedereen kan programmeren.",
+  "title" : "Iedereen-kan-programmeren",
+  "programming_language" : "Python",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Week 2 - Variabele en operatoren",
+      "items" : [
+        {
+          "title" : "Variabele",
+          "task_list" : [
+            {
+              "name" : "Het aanmaken van variabele",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "## Opdracht 1: Vul de verschillende velden in met de juiste data.\n\nx = 5\n#Variabele naam: x\n#Variabele waarde: 5\n#Variabele type: integer\n\ny = 235\n#Variabele naam: y\n#Variabele waarde: 235\n#Variabele type: integer\n\nz = -721\n#Variabele naam: z\n#Variabele waarde: -721\n#Variabele type: integer\n\n## Opdracht 2: Vul de verschillende velden in met de juiste data.\n\nstappenteller = 0\n#Variabele naam: stappenteller\n#Variabele waarde: 0\n#Variabele type: integer\n\ntijdelijkGetal = 45\n#Variabele naam: tijdelijkGetal\n#Variabele waarde: 45\n#Variabele type: integer\n\naantalHoeken = 4\n#Variabele naam: aantalHoeken\n#Variabele waarde: 4\n#Variabele type: integer\n\n## Opdracht 3: Vul de verschillende velden in met de juiste data.\nvarA = -342\n#Variabele naam: varA\n#Variabele waarde: -342\n#Variabele type: integer\nvarB = 244\n#Variabele naam: varA\n#Variabele waarde: 244\n#Variabele type: integer\nvarC = 8942\n#Variabele naam: varA\n#Variabele waarde: 8942\n#Variabele type: integer\n\n## Opdracht 4: Vul de verschillende velden in met de juiste data.\nwx = 432\n#Variabele naam: wx\n#Variabele waarde: 432\n#Variabele type: integer\nwxy = 475\n#Variabele naam: wxy\n#Variabele waarde: 475\n#Variabele type: integer\nwxyz = 4515\n#Variabele naam: wxyz\n#Variabele waarde: 4515\n#Variabele type: integer\n\n## Opdracht 5: Creeër twee variabelen en vul de juiste informatie aan.\nab = 0\n#Variabele naam: ab\n#Variabele waarde: 0\n#Variabele type: integer\ncd = 1\n#Variabele naam: cd\n#Variabele waarde: 1\n#Variabele type: integer\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Verschillende type variabele",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "## Opdracht 1: Vul de verschillende velden in met de juiste data.\nvarA = \"string\"\n#Variabele naam: varA\n#Variabele waarde: \"string\"\n#Variabele type: string\n\nvarB = \"stringString\"\n#Variabele naam: varB\n#Variabele waarde: \"stringString\"\n#Variabele type: string\n\nvarC = 0\n#Variabele naam: varC\n#Variabele waarde: 0\n#Variabele type: integer\n\nvarD = 1\n#Variabele naam: varD\n#Variabele waarde: 1\n#Variabele type: integer\n\nvarE = 145.1\n#Variabele naam: varE\n#Variabele waarde: 145.1\n#Variabele type: float\n\nvarF = 23.5345\n#Variabele naam: varF\n#Variabele waarde: 23.5345\n#Variabele type: float\n\nvarG = True\n#Variabele naam: varG\n#Variabele waarde: True\n#Variabele type: boolean\n\nvarH = False\n#Variabele naam: varH\n#Variabele waarde: False\n#Variabele type: boolean\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Het aanroepen en overschrijven van variabele",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = \"Hello\"\ny = 43\nz = False\n\n\n## Opdracht 1: Print variabele x, overschrijf deze met een nieuwe string en print variabele x opnieuw.\nprint(x)\nx = \"World\"\nprint(x)\n\n## Opdracht 2: Print variabele y, verhoog deze met 1 en print variabele y opnieuw.\nprint(y)\ny = y + 1\nprint(y)\n\n## Opdracht 3: Print variabele z, overschrijf deze met True en print variabele z opnieuw.\nprint(z)\nz = True\nprint(z)\n\n## Opdracht 4: Overschrijf alle variabele (x, y en z) met 0.\nx = 0\ny = 0\nz = 0\n\nprint(x)\nprint(y)\nprint(z)\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Extra - Variabele binnen functies",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "# TODO: type solution here\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Operators",
+          "task_list" : [
+            {
+              "name" : "Wiskundige operatoren",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "varA = 6\nvarB = 1\nvarC = 6\nvarD = 8\n\n## Opdracht 1: Vul de verschillende velden in met de juiste data.\nsumA = varB + varD\n#Variabele naam: sumA\n#Variabele waarde: 9\n#Variabele type: integer\n\nsumB = varA + varC\n#Variabele naam: sumB\n#Variabele waarde: 12\n#Variabele type: integer\n\nsubA = sumA - varA\n#Variabele naam: subA\n#Variabele waarde: 3\n#Variabele type: integer\n\nsubB = sumB - varB\n#Variabele naam: subB\n#Variabele waarde: 11\n#Variabele type: integer\n\nmultA = varA * varB\n#Variabele naam: multA\n#Variabele waarde: 6\n#Variabele type: integer\n\nmultB = varC * varD\n#Variabele naam: multB\n#Variabele waarde: 48\n#Variabele type: integer\n\npowA = varA ** varB\n#Variabele naam: powA\n#Variabele waarde: 6\n#Variabele type: integer\n\npowB = varC ** varD\n#Variabele naam: powB\n#Variabele waarde: 1679616‬\n#Variabele type: integer\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Logische operatoren",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "varA = 4\nvarB = 9\nvarC = 4.2\nvarD = -53.2\n\n#Task 1\nequA = varA == varB\n#Variabele naam: equA\n#Variabele waarde: False\n#Variabele type: boolean\n\nequB = varC == varD\n#Variabele naam: equB\n#Variabele waarde: False\n#Variabele type: boolean\n\nequC = varB == varB\n#Variabele naam: equC\n#Variabele waarde: True\n#Variabele type: boolean\n\n#Task 2\nuneqA = varA != varB\n#Variabele naam: uneqA\n#Variabele waarde: True\n#Variabele type: boolean\n\nuneqB = varC != varD\n#Variabele naam: uneqB\n#Variabele waarde: True\n#Variabele type: boolean\n\nuneqC = varB != varB\n#Variabele naam: uneqC\n#Variabele waarde: False\n#Variabele type: boolean\n\nlargerA = varA > varC\n#Variabele naam: largerA\n#Variabele waarde: False\n#Variabele type: boolean\n\nlargerB = varB > varD\n#Variabele naam: largerB\n#Variabele waarde: True\n#Variabele type: boolean\n\nlargerC = varA > varA\n#Variabele naam: largerC\n#Variabele waarde: False\n#Variabele type: boolean\n\nlargerequA = varA >= varC\n#Variabele naam: largerequA\n#Variabele waarde: False\n#Variabele type: boolean\n\nlargerequB = varB >= varD\n#Variabele naam: largerequB\n#Variabele waarde: True\n#Variabele type: boolean\n\nlargerequC = varA >= varA\n#Variabele naam: largerequC\n#Variabele waarde: True\n#Variabele type: boolean\n\nsmallerA = varA < varC\n#Variabele naam: smallerA\n#Variabele waarde: True\n#Variabele type: boolean\nsmallerB = varB < varD\n#Variabele naam: smallerC\n#Variabele waarde: False\n#Variabele type: boolean\n\nsmallerC = varA < varA\n#Variabele naam: smallerC\n#Variabele waarde: False\n#Variabele type: boolean\n\nsmallerequA = varA <= varC\n#Variabele naam: smallerequA\n#Variabele waarde: True\n#Variabele type: boolean\n\nsmallerequB = varB <= varD\n#Variabele naam: smallerequB\n#Variabele waarde: False\n#Variabele type: boolean\n\nsmallerequC = varA <= varA\n#Variabele naam: smallerequC\n#Variabele waarde: True\n#Variabele type: boolean\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Booleaanse operatoren",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "varA = True\nvarB = False\n\nandA = varA and varA\n#Variabele naam: andA\n#Variabele waarde: True\n#Variabele type: boolean\n\nandB = varA and varB\n#Variabele naam: andB\n#Variabele waarde: False\n#Variabele type: boolean\n\nandC = varB and varA\n#Variabele naam: andC\n#Variabele waarde: False\n#Variabele type: boolean\n\nandD = varB and varB\n#Variabele naam: andD\n#Variabele waarde: False\n#Variabele type: boolean\n\norA = varA or varA\n#Variabele naam: orA\n#Variabele waarde: True\n#Variabele type: boolean\n\norB = varA or varB\n#Variabele naam: orB\n#Variabele waarde: True\n#Variabele type: boolean\n\norC = varB or varA\n#Variabele naam: orC\n#Variabele waarde: True\n#Variabele type: boolean\n\norD = varB or varB\n#Variabele naam: orD\n#Variabele waarde: False\n#Variabele type: boolean\n\nnotA = not(varA)\n#Variabele naam: notA\n#Variabele waarde: False\n#Variabele type: boolean\n\nnotB = not(varB)\n#Variabele naam: notB\n#Variabele waarde: False\n#Variabele type: boolean\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Expressies",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 4\ny = 6\n\nexpressionA = 8 * 5 + 5 / 2\n#Stap 1:    40 + 5 / 2\n#Stap 2:    40 + 2.5\n#Stap 3:    42.5\n#Type  :    Float\n\nexpressionB = x * 5 + y / 2\n#Stap 1:    4 * 5 + y / 2\n#Stap 2:    20 + y / 2\n#Stap 3:    20 + 6 / 2\n#Stap 4:    20 + 3\n#Stap 5:    23\n#Type  :    Integer\n\nexpressionC = expressionB >= expressionA\n#Stap 1:    23 >= expressionA\n#Stap 2:    23 >= 42.5\n#Stap 3:    False\n#Type  :    Boolean\n\nexpressionD = expressionC or expressionA > 40\n#Stap 1:    False or expressionA > 40\n#Stap 2:    False or 42.5 > 40\n#Stap 3:    False or True\n#Stap 4:    True\n#Type  :    Boolean\n\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        }
+      ],
+      "type" : "section"
+    },
+    {
+      "title" : "Week 3 - Branching",
+      "items" : [
+        {
+          "title" : "If",
+          "task_list" : [
+            {
+              "name" : "Programma 1",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 5\n\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x == 5\n#Conditie uitkomst: True\nif(x == 5):\n    print(\"Stap 1.\")\nprint(\"Stap 2.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 5\ny = 2\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x *2 <= 14\n#Conditie uitkomst: False\nif(x * y > 14):\n    print(\"Stap 1.\")\nprint(\"Stap 2.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 3",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 5\ny = 21\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x > 0\n#Conditie uitkomst: True\nif(x > 0):\n    print(\"Stap 1.\")\n    #Keyword: if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): x, y\n    #Conditie: x * 2 <= 14\n    #Conditie uitkomst: False\n    if(y / x <= 4):\n        print(\"Stap 2.\")\nprint(\"Stap 3.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 4",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 5\ny = 21\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x < 0\n#Conditie uitkomst: False\nif(x < 0):\n    print(\"Stap 1.\")\n    #Keyword: if\n    #Uitgevoerd: Nee\n    #Conditie variabele(n): x, y\n    #Conditie: y ** x <= 456\n    #Conditie uitkomst: False\n    if(y ** x <= 456):\n        print(\"Stap 2.\")\nprint(\"Stap 3.\")\nprint(\"Einde programma.\")\n\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "If - else",
+          "task_list" : [
+            {
+              "name" : "Programma 1",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 5\n\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x != 0\n#Conditie uitkomst: True\n#Uitgevoerd pad(en): 1\nif(x != 0):\n    print(\"Pad 1.\")\nelse:\n    print(\"Pad 2.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 5\n\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x != 0\n#Conditie uitkomst: False\n#Uitgevoerd pad(en): 1\nif(x != 55/11):\n    print(\"Pad 1.\")\nelse:\n    print(\"Pad 2.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 3",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 5\ny = x * 2\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x != 0\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(x != 0):\n    print(\"Pad 1.\")\n    #Keyword(s): if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): x, y\n    #Conditie: x <= y\n    #Conditie uitkomst: True\n    if(x <= y):\n        print(\"Pad 2.\")\nelse:\n    print(\"Pad 3.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 4",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 21/3\ny = x * 2\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x < 15\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(x < 15):\n    print(\"Pad 1.\")\n    #Keyword(s): if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    if(10 >= y):\n        print(\"Pad 2.\")\nelse:\n    print(\"Pad 3.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Geneste if - else",
+          "task_list" : [
+            {
+              "name" : "Programma 1",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 21/3\ny = x * 2\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x < 15\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(x < 15):\n    print(\"Pad 1.\")\n    #Keyword(s): if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    #Uitgevoerd pad: 3\n    if(10 >= y):\n        print(\"Pad 2.\")\n    else:\n        print(\"Pad 3.\")\nelse:\n    print(\"Pad 4.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 21/3\ny = x/3 * 4\nz = 24\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): z\n#Conditie: x < 15\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(z > 20):\n    print(\"Pad 1.\")\n    #Keyword(s): if, else\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    #Uitgevoerd pad: 2\n    if(5 <= y):\n        print(\"Pad 2.\")\n        #Keyword(s): if, else\n        #Uitgevoerd: JA\n        #Conditie variabele(n): x, y\n        #Conditie: 10 >= y\n        #Conditie uitkomst: False\n        #Uitgevoerd pad: 4\n        if(50 >= x * y):\n            print(\"Pad 3.\")\n        else:\n            print(\"Pad 4.\")\n    else:\n        print(\"Pad 5.\")\nelse:\n    print(\"Pad 6.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Programma 3",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "x = 21/3\ny = x/3 * 4\nz = 24\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): z\n#Conditie: x < 15\n#Conditie uitkomst: False\n#Uitgevoerd pad: 6\nif(z < 20):\n    print(\"Pad 1.\")\n    #Keyword(s): if, else\n    #Uitgevoerd: Nee\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    #Uitgevoerd pad: geen\n    if(5 <= y):\n        print(\"Pad 2.\")\n        #Keyword(s): if, else\n        #Uitgevoerd: Nee\n        #Conditie variabele(n): x, y\n        #Conditie: 10 >= y\n        #Conditie uitkomst: False\n        #Uitgevoerd pad: geen\n        if(50 >= x * y):\n            print(\"Pad 3.\")\n        else:\n            print(\"Pad 4.\")\n    else:\n        print(\"Pad 5.\")\nelse:\n    print(\"Pad 6.\")\nprint(\"Einde programma.\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Opdrachten",
+          "task_list" : [
+            {
+              "name" : "Schrikkeljaar",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "isLeapYear = False\nyear = int(input(\"Which year do you want to check for a common or leap year?:\\n\"))\n\n\nif(year % 400 == 0):\n    isLeapYear = True\nelse:\n    if(year % 4 == 0 and year % 100 != 0):\n        isLeapYear = True\n\nif(isLeapYear):\n    print(str(year) + \" is a leap year!\")\nelse:\n    print(str(year) + \" is a common year!\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "LeeftijdsCheck",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "Name = \"Aron\"\nAge = 70\n\nif(Age <= 18):\n    print(\"Reduction = 10%\")\nelif(Age <=65):\n    print(\"Reduction = 0%\")\nelse:\n    print(\"Reduction = 25%\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "OnderGelijkOfBoven",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "import random\n\nnumber = int(input(\"Enter a number:\\n\"))\nrandomNumber = random.randint(0, 100)\n\nif(number < 0):\n    print(\"No negative numbers!\")\nelif(number < randomNumber):\n    print(\"The number is below the random number.\")\nelif(number == randomNumber):\n    print(\"The number is equal to the random number!\")\nelif(number > randomNumber and number <= 100):\n    print(\"The number is above the random number.\")\nelse:\n    print(\"No numbers higher than 100!\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "if - else en elif",
+          "task_list" : [ ],
+          "type" : "lesson"
+        }
+      ],
+      "type" : "section"
+    },
+    {
+      "title" : "Week 4 - Arrays en functies",
+      "items" : [
+        {
+          "title" : "Arrays",
+          "task_list" : [
+            {
+              "name" : "Aanmaken",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Data aanroepen",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\na = integerArray[2]\n#Variabele naam: a\n#Variabele waarde: 3\n#Variabele type: integer\n\nb = integerArray[2-1]\n#Variabele naam: b\n#Variabele waarde: 2\n#Variabele type: integer\n\nc = stringArray[4//2]\n#Variabele naam: c\n#Variabele waarde: \"3\"\n#Variabele type: string\n\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: \"1\"\n#Variabele type: string\n\ne = arrayOfArrays[2]\n#Variabele naam: e\n#Variabele waarde: [\"1\", \"2\", \"3\"]\n#Variabele type: array\n\nf = arrayOfArrays[1][0]\n#Variabele naam: f\n#Variabele waarde: 1\n#Variabele type: integer\n\ng = arrayOfArrays[2][2]\n#Variabele naam: g\n#Variabele waarde: \"3\"\n#Variabele type: string\n\nh = arrayOfArrays[0]\n#Variabele naam: h\n#Variabele waarde: []\n#Variabele type: array\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Data overschrijven",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nintegerArray[0] = integerArray[0] + 6\na = integerArray[0]\n#Variabele naam: a\n#Variabele waarde: 7\n#Variabele type: integer\n\nintegerArray[1] = integerArray[1] * 2\nb = integerArray[1]\n#Variabele naam: b\n#Variabele waarde: 4\n#Variabele type: integer\n\nstringArray[2] = stringArray[2] + stringArray[0]\nc = stringArray[2]\n#Variabele naam: c\n#Variabele waarde: \"31\"\n#Variabele type: string\n\nstringArray[0] = \"abc\"\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: \"abc\"\n#Variabele type: string\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Data toevoegen",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nemptyArray.append(\"first\")\n#Variabele naam: emptyArray\n#Variabele waarde: [\"first\"]\n#Variabele type: array\n\nemptyArray.append(\"second\")\n#Variabele naam: emptyArray\n#Variabele waarde: [\"first\", \"second\"]\n#Variabele type: array\n\nintegerArray.append(1)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2, 3, 1]\n#Variabele type: array\n\nstringArray.append(\"4\")\n#Variabele naam: stringArray\n#Variabele waarde: [\"1\", \"2\", \"3\", \"4\"]\n#Variabele type: array\n\nintegerArray.append(13)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2, 3, 1, 13]\n#Variabele type: array\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Data verwijderen",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\nintegerArray.remove(3)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2]\n#Variabele type: array\n\nintegerArray.remove(1)\n#Variabele naam: integerArray\n#Variabele waarde: [2]\n#Variabele type: array\n\nstringArray.remove(\"2\")\n#Variabele naam: stringArray\n#Variabele waarde: [\"1\", \"3\"]\n#Variabele type: array\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Functies",
+          "task_list" : [
+            {
+              "name" : "Input",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "userInput = input(\"Enter a number\")\n#Functie naam: input\n#Variabele naam: userInput\n#Variabele waarde: unknown\n#Variabele type: string\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Casting",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "string = \"123\"\ninteger = 123\n\nstring = int(string)\n#Functie naam: int\n#Functie input waarde: \"123\"\n#Variabele naam: string\n#Variabele waarde: 123\n#Variabele type: integer\n\ninteger = str(integer)\n#Functie naam: str\n#Functie input waarde: 123\n#Variabele naam: integer\n#Variabele waarde: \"123\"\n#Variabele type: string\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Print",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "# TODO: type solution here\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Len",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "array1 = [1, 2, 3]\narray2 = [\"ab\", \"bcd\", \"efgh\"]\n\n#Task 1\narray1Len = len(array1)\nprint(array1Len)\n\narray2Len = len(array2)\nprint(array1Len)\n\n#Task 2\narray2Index0Len = len(array2[0])\nprint(array2Index0Len)\narray2Index2Len = len(array2[2])\nprint(array2Index2Len)\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Range",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "conditionVariable = 0\n\nwhile(conditionVariable <= 4):\n    print(conditionVariable)\n    conditionVariable = conditionVariable + 1\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Extra - Try Except",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "intInput = input(\"Enter a number:\\n\")\n\ntry:\n    intInput = int(intInput)\nexcept:\n    print(\"Please enter a number... try it once more...\")\n    intInput = int(input(\"Enter a number:\\n\"))\n\nprint(intInput)\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Opdrachten",
+          "task_list" : [
+            {
+              "name" : "Totale leeftijd",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "persons = [[\"p1\", 19], [\"p2\", 18], [\"p3\", 22], [\"p4\", 21]]\n\nperson1Age = persons[0][1]\nperson3Name = persons[2][0]\n\nprint(\"person 1: \" + persons[0][0] +\" with age: \" + str(person1Age))\nprint(\"person 2: \" + persons[1][0] +\" with age: \" + str(persons[1][1]))\nprint(\"person 3: \" + person3Name +\" with age: \" + str(persons[2][1]))\nprint(\"person 4: \" + persons[3][0] +\" with age: \" + str(persons[3][1]))\n\nprint(\"The combined age of all persons is: \" + str(persons[0][1] + persons[1][1] + persons[2][1] + persons[3][1]))\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Cash register",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "products = [[\"Apple\", 2], [\"Bread\", 1], [\"Melon\", 3]]\namounts = [0, 0, 0]\n\namounts[0] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\namounts[1] = int(input(\"How much \"+products[1][0]+ \" would you like?\\n\"))\namounts[2] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\n\ntotal = products[0][1] * amounts[0] + products[1][1] * amounts[1] + products[2][1] * amounts[2]\n\nprint(\"You have to pay: \"+ str(total))\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        }
+      ],
+      "type" : "section"
+    },
+    {
+      "title" : "Week 5 - While loops",
+      "items" : [
+        {
+          "title" : "While loops",
+          "task_list" : [
+            {
+              "name" : "Structuur #1",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "conditionVariable = 0\n\nwhile(conditionVariable <= 4):\n    print(conditionVariable)\n    conditionVariable = conditionVariable + 1\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Structuur #2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "condition = True\ncounter = 0\n\nwhile(condition):\n    if(counter <= 4):\n        print(counter)\n        counter = counter + 1\n    else:\n        condition = False\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Structuur #3",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Tellen",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "#Task 1\nconditionVariable1 = 0\n\nwhile(conditionVariable1 < 10):\n    print(conditionVariable1 + 1)\n    conditionVariable1 = conditionVariable1 + 1\n\n#Task 2\nconditionVariable2 = 10\n\nwhile(conditionVariable2>-1):\n    conditionVariable2 = conditionVariable2 - 1\n\n#Task 3\nconditionVariable3 = len(\"aString\")\nwhile(conditionVariable3>=0):\n    conditionVariable3 =conditionVariable3 - 1\n\n#Task 4\narray=[4, 7, 123, 556]\nconditionVariable4 = 0\n\nwhile(conditionVariable4 < len(array)):\n    print(conditionVariable4)\n    conditionVariable4 = conditionVariable4 + 1\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Iteraties over indexen",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "array1 = [23, 62, 94]\narray2 = [55, 45, 7]\n\n#Task 1\nindex = 0\n\nwhile(index < len(array1)):\n    print(array1[index])\n    index = index + 1\n\n#Task 2\nindex = len(array1) - 1\n\nwhile(index>=0):\n    print(array1[index])\n    index = index - 1\n\n#Task 3\nif(len(array1) == len(array2)):\n    index = 0\n    while(index < len(array2)):\n        array2[index] = array1[index] + array2[index]\n        index = index + 1\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Opdrachten",
+          "task_list" : [
+            {
+              "name" : "Programma loop",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "def programLoop():\n    active = True\n    while(active):\n        print(\"Doing stuff\")\n        userInput = input(\"Do you want to continue? [y/n]\\n\")\n        if(userInput == \"n\"):\n            print(\"quiting\")\n            active = False\n        elif(userInput == \"y\"):\n            print(\"continueing\")\n            continue\n        else:\n            print(\"Please enter \\\"y\\\" or \\\"n\\\"\")\n\nprogramLoop()\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Kassa #2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "# TODO: type solution here\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Tellen #2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "#Task 1\n#Amount of iterations:  10\nconditionVar1 = 0\n\nwhile(conditionVar1 < 5):\n    conditionVar1 = conditionVar1 + 0.5\n\n#Task 2\n\n#Amount of iterations:  5\nconditionVar2 = 10\n\nwhile(conditionVar2 >= 0):\n    conditionVar2 = conditionVar2 - 2\n\n#Task 3\n#Amount of iterations:  50\nconditionVar3 = 100\n\nwhile(conditionVar3 != 50):\n    if(conditionVar3>50):\n        conditionVar3 = conditionVar3 - 1\n    else:\n        conditionVar3 = conditionVar3 + 1\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        }
+      ],
+      "type" : "section"
+    },
+    {
+      "title" : "Week 6 - For loops",
+      "items" : [
+        {
+          "title" : "For loops",
+          "task_list" : [
+            {
+              "name" : "Structuur #1",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "# TODO: type solution here\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Structuur #2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "# TODO: type solution here\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Structuur #3",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "# TODO: type solution here\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "For loop variabele",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "#Task 1\narray1 = [1, 2, 3, 4, 5]\n\nfor element in array1:\n    print(element)\n\n#Task 2\nstring1 = \"abcd\"\n\nreturnString = \"\"\nfor symbol in string1:\n    if(len(returnString)<3):\n        returnString = returnString + symbol\n\n#Task 3\narray2 = [True, False, True, True, True, False, False, True]\ncounter = 0\nfor boolean in array2:\n    if(not(boolean)):\n        counter = counter + 1\nprint(str(counter) + \" Falses counted\")\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "For element in array",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "players = []\n\nplayers.append([\"p1\", 27])\nplayers.append([\"p2\", 43])\nplayers.append([\"p3\", 72])\nplayers.append([\"p4\", 12])\nplayers.append([\"p5\", 22])\nplayers.append([\"p6\", 61])\n\nloser =players[0]\n\nfor i in (range(len(players))):\n    points = players[i][1]\n    if(loser[1] > points):\n        loser = players[i]\n\nwinner = players[0]\n\nfor player in players:\n    points = player[1]\n    if(winner[1] < points):\n        winner = player\n\nprint(winner[0] + \" is the winner with \" + str(winner[1]) + \" points!\")\nprint(loser[0] + \" is the loser with \" + str(loser[1]) + \" points...\")\n\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        }
+      ],
+      "type" : "section"
+    },
+    {
+      "title" : "Week 7 - Problem solving",
+      "items" : [ ],
+      "type" : "section"
+    },
+    {
+      "title" : "Eindopdrachten - Python",
+      "items" : [ ],
+      "type" : "section"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "README.md",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "# Iedereen kan programmeren\r\n"
+    }
+  ],
+  "version" : 11
+}
