@@ -2,8 +2,12 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 90
+    length: 1
+    placeholder_text: Vul in
 - name: tests/test_task.py
-  visible: false
+  visible: true
 - name: __init__.py
   visible: true
 - name: tests/__init__.py

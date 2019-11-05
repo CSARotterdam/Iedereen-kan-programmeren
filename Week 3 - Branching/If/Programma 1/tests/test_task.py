@@ -1,5 +1,5 @@
 import unittest
-from Regex_Helper import regex_helper
+from regex_helper import regex_helper
 
 
 class TestCase(unittest.TestCase):

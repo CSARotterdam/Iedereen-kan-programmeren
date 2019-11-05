@@ -1,6 +1,10 @@
-import unittest
+import test_helper
+from UserInputHelper import *
 
 
-class TestCase(unittest.TestCase):
-    def test(self):
-        self.assertEqual(1, 0, msg="Implement tests")
+if __name__ == "__main__":
+    helper = Helper()
+
+
+
+
