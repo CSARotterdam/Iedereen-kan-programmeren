@@ -1,5 +1,4 @@
 {
-  "environment" : "unittest",
   "summary" : "Lesstof voor iedereen kan programmeren.",
   "title" : "Iedereen-kan-programmeren",
   "programming_language" : "Python",
@@ -32,7 +31,7 @@
                   "name" : "tests/test_task.py",
                   "placeholders" : [ ],
                   "is_visible" : true,
-                  "text" : "import test_helper\n\nif __name__ == \"__main__\":\n    placeholders = test_helper.get_answer_placeholders()\n    print(placeholders)\n    print(len(placeholders))\n\n\n\n"
+                  "text" : "import test_helper\nfrom UserInputHelper import *\n\n\nif __name__ == \"__main__\":\n    helper = Helper()\n\n\n\n\n"
                 },
                 "__init__.py" : {
                   "name" : "__init__.py",
@@ -153,6 +152,131 @@
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "task5",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "# todo: replace this with an actual task\ndef sum(a, b):\n    return a + b\n"
+                },
+                "tests.py" : {
+                  "name" : "tests.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    placeholder = placeholders[0]\n    if placeholder == \"\":       # TODO: your condition here\n        passed()\n    else:\n        failed()\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    # test_answer_placeholders()       # TODO: uncomment test call\n\n\n"
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Het aanmaken van variabelen",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [
+                    {
+                      "offset" : 90,
+                      "length" : 9,
+                      "possible_answer" : "x",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 193,
+                      "length" : 9,
+                      "possible_answer" : "235",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 298,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 345,
+                      "length" : 9,
+                      "possible_answer" : "stappenteller",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 374,
+                      "length" : 9,
+                      "possible_answer" : "0",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 481,
+                      "length" : 9,
+                      "possible_answer" : "45",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 508,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 553,
+                      "length" : 9,
+                      "possible_answer" : "aantalHoeken",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 582,
+                      "length" : 9,
+                      "possible_answer" : "4",
+                      "placeholder_text" : "9. Vul in"
+                    },
+                    {
+                      "offset" : 609,
+                      "length" : 10,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "10. Vul in"
+                    },
+                    {
+                      "offset" : 622,
+                      "length" : 28,
+                      "possible_answer" : "varA = -342",
+                      "placeholder_text" : "11. Maak de juiste variabele"
+                    },
+                    {
+                      "offset" : 723,
+                      "length" : 28,
+                      "possible_answer" : "varB = 244",
+                      "placeholder_text" : "12. Maak de juiste variabele"
+                    },
+                    {
+                      "offset" : 823,
+                      "length" : 28,
+                      "possible_answer" : "varC = 8942",
+                      "placeholder_text" : "13. Maak de juiste variabele"
+                    }
+                  ],
+                  "is_visible" : true,
+                  "text" : "## Opdracht 1: Vul de verschillende velden in met de juiste data.\n\nx = 5\n#Variabele naam: 1. Vul in\n#Variabele waarde: 5\n#Variabele type: integer\n\ny = 235\n#Variabele naam: y\n#Variabele waarde: 2. Vul in\n#Variabele type: integer\n\nz = -721\n#Variabele naam: z\n#Variabele waarde: -721\n#Variabele type: 3. Vul in\n\n\nstappenteller = 0\n#Variabele naam: 4. Vul in\n#Variabele waarde: 5. Vul in\n#Variabele type: integer\n\ntijdelijkGetal = 45\n#Variabele naam: tijdelijkGetal\n#Variabele waarde: 6. Vul in\n#Variabele type: 7. Vul in\n\naantalHoeken = 4\n#Variabele naam: 8. Vul in\n#Variabele waarde: 9. Vul in\n#Variabele type: 10. Vul in\n\n\n11. Maak de juiste variabele\n#Variabele naam: varA\n#Variabele waarde: -342\n#Variabele type: integer\n\n12. Maak de juiste variabele\n#Variabele naam: varB\n#Variabele waarde: 244\n#Variabele type: integer\n\n13. Maak de juiste variabele\n#Variabele naam: varC\n#Variabele waarde: 8942\n#Variabele type: integer\n\n"
+                },
+                "tests.py" : {
+                  "name" : "tests.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.helper.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.helper.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.helper.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
               "description_format" : "HTML",
               "feedback_link" : {
                 "link_type" : "STEPIK"
@@ -330,7 +454,7 @@
                   "name" : "tests/test_task.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\nfrom Regex_Helper import regex_helper\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        a = regex_helper()\n        \n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
+                  "text" : "import unittest\nfrom regex_helper import regex_helper\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        a = regex_helper()\n        \n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
                 },
                 "__init__.py" : {
                   "name" : "__init__.py",
@@ -1967,10 +2091,10 @@
       "name" : "test_helper.py",
       "placeholders" : [ ],
       "is_visible" : true,
-      "text" : "import sys\r\n\r\ndef get_file_text(path):\r\n    \"\"\" Returns file text by path\"\"\"\r\n    file_io = open(path, \"r\")\r\n    text = file_io.read()\r\n    file_io.close()\r\n    return text\r\n\r\n\r\ndef get_file_output(encoding=\"utf-8\", path=sys.argv[-1], arg_string=\"\"):\r\n    \"\"\"\r\n    Returns answer file output\r\n    :param encoding: to decode output in python3\r\n    :param path: path of file to execute\r\n    :return: list of strings\r\n    \"\"\"\r\n    import subprocess\r\n\r\n    proc = subprocess.Popen([sys.executable, path], stdin=subprocess.PIPE, stdout=subprocess.PIPE,\r\n                            stderr=subprocess.STDOUT)\r\n    if arg_string:\r\n        for arg in arg_string.split(\"\\n\"):\r\n            proc.stdin.write(bytearray(str(arg) + \"\\n\", encoding))\r\n            proc.stdin.flush()\r\n\r\n    return list(map(lambda x: str(x.decode(encoding)), proc.communicate()[0].splitlines()))\r\n\r\n\r\ndef test_file_importable():\r\n    \"\"\" Tests there is no obvious syntax errors\"\"\"\r\n    path = sys.argv[-1]\r\n    if not path.endswith(\".py\"):\r\n        import os\r\n\r\n        parent = os.path.abspath(os.path.join(path, os.pardir))\r\n        python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f)) and f.endswith(\".py\")]\r\n        for python_file in python_files:\r\n            if python_file == \"tests.py\":\r\n                continue\r\n            check_importable_path(os.path.join(parent, python_file))\r\n        return\r\n    check_importable_path(path)\r\n\r\n\r\ndef check_importable_path(path):\r\n    \"\"\" Checks that file is importable.\r\n        Reports failure otherwise.\r\n    \"\"\"\r\n    saved_input = patch_input()\r\n    try:\r\n        import_file(path)\r\n    except:\r\n        failed(\"The file contains syntax errors\", test_file_importable.__name__)\r\n        return\r\n    finally:\r\n        revert_input(saved_input)\r\n\r\n    passed(test_file_importable.__name__)\r\n\r\n\r\ndef patch_input():\r\n    def mock_fun(_m=\"\"):\r\n        return \"mock\"\r\n\r\n    if sys.version_info[0] == 3:\r\n        import builtins\r\n        save_input = builtins.input\r\n        builtins.input = mock_fun\r\n        return save_input\r\n    elif sys.version_info[0] == 2:\r\n        import __builtin__\r\n        save_input = __builtin__.raw_input\r\n        __builtin__.raw_input = mock_fun\r\n        __builtin__.input = mock_fun\r\n        return save_input\r\n\r\n\r\ndef revert_input(saved_input):\r\n    if sys.version_info[0] == 3:\r\n        import builtins\r\n        builtins.input = saved_input\r\n    elif sys.version_info[0] == 2:\r\n        import __builtin__\r\n        __builtin__.raw_input = saved_input\r\n        __builtin__.input = saved_input\r\n\r\n\r\ndef import_file(path):\r\n    \"\"\" Returns imported file \"\"\"\r\n    if sys.version_info[0] == 2 or sys.version_info[1] < 3:\r\n        import imp\r\n\r\n        return imp.load_source(\"tmp\", path)\r\n    elif sys.version_info[0] == 3:\r\n        import importlib.machinery\r\n\r\n        return importlib.machinery.SourceFileLoader(\"tmp\", path).load_module(\"tmp\")\r\n\r\n\r\ndef import_task_file():\r\n    \"\"\" Returns imported file.\r\n        Imports file from which check action was run\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    return import_file(path)\r\n\r\n\r\ndef test_is_not_empty():\r\n    \"\"\"\r\n        Checks that file is not empty\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    file_text = get_file_text(path)\r\n\r\n    if len(file_text) > 0:\r\n        passed()\r\n    else:\r\n        failed(\"The file is empty. Please, reload the task and try again.\")\r\n\r\n\r\ndef test_text_equals(text, error_text):\r\n    \"\"\"\r\n        Checks that answer equals text.\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    file_text = get_file_text(path)\r\n\r\n    if file_text.strip() == text:\r\n        passed()\r\n    else:\r\n        failed(error_text)\r\n\r\n\r\ndef test_answer_placeholders_text_deleted(error_text=\"Don't just delete task text\"):\r\n    \"\"\"\r\n        Checks that all answer placeholders are not empty\r\n    \"\"\"\r\n    windows = get_answer_placeholders()\r\n\r\n    for window in windows:\r\n        if len(window) == 0:\r\n            failed(error_text)\r\n            return\r\n    passed()\r\n\r\n\r\ndef set_congratulation_message(message):\r\n    \"\"\" Overrides default 'Congratulations!' message \"\"\"\r\n    print(\"#educational_plugin CONGRATS_MESSAGE \" + message)\r\n\r\n\r\ndef failed(message=\"Please, reload the task and try again.\", name=None):\r\n    \"\"\" Reports failure \"\"\"\r\n    if not name:\r\n        name = sys._getframe().f_back.f_code.co_name\r\n    print(\"#educational_plugin \" + name + \" FAILED + \" + message)\r\n\r\n\r\ndef passed(name=None):\r\n    \"\"\" Reports success \"\"\"\r\n    if not name:\r\n        name = sys._getframe().f_back.f_code.co_name\r\n    print(\"#educational_plugin \" + name + \" test OK\")\r\n\r\n\r\ndef get_answer_placeholders():\r\n    \"\"\"\r\n        Returns all answer placeholders text\r\n    \"\"\"\r\n    prefix = \"#educational_plugin_window = \"\r\n    path = sys.argv[-1]\r\n    import os\r\n\r\n    file_name_without_extension = os.path.splitext(path)[0]\r\n    windows_path = file_name_without_extension[0:-15] + \"task.py\"\r\n    windows = []\r\n    f = open(windows_path, \"r\")\r\n    window_text = \"\"\r\n    first = True\r\n    for line in f.readlines():\r\n        if line.startswith(prefix):\r\n            if not first:\r\n                windows.append(window_text.strip())\r\n            else:\r\n                first = False\r\n            window_text = line[len(prefix):]\r\n        else:\r\n            window_text += line\r\n\r\n    if window_text:\r\n        windows.append(window_text.strip())\r\n\r\n    f.close()\r\n    return windows\r\n\r\n\r\ndef check_samples(samples=()):\r\n    \"\"\"\r\n      Check script output for all samples. Sample is a two element list, where the first is input and\r\n      the second is output.\r\n    \"\"\"\r\n    for sample in samples:\r\n        if len(sample) == 2:\r\n            output = get_file_output(arg_string=str(sample[0]))\r\n            if \"\\n\".join(output) != sample[1]:\r\n                failed(\r\n                    \"Test from samples failed: \\n \\n\"\r\n                    \"Input:\\n{}\"\r\n                    \"\\n \\n\"\r\n                    \"Expected:\\n{}\"\r\n                    \"\\n \\n\"\r\n                    \"Your result:\\n{}\".format(str.strip(sample[0]), str.strip(sample[1]), \"\\n\".join(output)))\r\n                return\r\n        set_congratulation_message(\"All test from samples passed. Now we are checking your solution on Stepik server.\")\r\n\r\n    passed()\r\n\r\n\r\ndef run_common_tests(error_text=\"Please, reload file and try again\"):\r\n    test_is_not_empty()\r\n    test_answer_placeholders_text_deleted()\r\n    test_file_importable()\r\n"
+      "text" : "import sys\r\n\r\ndef get_file_text(path):\r\n    \"\"\" Returns file text by path\"\"\"\r\n    file_io = open(path, \"r\")\r\n    text = file_io.read()\r\n    file_io.close()\r\n    return text\r\n\r\n\r\ndef get_file_output(encoding=\"utf-8\", path=sys.argv[-1], arg_string=\"\"):\r\n    \"\"\"\r\n    Returns answer file output\r\n    :param encoding: to decode output in python3\r\n    :param path: path of file to execute\r\n    :return: list of strings\r\n    \"\"\"\r\n    import subprocess\r\n\r\n    proc = subprocess.Popen([sys.executable, path], stdin=subprocess.PIPE, stdout=subprocess.PIPE,\r\n                            stderr=subprocess.STDOUT)\r\n    if arg_string:\r\n        for arg in arg_string.split(\"\\n\"):\r\n            proc.stdin.write(bytearray(str(arg) + \"\\n\", encoding))\r\n            proc.stdin.flush()\r\n\r\n    return list(map(lambda x: str(x.decode(encoding)), proc.communicate()[0].splitlines()))\r\n\r\n\r\ndef test_file_importable():\r\n    \"\"\" Tests there is no obvious syntax errors\"\"\"\r\n    path = sys.argv[-1]\r\n    if not path.endswith(\".py\"):\r\n        import os\r\n\r\n        parent = os.path.abspath(os.path.join(path, os.pardir))\r\n        python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f)) and f.endswith(\".py\")]\r\n        for python_file in python_files:\r\n            if python_file == \"tests.py\":\r\n                continue\r\n            check_importable_path(os.path.join(parent, python_file))\r\n        return\r\n    check_importable_path(path)\r\n\r\n\r\ndef check_importable_path(path):\r\n    \"\"\" Checks that file is importable.\r\n        Reports failure otherwise.\r\n    \"\"\"\r\n    saved_input = patch_input()\r\n    try:\r\n        import_file(path)\r\n    except:\r\n        failed(\"The file contains syntax errors\", test_file_importable.__name__)\r\n        return\r\n    finally:\r\n        revert_input(saved_input)\r\n\r\n    passed(test_file_importable.__name__)\r\n\r\n\r\ndef patch_input():\r\n    def mock_fun(_m=\"\"):\r\n        return \"mock\"\r\n\r\n    if sys.version_info[0] == 3:\r\n        import builtins\r\n        save_input = builtins.input\r\n        builtins.input = mock_fun\r\n        return save_input\r\n    elif sys.version_info[0] == 2:\r\n        import __builtin__\r\n        save_input = __builtin__.raw_input\r\n        __builtin__.raw_input = mock_fun\r\n        __builtin__.input = mock_fun\r\n        return save_input\r\n\r\n\r\ndef revert_input(saved_input):\r\n    if sys.version_info[0] == 3:\r\n        import builtins\r\n        builtins.input = saved_input\r\n    elif sys.version_info[0] == 2:\r\n        import __builtin__\r\n        __builtin__.raw_input = saved_input\r\n        __builtin__.input = saved_input\r\n\r\n\r\ndef import_file(path):\r\n    \"\"\" Returns imported file \"\"\"\r\n    if sys.version_info[0] == 2 or sys.version_info[1] < 3:\r\n        import imp\r\n\r\n        return imp.load_source(\"tmp\", path)\r\n    elif sys.version_info[0] == 3:\r\n        import importlib.machinery\r\n\r\n        return importlib.machinery.SourceFileLoader(\"tmp\", path).load_module(\"tmp\")\r\n\r\n\r\ndef import_task_file():\r\n    \"\"\" Returns imported file.\r\n        Imports file from which check action was run\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    return import_file(path)\r\n\r\n\r\ndef test_is_not_empty():\r\n    \"\"\"\r\n        Checks that file is not empty\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    file_text = get_file_text(path)\r\n\r\n    if len(file_text) > 0:\r\n        passed()\r\n    else:\r\n        failed(\"The file is empty. Please, reload the task and try again.\")\r\n\r\n\r\ndef test_text_equals(text, error_text):\r\n    \"\"\"\r\n        Checks that answer equals text.\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    file_text = get_file_text(path)\r\n\r\n    if file_text.strip() == text:\r\n        passed()\r\n    else:\r\n        failed(error_text)\r\n\r\n\r\ndef test_answer_placeholders_text_deleted(error_text=\"Don't just delete task text\"):\r\n    \"\"\"\r\n        Checks that all answer placeholders are not empty\r\n    \"\"\"\r\n    windows = get_answer_placeholders()\r\n\r\n    for window in windows:\r\n        if len(window) == 0:\r\n            failed(error_text)\r\n            return\r\n    passed()\r\n\r\n\r\ndef set_congratulation_message(message):\r\n    \"\"\" Overrides default 'Congratulations!' message \"\"\"\r\n    print(\"#educational_plugin CONGRATS_MESSAGE \" + message)\r\n\r\n\r\ndef failed(message=\"Please, reload the task and try again.\", name=None):\r\n    \"\"\" Reports failure \"\"\"\r\n    if not name:\r\n        name = sys._getframe().f_back.f_code.co_name\r\n    print(\"#educational_plugin \" + name + \" FAILED + \" + message)\r\n\r\n\r\ndef passed(name=None):\r\n    \"\"\" Reports success \"\"\"\r\n    if not name:\r\n        name = sys._getframe().f_back.f_code.co_name\r\n    print(\"#educational_plugin \" + name + \" test OK\")\r\n\r\n\r\ndef get_answer_placeholders():\r\n    \"\"\"\r\n        Returns all answer placeholders text\r\n    \"\"\"\r\n    prefix = \"#educational_plugin_window = \"\r\n    path = sys.argv[-1]\r\n    import os\r\n\r\n    file_name_without_extension = os.path.splitext(path)[0]\r\n    windows_path = file_name_without_extension + \"_windows\"\r\n    windows = []\r\n    f = open(windows_path, \"r\")\r\n    window_text = \"\"\r\n    first = True\r\n    for line in f.readlines():\r\n        if line.startswith(prefix):\r\n            if not first:\r\n                windows.append(window_text.strip())\r\n            else:\r\n                first = False\r\n            window_text = line[len(prefix):]\r\n        else:\r\n            window_text += line\r\n\r\n    if window_text:\r\n        windows.append(window_text.strip())\r\n\r\n    f.close()\r\n    return windows\r\n\r\n\r\ndef check_samples(samples=()):\r\n    \"\"\"\r\n      Check script output for all samples. Sample is a two element list, where the first is input and\r\n      the second is output.\r\n    \"\"\"\r\n    for sample in samples:\r\n        if len(sample) == 2:\r\n            output = get_file_output(arg_string=str(sample[0]))\r\n            if \"\\n\".join(output) != sample[1]:\r\n                failed(\r\n                    \"Test from samples failed: \\n \\n\"\r\n                    \"Input:\\n{}\"\r\n                    \"\\n \\n\"\r\n                    \"Expected:\\n{}\"\r\n                    \"\\n \\n\"\r\n                    \"Your result:\\n{}\".format(str.strip(sample[0]), str.strip(sample[1]), \"\\n\".join(output)))\r\n                return\r\n        set_congratulation_message(\"All test from samples passed. Now we are checking your solution on Stepik server.\")\r\n\r\n    passed()\r\n\r\n\r\ndef run_common_tests(error_text=\"Please, reload file and try again\"):\r\n    test_is_not_empty()\r\n    test_answer_placeholders_text_deleted()\r\n    test_file_importable()\r\n"
     },
     {
-      "name" : "Regex_Helper.py",
+      "name" : "regex_helper.py",
       "placeholders" : [ ],
       "is_visible" : true,
       "text" : "import re\r\n\r\nclass regex_helper:\r\n    VAR_STRUCTURE = \"^[_|a-zA-Z]\\w*\\s*=\\s*(\\\".*\\\"|\\'.*\\'|\\d+|\\d+\\.\\d+|True|False)$\"\r\n    FLOAT = \"^\\d*\\.\\d*$\"\r\n    STRING = \"^[\\\"\\'].*[\\\"\\']$\"\r\n    INTEGER = \"^(?<!\\d\\.)(-)*\\d+(?!\\.\\d)$\"\r\n    BOOLEAN = \"(True|False)$\"\r\n    COMMENT = \"#.*$\"\r\n    opArrNoEscape = [\"-\", \"/\", \"//\", \"%\",\r\n                     \"=\", \"-=\", \"/=\", \"//=\", \"&=\", \">>=\", \"<<=\",\r\n                     \"==\", \"!=\", \">\", \"<\", \">=\", \"<=\",\r\n                     \"and\", \"or\",\r\n                     \"is\", \"is not\",\r\n                     \"in\", \"not in\",\r\n                     \"&\", \"~\", \"<<\", \">>\", ]\r\n    opArrMustBeEscaped = [\"+\", \"*\", \"+=\", \"*=\", \"|=\", \"^=\", \"|\", \"^\", ]\r\n    opArrMustBeEscapedTwice = [\"**\", \"**=\", ]\r\n    opArrArity1 = [\"not\", ]\r\n    ifLine1 = \"if()\"\r\n\r\n    opArr = opArrNoEscape + opArrMustBeEscaped + opArrMustBeEscapedTwice + opArrArity1\r\n\r\n    # Create a regex matching any applicable operands being applied to any given operator\r\n    def createOperatorPattern(self, operator, *operands):\r\n        if operator in self.opArrMustBeEscaped:\r\n            return f\"^{operands[0]}\\s*\\{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrMustBeEscapedTwice:\r\n            return f\"^{operands[0]}\\s*\\{operator[0]}\\{operator[1:]}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrNoEscape:\r\n            return f\"^{operands[0]}\\s*{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrArity1:\r\n            return f\"^{operator}\\s*{operands[0]}$\"\r\n        else:\r\n            return \"^$\"\r\n\r\n    # Create a regex matching a given expression\r\n    # Param: operands - Indexable collection containing all operands in left to right order\r\n    # Param: operators - Indexable collection containing all operators in left to right order\r\n    def createExpressionPattern(self, operands, operators):\r\n        regexOut = \"^\"\r\n\r\n        # sanitizing String operands\r\n        escOperands = []\r\n        for operand in operands:\r\n            escOperands.append(operand.translate(str.maketrans({\"\\\"\": r\"\\\"\"})))\r\n\r\n        print(escOperands)\r\n        count = 0\r\n        loopOps = escOperands[0:-1]\r\n\r\n        # Looping through Operators and operands 0 through N-1\r\n        # Because of the structure of expressions, we can encounter up to two operators between each operand.\r\n        for operand in loopOps:\r\n            if operators[count] in self.opArrArity1 and count < len(operators) - 1:\r\n                regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n            regexOut += operand + \"\\s*\"\r\n\r\n            if count < len(operators):\r\n                if operators[count] in self.opArrMustBeEscaped:\r\n                    regexOut += f\"\\{operators[count]}\\s*\"\r\n                elif operators[count] in self.opArrMustBeEscapedTwice:\r\n                    regexOut += f\"\\{operators[count][0]}\\{operators[count][1:]}\\s*\"\r\n                else:\r\n                    regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n        # Adding final operand and optionally operator\r\n        if operators[-1] in self.opArrArity1:\r\n            regexOut += f\"{operators[-1]}\\s*{escOperands[-1]}\"\r\n        else:\r\n            regexOut += f\"{escOperands[-1]}$\"\r\n\r\n        return regexOut\r\n\r\n    # Takes in an expression as it would be typed in regular python, and returns a regex matching that expression.\r\n    def expressionToRegex(self, stringIn):\r\n        operands = []\r\n        operators = []\r\n\r\n        PATTERN = re.compile(r'''((?:[^ \"']|\"[^\"]*\"|'[^']*')+)''')\r\n        for word in PATTERN.split(stringIn)[1::2]:\r\n            if word in self.opArr:\r\n                operators.append(word)\r\n            else:\r\n                operands.append(word)\r\n\r\n        return self.createExpressionPattern(operands, operators)\r\n\r\n    def ifRegex(self,condition):\r\n        ifRegex = \"if *(\\( *\"\r\n        ifRegex2 = \" *\\)| *\"\r\n        ifRegex3 = \" *):\"\r\n        condRegex = self.expressionToRegex(condition)[1:-1]\r\n        return ifRegex + condRegex + ifRegex2 + condRegex + ifRegex3;\r\n\r\n    def splitspace(self, stringIn):\r\n        PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\\+|\\*|\\+=|\\*=|\\|=|\\^=|\\||\\^|\\*\\*|\\*\\*=)''')\r\n        arrout = []\r\n        for el in PATTERN.split(stringIn):\r\n            arrout.append(el.strip())\r\n        return arrout\r\n\r\n    def CheckAbstractAbstraction(self, input):\r\n        self.baseExecute(input, )\r\n\r\n    def setupRegex(self):\r\n        pass\r\n\r\n    def baseExecute(self, input, structure):\r\n        pattern = re.compile(structure)\r\n        matches = pattern.findall(input)\r\n        return matches\r\n\r\n    def execute(self, input, structure):\r\n        return len(self.baseExecute(input, structure)) > 0\r\n\r\n    def varStructureCheck(self, input):\r\n        return self.execute(input, self.VAR_STRUCTURE)\r\n\r\n    def customVarMatch(self, input, varName, varData):\r\n        return self.execute(input, varName + \"\\s*=\\s*\" + varData)\r\n\r\n    def typeCheck(self, input, type):\r\n        structure = \"\"\r\n        if type == \"string\":\r\n            structure = self.STRING\r\n        elif type == \"integer\":\r\n            structure = self.INTEGER\r\n        elif type == \"float\":\r\n            structure = self.FLOAT\r\n        elif type == \"boolean\":\r\n            structure = self.BOOLEAN\r\n        else:\r\n            pass\r\n        return self.execute(input, structure)\r\n"
@@ -1979,7 +2103,7 @@
       "name" : "UserInputHelper.py",
       "placeholders" : [ ],
       "is_visible" : true,
-      "text" : "from test_helper import get_answer_placeholders\r\nfrom regex_helper import *\r\n\r\nclass Helper:\r\n    def __init__(self):\r\n        self.helper = RegexHelper()\r\n        self.answers = get_answer_placeholders()\r\n\r\n    def CheckBaseType(self, index, type):\r\n        answer = self.GetInput(index)\r\n        outcome = False\r\n        if(type==\"boolean\"):\r\n            outcome = self.helper.execute(answer, self.helper.BOOLEAN)\r\n        elif(type==\"float\"):\r\n            outcome = self.helper.execute(answer, self.helper.FLOAT)\r\n        elif(type==\"string\"):\r\n            outcome = self.helper.execute(answer, self.helper.STRING)\r\n        elif(type==\"integer\"):\r\n            outcome = self.helper.execute(answer, self.helper.INTEGER)\r\n        return outcome\r\n\r\n    def CheckInput(self, index, regexString):\r\n        return self.helper.execute(self.GetInput(index), regexString)\r\n\r\n    def GetInput(self, index):\r\n        return self.answers[index]\r\n"
+      "text" : "from test_helper import get_answer_placeholders\r\nfrom regex_helper import *\r\n\r\nclass Helper:\r\n    def __init__(self):\r\n        self.helper = regex_helper()\r\n        self.answers = get_answer_placeholders()\r\n\r\n    def CheckBaseType(self, index, type):\r\n        answer = self.GetInput(index)\r\n        outcome = False\r\n        if(type==\"boolean\"):\r\n            outcome = self.helper.execute(answer, self.helper.BOOLEAN)\r\n        elif(type==\"float\"):\r\n            outcome = self.helper.execute(answer, self.helper.FLOAT)\r\n        elif(type==\"string\"):\r\n            outcome = self.helper.execute(answer, self.helper.STRING)\r\n        elif(type==\"integer\"):\r\n            outcome = self.helper.execute(answer, self.helper.INTEGER)\r\n        return outcome\r\n\r\n    def CheckInput(self, index, regexString):\r\n        return self.helper.execute(self.GetInput(index), regexString)\r\n\r\n    def GetInput(self, index):\r\n        return self.answers[index]\r\n"
     }
   ],
   "version" : 11
