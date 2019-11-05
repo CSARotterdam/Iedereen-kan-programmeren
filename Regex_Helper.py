@@ -90,9 +90,9 @@ class regex_helper:
         return self.createExpressionPattern(operands, operators)
 
     def ifRegex(self,condition):
-        ifRegex = "if *(\( *"
-        ifRegex2 = " *\)| *"
-        ifRegex3 = " *):"
+        ifRegex = "if *(\(\s*"
+        ifRegex2 = "\s*\)|\s*"
+        ifRegex3 = "\s*):"
         condRegex = self.expressionToRegex(condition)[1:-1]
         return ifRegex + condRegex + ifRegex2 + condRegex + ifRegex3;
 
