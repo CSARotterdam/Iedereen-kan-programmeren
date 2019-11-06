@@ -4,6 +4,3 @@ files:
   visible: true
 - name: tests.py
   visible: false
-- name: __init__.py
-  visible: true
-
