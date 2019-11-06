@@ -19,13 +19,19 @@
                   "placeholders" : [
                     {
                       "offset" : 90,
-                      "length" : 6,
+                      "length" : 14,
                       "possible_answer" : "x",
-                      "placeholder_text" : "Vul in"
+                      "placeholder_text" : "Wat is de naam"
+                    },
+                    {
+                      "offset" : 124,
+                      "length" : 16,
+                      "possible_answer" : "5",
+                      "placeholder_text" : "Wat is de waarde"
                     }
                   ],
                   "is_visible" : true,
-                  "text" : "## Opdracht 1: Vul de verschillende velden in met de juiste data.\n\nx = 5\n#Variabele naam: Vul in\n#Variabele waarde: 5\n#Variabele type: integer\n\ny = 235\n#Variabele naam: y\n#Variabele waarde: 235\n#Variabele type: integer\n\nz = -721\n#Variabele naam: z\n#Variabele waarde: -721\n#Variabele type: integer\n\n## Opdracht 2: Vul de verschillende velden in met de juiste data.\n\nstappenteller = 0\n#Variabele naam: stappenteller\n#Variabele waarde: 0\n#Variabele type: integer\n\ntijdelijkGetal = 45\n#Variabele naam: tijdelijkGetal\n#Variabele waarde: 45\n#Variabele type: integer\n\naantalHoeken = 4\n#Variabele naam: aantalHoeken\n#Variabele waarde: 4\n#Variabele type: integer\n\n## Opdracht 3: Vul de verschillende velden in met de juiste data.\nvarA = -342\n#Variabele naam: varA\n#Variabele waarde: -342\n#Variabele type: integer\nvarB = 244\n#Variabele naam: varA\n#Variabele waarde: 244\n#Variabele type: integer\nvarC = 8942\n#Variabele naam: varA\n#Variabele waarde: 8942\n#Variabele type: integer\n\n## Opdracht 4: Vul de verschillende velden in met de juiste data.\nwx = 432\n#Variabele naam: wx\n#Variabele waarde: 432\n#Variabele type: integer\nwxy = 475\n#Variabele naam: wxy\n#Variabele waarde: 475\n#Variabele type: integer\nwxyz = 4515\n#Variabele naam: wxyz\n#Variabele waarde: 4515\n#Variabele type: integer\n\n## Opdracht 5: Creeër twee variabelen en vul de juiste informatie aan.\nab = 0\n#Variabele naam: ab\n#Variabele waarde: 0\n#Variabele type: integer\ncd = 1\n#Variabele naam: cd\n#Variabele waarde: 1\n#Variabele type: integer\n"
+                  "text" : "## Opdracht 1: Vul de verschillende velden in met de juiste data.\n\nx = 5\n#Variabele naam: Wat is de naam\n#Variabele waarde: Wat is de waarde\n#Variabele type: integer\n\ny = 235\n#Variabele naam: y\n#Variabele waarde: 235\n#Variabele type: integer\n\nz = -721\n#Variabele naam: z\n#Variabele waarde: -721\n#Variabele type: integer\n\n## Opdracht 2: Vul de verschillende velden in met de juiste data.\n\nstappenteller = 0\n#Variabele naam: stappenteller\n#Variabele waarde: 0\n#Variabele type: integer\n\ntijdelijkGetal = 45\n#Variabele naam: tijdelijkGetal\n#Variabele waarde: 45\n#Variabele type: integer\n\naantalHoeken = 4\n#Variabele naam: aantalHoeken\n#Variabele waarde: 4\n#Variabele type: integer\n\n## Opdracht 3: Vul de verschillende velden in met de juiste data.\nvarA = -342\n#Variabele naam: varA\n#Variabele waarde: -342\n#Variabele type: integer\nvarB = 244\n#Variabele naam: varA\n#Variabele waarde: 244\n#Variabele type: integer\nvarC = 8942\n#Variabele naam: varA\n#Variabele waarde: 8942\n#Variabele type: integer\n\n## Opdracht 4: Vul de verschillende velden in met de juiste data.\nwx = 432\n#Variabele naam: wx\n#Variabele waarde: 432\n#Variabele type: integer\nwxy = 475\n#Variabele naam: wxy\n#Variabele waarde: 475\n#Variabele type: integer\nwxyz = 4515\n#Variabele naam: wxyz\n#Variabele waarde: 4515\n#Variabele type: integer\n\n## Opdracht 5: Creeër twee variabelen en vul de juiste informatie aan.\nab = 0\n#Variabele naam: ab\n#Variabele waarde: 0\n#Variabele type: integer\ncd = 1\n#Variabele naam: cd\n#Variabele waarde: 1\n#Variabele type: integer\n"
                 },
                 "tests/test_task.py" : {
                   "name" : "tests/test_task.py",
@@ -439,521 +445,7 @@
       "title" : "Week 3 - Branching",
       "items" : [
         {
-          "title" : "If",
-          "task_list" : [
-            {
-              "name" : "Programma 1",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 5\n\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x == 5\n#Conditie uitkomst: True\nif(x == 5):\n    print(\"Stap 1.\")\nprint(\"Stap 2.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\nfrom regex_helper import regex_helper\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        a = regex_helper()\n        \n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 2",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 5\ny = 2\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x *2 <= 14\n#Conditie uitkomst: False\nif(x * y > 14):\n    print(\"Stap 1.\")\nprint(\"Stap 2.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 3",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 5\ny = 21\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x > 0\n#Conditie uitkomst: True\nif(x > 0):\n    print(\"Stap 1.\")\n    #Keyword: if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): x, y\n    #Conditie: x * 2 <= 14\n    #Conditie uitkomst: False\n    if(y / x <= 4):\n        print(\"Stap 2.\")\nprint(\"Stap 3.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 4",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 5\ny = 21\n#Keyword: if\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x < 0\n#Conditie uitkomst: False\nif(x < 0):\n    print(\"Stap 1.\")\n    #Keyword: if\n    #Uitgevoerd: Nee\n    #Conditie variabele(n): x, y\n    #Conditie: y ** x <= 456\n    #Conditie uitkomst: False\n    if(y ** x <= 456):\n        print(\"Stap 2.\")\nprint(\"Stap 3.\")\nprint(\"Einde programma.\")\n\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        },
-        {
-          "title" : "If - else",
-          "task_list" : [
-            {
-              "name" : "Programma 1",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 5\n\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x != 0\n#Conditie uitkomst: True\n#Uitgevoerd pad(en): 1\nif(x != 0):\n    print(\"Pad 1.\")\nelse:\n    print(\"Pad 2.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 2",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 5\n\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x != 0\n#Conditie uitkomst: False\n#Uitgevoerd pad(en): 1\nif(x != 55/11):\n    print(\"Pad 1.\")\nelse:\n    print(\"Pad 2.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 3",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 5\ny = x * 2\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x != 0\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(x != 0):\n    print(\"Pad 1.\")\n    #Keyword(s): if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): x, y\n    #Conditie: x <= y\n    #Conditie uitkomst: True\n    if(x <= y):\n        print(\"Pad 2.\")\nelse:\n    print(\"Pad 3.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 4",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 21/3\ny = x * 2\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x < 15\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(x < 15):\n    print(\"Pad 1.\")\n    #Keyword(s): if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    if(10 >= y):\n        print(\"Pad 2.\")\nelse:\n    print(\"Pad 3.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        },
-        {
-          "title" : "Geneste if - else",
-          "task_list" : [
-            {
-              "name" : "Programma 1",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 21/3\ny = x * 2\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): x\n#Conditie: x < 15\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(x < 15):\n    print(\"Pad 1.\")\n    #Keyword(s): if\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    #Uitgevoerd pad: 3\n    if(10 >= y):\n        print(\"Pad 2.\")\n    else:\n        print(\"Pad 3.\")\nelse:\n    print(\"Pad 4.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 2",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 21/3\ny = x/3 * 4\nz = 24\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): z\n#Conditie: x < 15\n#Conditie uitkomst: True\n#Uitgevoerd pad: 1\nif(z > 20):\n    print(\"Pad 1.\")\n    #Keyword(s): if, else\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    #Uitgevoerd pad: 2\n    if(5 <= y):\n        print(\"Pad 2.\")\n        #Keyword(s): if, else\n        #Uitgevoerd: JA\n        #Conditie variabele(n): x, y\n        #Conditie: 10 >= y\n        #Conditie uitkomst: False\n        #Uitgevoerd pad: 4\n        if(50 >= x * y):\n            print(\"Pad 3.\")\n        else:\n            print(\"Pad 4.\")\n    else:\n        print(\"Pad 5.\")\nelse:\n    print(\"Pad 6.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Programma 3",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "x = 21/3\ny = x/3 * 4\nz = 24\n#Keyword(s): if, else\n#Uitgevoerd: Ja\n#Conditie variabele(n): z\n#Conditie: x < 15\n#Conditie uitkomst: False\n#Uitgevoerd pad: 6\nif(z < 20):\n    print(\"Pad 1.\")\n    #Keyword(s): if, else\n    #Uitgevoerd: Nee\n    #Conditie variabele(n): y\n    #Conditie: 10 >= y\n    #Conditie uitkomst: False\n    #Uitgevoerd pad: geen\n    if(5 <= y):\n        print(\"Pad 2.\")\n        #Keyword(s): if, else\n        #Uitgevoerd: Nee\n        #Conditie variabele(n): x, y\n        #Conditie: 10 >= y\n        #Conditie uitkomst: False\n        #Uitgevoerd pad: geen\n        if(50 >= x * y):\n            print(\"Pad 3.\")\n        else:\n            print(\"Pad 4.\")\n    else:\n        print(\"Pad 5.\")\nelse:\n    print(\"Pad 6.\")\nprint(\"Einde programma.\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        },
-        {
-          "title" : "Opdrachten",
-          "task_list" : [
-            {
-              "name" : "Schrikkeljaar",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "isLeapYear = False\nyear = int(input(\"Which year do you want to check for a common or leap year?:\\n\"))\n\n\nif(year % 400 == 0):\n    isLeapYear = True\nelse:\n    if(year % 4 == 0 and year % 100 != 0):\n        isLeapYear = True\n\nif(isLeapYear):\n    print(str(year) + \" is a leap year!\")\nelse:\n    print(str(year) + \" is a common year!\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "LeeftijdsCheck",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "Name = \"Aron\"\nAge = 70\n\nif(Age <= 18):\n    print(\"Reduction = 10%\")\nelif(Age <=65):\n    print(\"Reduction = 0%\")\nelse:\n    print(\"Reduction = 25%\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "OnderGelijkOfBoven",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "import random\n\nnumber = int(input(\"Enter a number:\\n\"))\nrandomNumber = random.randint(0, 100)\n\nif(number < 0):\n    print(\"No negative numbers!\")\nelif(number < randomNumber):\n    print(\"The number is below the random number.\")\nelif(number == randomNumber):\n    print(\"The number is equal to the random number!\")\nelif(number > randomNumber and number <= 100):\n    print(\"The number is above the random number.\")\nelse:\n    print(\"No numbers higher than 100!\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        },
-        {
-          "title" : "if - else en elif",
+          "title" : "If-actual",
           "task_list" : [ ],
           "type" : "lesson"
         }
@@ -962,966 +454,17 @@
     },
     {
       "title" : "Week 4 - Arrays en functies",
-      "items" : [
-        {
-          "title" : "Arrays",
-          "task_list" : [
-            {
-              "name" : "Aanmaken",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Data aanroepen",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\na = integerArray[2]\n#Variabele naam: a\n#Variabele waarde: 3\n#Variabele type: integer\n\nb = integerArray[2-1]\n#Variabele naam: b\n#Variabele waarde: 2\n#Variabele type: integer\n\nc = stringArray[4//2]\n#Variabele naam: c\n#Variabele waarde: \"3\"\n#Variabele type: string\n\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: \"1\"\n#Variabele type: string\n\ne = arrayOfArrays[2]\n#Variabele naam: e\n#Variabele waarde: [\"1\", \"2\", \"3\"]\n#Variabele type: array\n\nf = arrayOfArrays[1][0]\n#Variabele naam: f\n#Variabele waarde: 1\n#Variabele type: integer\n\ng = arrayOfArrays[2][2]\n#Variabele naam: g\n#Variabele waarde: \"3\"\n#Variabele type: string\n\nh = arrayOfArrays[0]\n#Variabele naam: h\n#Variabele waarde: []\n#Variabele type: array\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Data overschrijven",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nintegerArray[0] = integerArray[0] + 6\na = integerArray[0]\n#Variabele naam: a\n#Variabele waarde: 7\n#Variabele type: integer\n\nintegerArray[1] = integerArray[1] * 2\nb = integerArray[1]\n#Variabele naam: b\n#Variabele waarde: 4\n#Variabele type: integer\n\nstringArray[2] = stringArray[2] + stringArray[0]\nc = stringArray[2]\n#Variabele naam: c\n#Variabele waarde: \"31\"\n#Variabele type: string\n\nstringArray[0] = \"abc\"\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: \"abc\"\n#Variabele type: string\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Data toevoegen",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nemptyArray.append(\"first\")\n#Variabele naam: emptyArray\n#Variabele waarde: [\"first\"]\n#Variabele type: array\n\nemptyArray.append(\"second\")\n#Variabele naam: emptyArray\n#Variabele waarde: [\"first\", \"second\"]\n#Variabele type: array\n\nintegerArray.append(1)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2, 3, 1]\n#Variabele type: array\n\nstringArray.append(\"4\")\n#Variabele naam: stringArray\n#Variabele waarde: [\"1\", \"2\", \"3\", \"4\"]\n#Variabele type: array\n\nintegerArray.append(13)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2, 3, 1, 13]\n#Variabele type: array\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Data verwijderen",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\nintegerArray.remove(3)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2]\n#Variabele type: array\n\nintegerArray.remove(1)\n#Variabele naam: integerArray\n#Variabele waarde: [2]\n#Variabele type: array\n\nstringArray.remove(\"2\")\n#Variabele naam: stringArray\n#Variabele waarde: [\"1\", \"3\"]\n#Variabele type: array\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        },
-        {
-          "title" : "Functies",
-          "task_list" : [
-            {
-              "name" : "Input",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "userInput = input(\"Enter a number\")\n#Functie naam: input\n#Variabele naam: userInput\n#Variabele waarde: unknown\n#Variabele type: string\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Casting",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "string = \"123\"\ninteger = 123\n\nstring = int(string)\n#Functie naam: int\n#Functie input waarde: \"123\"\n#Variabele naam: string\n#Variabele waarde: 123\n#Variabele type: integer\n\ninteger = str(integer)\n#Functie naam: str\n#Functie input waarde: 123\n#Variabele naam: integer\n#Variabele waarde: \"123\"\n#Variabele type: string\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Print",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "# TODO: type solution here\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Len",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "array1 = [1, 2, 3]\narray2 = [\"ab\", \"bcd\", \"efgh\"]\n\n#Task 1\narray1Len = len(array1)\nprint(array1Len)\n\narray2Len = len(array2)\nprint(array1Len)\n\n#Task 2\narray2Index0Len = len(array2[0])\nprint(array2Index0Len)\narray2Index2Len = len(array2[2])\nprint(array2Index2Len)\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Range",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "conditionVariable = 0\n\nwhile(conditionVariable <= 4):\n    print(conditionVariable)\n    conditionVariable = conditionVariable + 1\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Extra - Try Except",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "intInput = input(\"Enter a number:\\n\")\n\ntry:\n    intInput = int(intInput)\nexcept:\n    print(\"Please enter a number... try it once more...\")\n    intInput = int(input(\"Enter a number:\\n\"))\n\nprint(intInput)\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        },
-        {
-          "title" : "Opdrachten",
-          "task_list" : [
-            {
-              "name" : "Totale leeftijd",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "persons = [[\"p1\", 19], [\"p2\", 18], [\"p3\", 22], [\"p4\", 21]]\n\nperson1Age = persons[0][1]\nperson3Name = persons[2][0]\n\nprint(\"person 1: \" + persons[0][0] +\" with age: \" + str(person1Age))\nprint(\"person 2: \" + persons[1][0] +\" with age: \" + str(persons[1][1]))\nprint(\"person 3: \" + person3Name +\" with age: \" + str(persons[2][1]))\nprint(\"person 4: \" + persons[3][0] +\" with age: \" + str(persons[3][1]))\n\nprint(\"The combined age of all persons is: \" + str(persons[0][1] + persons[1][1] + persons[2][1] + persons[3][1]))\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Cash register",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "products = [[\"Apple\", 2], [\"Bread\", 1], [\"Melon\", 3]]\namounts = [0, 0, 0]\n\namounts[0] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\namounts[1] = int(input(\"How much \"+products[1][0]+ \" would you like?\\n\"))\namounts[2] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\n\ntotal = products[0][1] * amounts[0] + products[1][1] * amounts[1] + products[2][1] * amounts[2]\n\nprint(\"You have to pay: \"+ str(total))\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        }
-      ],
+      "items" : [ ],
       "type" : "section"
     },
     {
       "title" : "Week 5 - While loops",
-      "items" : [
-        {
-          "title" : "While loops",
-          "task_list" : [
-            {
-              "name" : "Structuur #1",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "conditionVariable = 0\n\nwhile(conditionVariable <= 4):\n    print(conditionVariable)\n    conditionVariable = conditionVariable + 1\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Structuur #2",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "condition = True\ncounter = 0\n\nwhile(condition):\n    if(counter <= 4):\n        print(counter)\n        counter = counter + 1\n    else:\n        condition = False\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Structuur #3",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Tellen",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "#Task 1\nconditionVariable1 = 0\n\nwhile(conditionVariable1 < 10):\n    print(conditionVariable1 + 1)\n    conditionVariable1 = conditionVariable1 + 1\n\n#Task 2\nconditionVariable2 = 10\n\nwhile(conditionVariable2>-1):\n    conditionVariable2 = conditionVariable2 - 1\n\n#Task 3\nconditionVariable3 = len(\"aString\")\nwhile(conditionVariable3>=0):\n    conditionVariable3 =conditionVariable3 - 1\n\n#Task 4\narray=[4, 7, 123, 556]\nconditionVariable4 = 0\n\nwhile(conditionVariable4 < len(array)):\n    print(conditionVariable4)\n    conditionVariable4 = conditionVariable4 + 1\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Iteraties over indexen",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "array1 = [23, 62, 94]\narray2 = [55, 45, 7]\n\n#Task 1\nindex = 0\n\nwhile(index < len(array1)):\n    print(array1[index])\n    index = index + 1\n\n#Task 2\nindex = len(array1) - 1\n\nwhile(index>=0):\n    print(array1[index])\n    index = index - 1\n\n#Task 3\nif(len(array1) == len(array2)):\n    index = 0\n    while(index < len(array2)):\n        array2[index] = array1[index] + array2[index]\n        index = index + 1\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        },
-        {
-          "title" : "Opdrachten",
-          "task_list" : [
-            {
-              "name" : "Programma loop",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "def programLoop():\n    active = True\n    while(active):\n        print(\"Doing stuff\")\n        userInput = input(\"Do you want to continue? [y/n]\\n\")\n        if(userInput == \"n\"):\n            print(\"quiting\")\n            active = False\n        elif(userInput == \"y\"):\n            print(\"continueing\")\n            continue\n        else:\n            print(\"Please enter \\\"y\\\" or \\\"n\\\"\")\n\nprogramLoop()\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Kassa #2",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "# TODO: type solution here\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Tellen #2",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "#Task 1\n#Amount of iterations:  10\nconditionVar1 = 0\n\nwhile(conditionVar1 < 5):\n    conditionVar1 = conditionVar1 + 0.5\n\n#Task 2\n\n#Amount of iterations:  5\nconditionVar2 = 10\n\nwhile(conditionVar2 >= 0):\n    conditionVar2 = conditionVar2 - 2\n\n#Task 3\n#Amount of iterations:  50\nconditionVar3 = 100\n\nwhile(conditionVar3 != 50):\n    if(conditionVar3>50):\n        conditionVar3 = conditionVar3 - 1\n    else:\n        conditionVar3 = conditionVar3 + 1\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        }
-      ],
+      "items" : [ ],
       "type" : "section"
     },
     {
       "title" : "Week 6 - For loops",
-      "items" : [
-        {
-          "title" : "For loops",
-          "task_list" : [
-            {
-              "name" : "Structuur #1",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "# TODO: type solution here\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Structuur #2",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "# TODO: type solution here\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "Structuur #3",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "# TODO: type solution here\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "For loop variabele",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "#Task 1\narray1 = [1, 2, 3, 4, 5]\n\nfor element in array1:\n    print(element)\n\n#Task 2\nstring1 = \"abcd\"\n\nreturnString = \"\"\nfor symbol in string1:\n    if(len(returnString)<3):\n        returnString = returnString + symbol\n\n#Task 3\narray2 = [True, False, True, True, True, False, False, True]\ncounter = 0\nfor boolean in array2:\n    if(not(boolean)):\n        counter = counter + 1\nprint(str(counter) + \" Falses counted\")\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            },
-            {
-              "name" : "For element in array",
-              "files" : {
-                "task.py" : {
-                  "name" : "task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : "players = []\n\nplayers.append([\"p1\", 27])\nplayers.append([\"p2\", 43])\nplayers.append([\"p3\", 72])\nplayers.append([\"p4\", 12])\nplayers.append([\"p5\", 22])\nplayers.append([\"p6\", 61])\n\nloser =players[0]\n\nfor i in (range(len(players))):\n    points = players[i][1]\n    if(loser[1] > points):\n        loser = players[i]\n\nwinner = players[0]\n\nfor player in players:\n    points = player[1]\n    if(winner[1] < points):\n        winner = player\n\nprint(winner[0] + \" is the winner with \" + str(winner[1]) + \" points!\")\nprint(loser[0] + \" is the loser with \" + str(loser[1]) + \" points...\")\n\n"
-                },
-                "tests/test_task.py" : {
-                  "name" : "tests/test_task.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : "import unittest\n\n\nclass TestCase(unittest.TestCase):\n    def test(self):\n        self.assertEqual(1, 0, msg=\"Implement tests\")\n"
-                },
-                "__init__.py" : {
-                  "name" : "__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : true,
-                  "text" : ""
-                },
-                "tests/__init__.py" : {
-                  "name" : "tests/__init__.py",
-                  "placeholders" : [ ],
-                  "is_visible" : false,
-                  "text" : ""
-                }
-              },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
-              "description_format" : "HTML",
-              "feedback_link" : {
-                "link_type" : "STEPIK"
-              },
-              "task_type" : "edu"
-            }
-          ],
-          "type" : "lesson"
-        }
-      ],
+      "items" : [ ],
       "type" : "section"
     },
     {
@@ -2088,22 +631,1042 @@
       "text" : "# Iedereen kan programmeren\r\n"
     },
     {
-      "name" : "test_helper.py",
-      "placeholders" : [ ],
-      "is_visible" : true,
-      "text" : "import sys\r\n\r\ndef get_file_text(path):\r\n    \"\"\" Returns file text by path\"\"\"\r\n    file_io = open(path, \"r\")\r\n    text = file_io.read()\r\n    file_io.close()\r\n    return text\r\n\r\n\r\ndef get_file_output(encoding=\"utf-8\", path=sys.argv[-1], arg_string=\"\"):\r\n    \"\"\"\r\n    Returns answer file output\r\n    :param encoding: to decode output in python3\r\n    :param path: path of file to execute\r\n    :return: list of strings\r\n    \"\"\"\r\n    import subprocess\r\n\r\n    proc = subprocess.Popen([sys.executable, path], stdin=subprocess.PIPE, stdout=subprocess.PIPE,\r\n                            stderr=subprocess.STDOUT)\r\n    if arg_string:\r\n        for arg in arg_string.split(\"\\n\"):\r\n            proc.stdin.write(bytearray(str(arg) + \"\\n\", encoding))\r\n            proc.stdin.flush()\r\n\r\n    return list(map(lambda x: str(x.decode(encoding)), proc.communicate()[0].splitlines()))\r\n\r\n\r\ndef test_file_importable():\r\n    \"\"\" Tests there is no obvious syntax errors\"\"\"\r\n    path = sys.argv[-1]\r\n    if not path.endswith(\".py\"):\r\n        import os\r\n\r\n        parent = os.path.abspath(os.path.join(path, os.pardir))\r\n        python_files = [f for f in os.listdir(parent) if os.path.isfile(os.path.join(parent, f)) and f.endswith(\".py\")]\r\n        for python_file in python_files:\r\n            if python_file == \"tests.py\":\r\n                continue\r\n            check_importable_path(os.path.join(parent, python_file))\r\n        return\r\n    check_importable_path(path)\r\n\r\n\r\ndef check_importable_path(path):\r\n    \"\"\" Checks that file is importable.\r\n        Reports failure otherwise.\r\n    \"\"\"\r\n    saved_input = patch_input()\r\n    try:\r\n        import_file(path)\r\n    except:\r\n        failed(\"The file contains syntax errors\", test_file_importable.__name__)\r\n        return\r\n    finally:\r\n        revert_input(saved_input)\r\n\r\n    passed(test_file_importable.__name__)\r\n\r\n\r\ndef patch_input():\r\n    def mock_fun(_m=\"\"):\r\n        return \"mock\"\r\n\r\n    if sys.version_info[0] == 3:\r\n        import builtins\r\n        save_input = builtins.input\r\n        builtins.input = mock_fun\r\n        return save_input\r\n    elif sys.version_info[0] == 2:\r\n        import __builtin__\r\n        save_input = __builtin__.raw_input\r\n        __builtin__.raw_input = mock_fun\r\n        __builtin__.input = mock_fun\r\n        return save_input\r\n\r\n\r\ndef revert_input(saved_input):\r\n    if sys.version_info[0] == 3:\r\n        import builtins\r\n        builtins.input = saved_input\r\n    elif sys.version_info[0] == 2:\r\n        import __builtin__\r\n        __builtin__.raw_input = saved_input\r\n        __builtin__.input = saved_input\r\n\r\n\r\ndef import_file(path):\r\n    \"\"\" Returns imported file \"\"\"\r\n    if sys.version_info[0] == 2 or sys.version_info[1] < 3:\r\n        import imp\r\n\r\n        return imp.load_source(\"tmp\", path)\r\n    elif sys.version_info[0] == 3:\r\n        import importlib.machinery\r\n\r\n        return importlib.machinery.SourceFileLoader(\"tmp\", path).load_module(\"tmp\")\r\n\r\n\r\ndef import_task_file():\r\n    \"\"\" Returns imported file.\r\n        Imports file from which check action was run\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    return import_file(path)\r\n\r\n\r\ndef test_is_not_empty():\r\n    \"\"\"\r\n        Checks that file is not empty\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    file_text = get_file_text(path)\r\n\r\n    if len(file_text) > 0:\r\n        passed()\r\n    else:\r\n        failed(\"The file is empty. Please, reload the task and try again.\")\r\n\r\n\r\ndef test_text_equals(text, error_text):\r\n    \"\"\"\r\n        Checks that answer equals text.\r\n    \"\"\"\r\n    path = sys.argv[-1]\r\n    file_text = get_file_text(path)\r\n\r\n    if file_text.strip() == text:\r\n        passed()\r\n    else:\r\n        failed(error_text)\r\n\r\n\r\ndef test_answer_placeholders_text_deleted(error_text=\"Don't just delete task text\"):\r\n    \"\"\"\r\n        Checks that all answer placeholders are not empty\r\n    \"\"\"\r\n    windows = get_answer_placeholders()\r\n\r\n    for window in windows:\r\n        if len(window) == 0:\r\n            failed(error_text)\r\n            return\r\n    passed()\r\n\r\n\r\ndef set_congratulation_message(message):\r\n    \"\"\" Overrides default 'Congratulations!' message \"\"\"\r\n    print(\"#educational_plugin CONGRATS_MESSAGE \" + message)\r\n\r\n\r\ndef failed(message=\"Please, reload the task and try again.\", name=None):\r\n    \"\"\" Reports failure \"\"\"\r\n    if not name:\r\n        name = sys._getframe().f_back.f_code.co_name\r\n    print(\"#educational_plugin \" + name + \" FAILED + \" + message)\r\n\r\n\r\ndef passed(name=None):\r\n    \"\"\" Reports success \"\"\"\r\n    if not name:\r\n        name = sys._getframe().f_back.f_code.co_name\r\n    print(\"#educational_plugin \" + name + \" test OK\")\r\n\r\n\r\ndef get_answer_placeholders():\r\n    \"\"\"\r\n        Returns all answer placeholders text\r\n    \"\"\"\r\n    prefix = \"#educational_plugin_window = \"\r\n    path = sys.argv[-1]\r\n    import os\r\n\r\n    file_name_without_extension = os.path.splitext(path)[0]\r\n    windows_path = file_name_without_extension + \"_windows\"\r\n    windows = []\r\n    f = open(windows_path, \"r\")\r\n    window_text = \"\"\r\n    first = True\r\n    for line in f.readlines():\r\n        if line.startswith(prefix):\r\n            if not first:\r\n                windows.append(window_text.strip())\r\n            else:\r\n                first = False\r\n            window_text = line[len(prefix):]\r\n        else:\r\n            window_text += line\r\n\r\n    if window_text:\r\n        windows.append(window_text.strip())\r\n\r\n    f.close()\r\n    return windows\r\n\r\n\r\ndef check_samples(samples=()):\r\n    \"\"\"\r\n      Check script output for all samples. Sample is a two element list, where the first is input and\r\n      the second is output.\r\n    \"\"\"\r\n    for sample in samples:\r\n        if len(sample) == 2:\r\n            output = get_file_output(arg_string=str(sample[0]))\r\n            if \"\\n\".join(output) != sample[1]:\r\n                failed(\r\n                    \"Test from samples failed: \\n \\n\"\r\n                    \"Input:\\n{}\"\r\n                    \"\\n \\n\"\r\n                    \"Expected:\\n{}\"\r\n                    \"\\n \\n\"\r\n                    \"Your result:\\n{}\".format(str.strip(sample[0]), str.strip(sample[1]), \"\\n\".join(output)))\r\n                return\r\n        set_congratulation_message(\"All test from samples passed. Now we are checking your solution on Stepik server.\")\r\n\r\n    passed()\r\n\r\n\r\ndef run_common_tests(error_text=\"Please, reload file and try again\"):\r\n    test_is_not_empty()\r\n    test_answer_placeholders_text_deleted()\r\n    test_file_importable()\r\n"
-    },
-    {
-      "name" : "regex_helper.py",
+      "name" : "Regex_Helper.py",
       "placeholders" : [ ],
       "is_visible" : true,
       "text" : "import re\r\n\r\nclass regex_helper:\r\n    VAR_STRUCTURE = \"^[_|a-zA-Z]\\w*\\s*=\\s*(\\\".*\\\"|\\'.*\\'|\\d+|\\d+\\.\\d+|True|False)$\"\r\n    FLOAT = \"^\\d*\\.\\d*$\"\r\n    STRING = \"^[\\\"\\'].*[\\\"\\']$\"\r\n    INTEGER = \"^(?<!\\d\\.)(-)*\\d+(?!\\.\\d)$\"\r\n    BOOLEAN = \"(True|False)$\"\r\n    COMMENT = \"#.*$\"\r\n    opArrNoEscape = [\"-\", \"/\", \"//\", \"%\",\r\n                     \"=\", \"-=\", \"/=\", \"//=\", \"&=\", \">>=\", \"<<=\",\r\n                     \"==\", \"!=\", \">\", \"<\", \">=\", \"<=\",\r\n                     \"and\", \"or\",\r\n                     \"is\", \"is not\",\r\n                     \"in\", \"not in\",\r\n                     \"&\", \"~\", \"<<\", \">>\", ]\r\n    opArrMustBeEscaped = [\"+\", \"*\", \"+=\", \"*=\", \"|=\", \"^=\", \"|\", \"^\", ]\r\n    opArrMustBeEscapedTwice = [\"**\", \"**=\", ]\r\n    opArrArity1 = [\"not\", ]\r\n    ifLine1 = \"if()\"\r\n\r\n    opArr = opArrNoEscape + opArrMustBeEscaped + opArrMustBeEscapedTwice + opArrArity1\r\n\r\n    # Create a regex matching any applicable operands being applied to any given operator\r\n    def createOperatorPattern(self, operator, *operands):\r\n        if operator in self.opArrMustBeEscaped:\r\n            return f\"^{operands[0]}\\s*\\{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrMustBeEscapedTwice:\r\n            return f\"^{operands[0]}\\s*\\{operator[0]}\\{operator[1:]}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrNoEscape:\r\n            return f\"^{operands[0]}\\s*{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrArity1:\r\n            return f\"^{operator}\\s*{operands[0]}$\"\r\n        else:\r\n            return \"^$\"\r\n\r\n    # Create a regex matching a given expression\r\n    # Param: operands - Indexable collection containing all operands in left to right order\r\n    # Param: operators - Indexable collection containing all operators in left to right order\r\n    def createExpressionPattern(self, operands, operators):\r\n        regexOut = \"^\"\r\n\r\n        # sanitizing String operands\r\n        escOperands = []\r\n        for operand in operands:\r\n            escOperands.append(operand.translate(str.maketrans({\"\\\"\": r\"\\\"\"})))\r\n\r\n        print(escOperands)\r\n        count = 0\r\n        loopOps = escOperands[0:-1]\r\n\r\n        # Looping through Operators and operands 0 through N-1\r\n        # Because of the structure of expressions, we can encounter up to two operators between each operand.\r\n        for operand in loopOps:\r\n            if operators[count] in self.opArrArity1 and count < len(operators) - 1:\r\n                regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n            regexOut += operand + \"\\s*\"\r\n\r\n            if count < len(operators):\r\n                if operators[count] in self.opArrMustBeEscaped:\r\n                    regexOut += f\"\\{operators[count]}\\s*\"\r\n                elif operators[count] in self.opArrMustBeEscapedTwice:\r\n                    regexOut += f\"\\{operators[count][0]}\\{operators[count][1:]}\\s*\"\r\n                else:\r\n                    regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n        # Adding final operand and optionally operator\r\n        if operators[-1] in self.opArrArity1:\r\n            regexOut += f\"{operators[-1]}\\s*{escOperands[-1]}\"\r\n        else:\r\n            regexOut += f\"{escOperands[-1]}$\"\r\n\r\n        return regexOut\r\n\r\n    # Takes in an expression as it would be typed in regular python, and returns a regex matching that expression.\r\n    def expressionToRegex(self, stringIn):\r\n        operands = []\r\n        operators = []\r\n\r\n        PATTERN = re.compile(r'''((?:[^ \"']|\"[^\"]*\"|'[^']*')+)''')\r\n        for word in PATTERN.split(stringIn)[1::2]:\r\n            if word in self.opArr:\r\n                operators.append(word)\r\n            else:\r\n                operands.append(word)\r\n\r\n        return self.createExpressionPattern(operands, operators)\r\n\r\n    def ifRegex(self,condition):\r\n        ifRegex = \"if *(\\( *\"\r\n        ifRegex2 = \" *\\)| *\"\r\n        ifRegex3 = \" *):\"\r\n        condRegex = self.expressionToRegex(condition)[1:-1]\r\n        return ifRegex + condRegex + ifRegex2 + condRegex + ifRegex3;\r\n\r\n    def splitspace(self, stringIn):\r\n        PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\\+|\\*|\\+=|\\*=|\\|=|\\^=|\\||\\^|\\*\\*|\\*\\*=)''')\r\n        arrout = []\r\n        for el in PATTERN.split(stringIn):\r\n            arrout.append(el.strip())\r\n        return arrout\r\n\r\n    def CheckAbstractAbstraction(self, input):\r\n        self.baseExecute(input, )\r\n\r\n    def setupRegex(self):\r\n        pass\r\n\r\n    def baseExecute(self, input, structure):\r\n        pattern = re.compile(structure)\r\n        matches = pattern.findall(input)\r\n        return matches\r\n\r\n    def execute(self, input, structure):\r\n        return len(self.baseExecute(input, structure)) > 0\r\n\r\n    def varStructureCheck(self, input):\r\n        return self.execute(input, self.VAR_STRUCTURE)\r\n\r\n    def customVarMatch(self, input, varName, varData):\r\n        return self.execute(input, varName + \"\\s*=\\s*\" + varData)\r\n\r\n    def typeCheck(self, input, type):\r\n        structure = \"\"\r\n        if type == \"string\":\r\n            structure = self.STRING\r\n        elif type == \"integer\":\r\n            structure = self.INTEGER\r\n        elif type == \"float\":\r\n            structure = self.FLOAT\r\n        elif type == \"boolean\":\r\n            structure = self.BOOLEAN\r\n        else:\r\n            pass\r\n        return self.execute(input, structure)\r\n"
     },
     {
-      "name" : "UserInputHelper.py",
+      "name" : "Week 3 - Branching/If/Programma 1/tests/__init__.py",
       "placeholders" : [ ],
       "is_visible" : true,
-      "text" : "from test_helper import get_answer_placeholders\r\nfrom regex_helper import *\r\n\r\nclass Helper:\r\n    def __init__(self):\r\n        self.helper = regex_helper()\r\n        self.answers = get_answer_placeholders()\r\n\r\n    def CheckBaseType(self, index, type):\r\n        answer = self.GetInput(index)\r\n        outcome = False\r\n        if(type==\"boolean\"):\r\n            outcome = self.helper.execute(answer, self.helper.BOOLEAN)\r\n        elif(type==\"float\"):\r\n            outcome = self.helper.execute(answer, self.helper.FLOAT)\r\n        elif(type==\"string\"):\r\n            outcome = self.helper.execute(answer, self.helper.STRING)\r\n        elif(type==\"integer\"):\r\n            outcome = self.helper.execute(answer, self.helper.INTEGER)\r\n        return outcome\r\n\r\n    def CheckInput(self, index, regexString):\r\n        return self.helper.execute(self.GetInput(index), regexString)\r\n\r\n    def GetInput(self, index):\r\n        return self.answers[index]\r\n"
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 1/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\nfrom Regex_Helper import regex_helper\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        a = regex_helper()\r\n        \r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 1/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 5\r\n\r\n#Keyword: if\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x == 5\r\n#Conditie uitkomst: True\r\nif(x == 5):\r\n    print(\"Stap 1.\")\r\nprint(\"Stap 2.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 1/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 2/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 2/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 2/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 5\r\ny = 2\r\n#Keyword: if\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x *2 <= 14\r\n#Conditie uitkomst: False\r\nif(x * y > 14):\r\n    print(\"Stap 1.\")\r\nprint(\"Stap 2.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 2/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 3/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 3/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 3/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 5\r\ny = 21\r\n#Keyword: if\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x > 0\r\n#Conditie uitkomst: True\r\nif(x > 0):\r\n    print(\"Stap 1.\")\r\n    #Keyword: if\r\n    #Uitgevoerd: Ja\r\n    #Conditie variabele(n): x, y\r\n    #Conditie: x * 2 <= 14\r\n    #Conditie uitkomst: False\r\n    if(y / x <= 4):\r\n        print(\"Stap 2.\")\r\nprint(\"Stap 3.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 3/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 4/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 4/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 4/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 5\r\ny = 21\r\n#Keyword: if\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x < 0\r\n#Conditie uitkomst: False\r\nif(x < 0):\r\n    print(\"Stap 1.\")\r\n    #Keyword: if\r\n    #Uitgevoerd: Nee\r\n    #Conditie variabele(n): x, y\r\n    #Conditie: y ** x <= 456\r\n    #Conditie uitkomst: False\r\n    if(y ** x <= 456):\r\n        print(\"Stap 2.\")\r\nprint(\"Stap 3.\")\r\nprint(\"Einde programma.\")\r\n\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If/Programma 4/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 1/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 1/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 1/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 5\r\n\r\n#Keyword(s): if, else\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x != 0\r\n#Conditie uitkomst: True\r\n#Uitgevoerd pad(en): 1\r\nif(x != 0):\r\n    print(\"Pad 1.\")\r\nelse:\r\n    print(\"Pad 2.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 1/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 2/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 2/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 2/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 5\r\n\r\n#Keyword(s): if, else\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x != 0\r\n#Conditie uitkomst: False\r\n#Uitgevoerd pad(en): 1\r\nif(x != 55/11):\r\n    print(\"Pad 1.\")\r\nelse:\r\n    print(\"Pad 2.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 2/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 3/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 3/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 3/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 5\r\ny = x * 2\r\n#Keyword(s): if, else\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x != 0\r\n#Conditie uitkomst: True\r\n#Uitgevoerd pad: 1\r\nif(x != 0):\r\n    print(\"Pad 1.\")\r\n    #Keyword(s): if\r\n    #Uitgevoerd: Ja\r\n    #Conditie variabele(n): x, y\r\n    #Conditie: x <= y\r\n    #Conditie uitkomst: True\r\n    if(x <= y):\r\n        print(\"Pad 2.\")\r\nelse:\r\n    print(\"Pad 3.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 3/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 4/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 4/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 4/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 21/3\r\ny = x * 2\r\n#Keyword(s): if, else\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x < 15\r\n#Conditie uitkomst: True\r\n#Uitgevoerd pad: 1\r\nif(x < 15):\r\n    print(\"Pad 1.\")\r\n    #Keyword(s): if\r\n    #Uitgevoerd: Ja\r\n    #Conditie variabele(n): y\r\n    #Conditie: 10 >= y\r\n    #Conditie uitkomst: False\r\n    if(10 >= y):\r\n        print(\"Pad 2.\")\r\nelse:\r\n    print(\"Pad 3.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/If - else/Programma 4/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/Schrikkeljaar/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/Schrikkeljaar/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/Schrikkeljaar/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "isLeapYear = False\r\nyear = int(input(\"Which year do you want to check for a common or leap year?:\\n\"))\r\n\r\n\r\nif(year % 400 == 0):\r\n    isLeapYear = True\r\nelse:\r\n    if(year % 4 == 0 and year % 100 != 0):\r\n        isLeapYear = True\r\n\r\nif(isLeapYear):\r\n    print(str(year) + \" is a leap year!\")\r\nelse:\r\n    print(str(year) + \" is a common year!\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/Schrikkeljaar/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/LeeftijdsCheck/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/LeeftijdsCheck/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/LeeftijdsCheck/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "Name = \"Aron\"\r\nAge = 70\r\n\r\nif(Age <= 18):\r\n    print(\"Reduction = 10%\")\r\nelif(Age <=65):\r\n    print(\"Reduction = 0%\")\r\nelse:\r\n    print(\"Reduction = 25%\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/LeeftijdsCheck/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/OnderGelijkOfBoven/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/OnderGelijkOfBoven/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/OnderGelijkOfBoven/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import random\r\n\r\nnumber = int(input(\"Enter a number:\\n\"))\r\nrandomNumber = random.randint(0, 100)\r\n\r\nif(number < 0):\r\n    print(\"No negative numbers!\")\r\nelif(number < randomNumber):\r\n    print(\"The number is below the random number.\")\r\nelif(number == randomNumber):\r\n    print(\"The number is equal to the random number!\")\r\nelif(number > randomNumber and number <= 100):\r\n    print(\"The number is above the random number.\")\r\nelse:\r\n    print(\"No numbers higher than 100!\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Opdrachten/OnderGelijkOfBoven/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 1/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 1/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 1/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 21/3\r\ny = x * 2\r\n#Keyword(s): if, else\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): x\r\n#Conditie: x < 15\r\n#Conditie uitkomst: True\r\n#Uitgevoerd pad: 1\r\nif(x < 15):\r\n    print(\"Pad 1.\")\r\n    #Keyword(s): if\r\n    #Uitgevoerd: Ja\r\n    #Conditie variabele(n): y\r\n    #Conditie: 10 >= y\r\n    #Conditie uitkomst: False\r\n    #Uitgevoerd pad: 3\r\n    if(10 >= y):\r\n        print(\"Pad 2.\")\r\n    else:\r\n        print(\"Pad 3.\")\r\nelse:\r\n    print(\"Pad 4.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 1/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 2/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 2/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 2/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 21/3\r\ny = x/3 * 4\r\nz = 24\r\n#Keyword(s): if, else\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): z\r\n#Conditie: x < 15\r\n#Conditie uitkomst: True\r\n#Uitgevoerd pad: 1\r\nif(z > 20):\r\n    print(\"Pad 1.\")\r\n    #Keyword(s): if, else\r\n    #Uitgevoerd: Ja\r\n    #Conditie variabele(n): y\r\n    #Conditie: 10 >= y\r\n    #Conditie uitkomst: False\r\n    #Uitgevoerd pad: 2\r\n    if(5 <= y):\r\n        print(\"Pad 2.\")\r\n        #Keyword(s): if, else\r\n        #Uitgevoerd: JA\r\n        #Conditie variabele(n): x, y\r\n        #Conditie: 10 >= y\r\n        #Conditie uitkomst: False\r\n        #Uitgevoerd pad: 4\r\n        if(50 >= x * y):\r\n            print(\"Pad 3.\")\r\n        else:\r\n            print(\"Pad 4.\")\r\n    else:\r\n        print(\"Pad 5.\")\r\nelse:\r\n    print(\"Pad 6.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 2/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 3/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 3/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 3/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "x = 21/3\r\ny = x/3 * 4\r\nz = 24\r\n#Keyword(s): if, else\r\n#Uitgevoerd: Ja\r\n#Conditie variabele(n): z\r\n#Conditie: x < 15\r\n#Conditie uitkomst: False\r\n#Uitgevoerd pad: 6\r\nif(z < 20):\r\n    print(\"Pad 1.\")\r\n    #Keyword(s): if, else\r\n    #Uitgevoerd: Nee\r\n    #Conditie variabele(n): y\r\n    #Conditie: 10 >= y\r\n    #Conditie uitkomst: False\r\n    #Uitgevoerd pad: geen\r\n    if(5 <= y):\r\n        print(\"Pad 2.\")\r\n        #Keyword(s): if, else\r\n        #Uitgevoerd: Nee\r\n        #Conditie variabele(n): x, y\r\n        #Conditie: 10 >= y\r\n        #Conditie uitkomst: False\r\n        #Uitgevoerd pad: geen\r\n        if(50 >= x * y):\r\n            print(\"Pad 3.\")\r\n        else:\r\n            print(\"Pad 4.\")\r\n    else:\r\n        print(\"Pad 5.\")\r\nelse:\r\n    print(\"Pad 6.\")\r\nprint(\"Einde programma.\")\r\n"
+    },
+    {
+      "name" : "Week 3 - Branching/Geneste if - else/Programma 3/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #1/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #1/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #1/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "# TODO: type solution here\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #1/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #2/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #2/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #2/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "# TODO: type solution here\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #2/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #3/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #3/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #3/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "# TODO: type solution here\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/Structuur #3/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For loop variabele/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For loop variabele/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For loop variabele/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "#Task 1\r\narray1 = [1, 2, 3, 4, 5]\r\n\r\nfor element in array1:\r\n    print(element)\r\n\r\n#Task 2\r\nstring1 = \"abcd\"\r\n\r\nreturnString = \"\"\r\nfor symbol in string1:\r\n    if(len(returnString)<3):\r\n        returnString = returnString + symbol\r\n\r\n#Task 3\r\narray2 = [True, False, True, True, True, False, False, True]\r\ncounter = 0\r\nfor boolean in array2:\r\n    if(not(boolean)):\r\n        counter = counter + 1\r\nprint(str(counter) + \" Falses counted\")\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For loop variabele/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For element in array/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For element in array/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For element in array/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "players = []\r\n\r\nplayers.append([\"p1\", 27])\r\nplayers.append([\"p2\", 43])\r\nplayers.append([\"p3\", 72])\r\nplayers.append([\"p4\", 12])\r\nplayers.append([\"p5\", 22])\r\nplayers.append([\"p6\", 61])\r\n\r\nloser =players[0]\r\n\r\nfor i in (range(len(players))):\r\n    points = players[i][1]\r\n    if(loser[1] > points):\r\n        loser = players[i]\r\n\r\nwinner = players[0]\r\n\r\nfor player in players:\r\n    points = player[1]\r\n    if(winner[1] < points):\r\n        winner = player\r\n\r\nprint(winner[0] + \" is the winner with \" + str(winner[1]) + \" points!\")\r\nprint(loser[0] + \" is the loser with \" + str(loser[1]) + \" points...\")\r\n\r\n"
+    },
+    {
+      "name" : "Week 6 - For loops/For loops/For element in array/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Kassa #2/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Kassa #2/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Kassa #2/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "# TODO: type solution here\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Kassa #2/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Tellen #2/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Tellen #2/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Tellen #2/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "#Task 1\r\n#Amount of iterations:  10\r\nconditionVar1 = 0\r\n\r\nwhile(conditionVar1 < 5):\r\n    conditionVar1 = conditionVar1 + 0.5\r\n\r\n#Task 2\r\n\r\n#Amount of iterations:  5\r\nconditionVar2 = 10\r\n\r\nwhile(conditionVar2 >= 0):\r\n    conditionVar2 = conditionVar2 - 2\r\n\r\n#Task 3\r\n#Amount of iterations:  50\r\nconditionVar3 = 100\r\n\r\nwhile(conditionVar3 != 50):\r\n    if(conditionVar3>50):\r\n        conditionVar3 = conditionVar3 - 1\r\n    else:\r\n        conditionVar3 = conditionVar3 + 1\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Tellen #2/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Programma loop/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Programma loop/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Programma loop/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "def programLoop():\r\n    active = True\r\n    while(active):\r\n        print(\"Doing stuff\")\r\n        userInput = input(\"Do you want to continue? [y/n]\\n\")\r\n        if(userInput == \"n\"):\r\n            print(\"quiting\")\r\n            active = False\r\n        elif(userInput == \"y\"):\r\n            print(\"continueing\")\r\n            continue\r\n        else:\r\n            print(\"Please enter \\\"y\\\" or \\\"n\\\"\")\r\n\r\nprogramLoop()\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/Opdrachten/Programma loop/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Tellen/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Tellen/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Tellen/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "#Task 1\r\nconditionVariable1 = 0\r\n\r\nwhile(conditionVariable1 < 10):\r\n    print(conditionVariable1 + 1)\r\n    conditionVariable1 = conditionVariable1 + 1\r\n\r\n#Task 2\r\nconditionVariable2 = 10\r\n\r\nwhile(conditionVariable2>-1):\r\n    conditionVariable2 = conditionVariable2 - 1\r\n\r\n#Task 3\r\nconditionVariable3 = len(\"aString\")\r\nwhile(conditionVariable3>=0):\r\n    conditionVariable3 =conditionVariable3 - 1\r\n\r\n#Task 4\r\narray=[4, 7, 123, 556]\r\nconditionVariable4 = 0\r\n\r\nwhile(conditionVariable4 < len(array)):\r\n    print(conditionVariable4)\r\n    conditionVariable4 = conditionVariable4 + 1\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Tellen/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #1/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #1/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #1/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "conditionVariable = 0\r\n\r\nwhile(conditionVariable <= 4):\r\n    print(conditionVariable)\r\n    conditionVariable = conditionVariable + 1\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #1/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #2/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #2/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #2/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "condition = True\r\ncounter = 0\r\n\r\nwhile(condition):\r\n    if(counter <= 4):\r\n        print(counter)\r\n        counter = counter + 1\r\n    else:\r\n        condition = False\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #2/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #3/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #3/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #3/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Structuur #3/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Iteraties over indexen/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Iteraties over indexen/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Iteraties over indexen/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "array1 = [23, 62, 94]\r\narray2 = [55, 45, 7]\r\n\r\n#Task 1\r\nindex = 0\r\n\r\nwhile(index < len(array1)):\r\n    print(array1[index])\r\n    index = index + 1\r\n\r\n#Task 2\r\nindex = len(array1) - 1\r\n\r\nwhile(index>=0):\r\n    print(array1[index])\r\n    index = index - 1\r\n\r\n#Task 3\r\nif(len(array1) == len(array2)):\r\n    index = 0\r\n    while(index < len(array2)):\r\n        array2[index] = array1[index] + array2[index]\r\n        index = index + 1\r\n"
+    },
+    {
+      "name" : "Week 5 - While loops/While loops/Iteraties over indexen/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 1/Omdraaien van tekst/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 1/Omdraaien van tekst/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 1/Omdraaien van tekst/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "def run():\r\n    textInput = input(\"Enter the text you would like to reverse:\\n\")\r\n    reversedText = reverse(textInput)\r\n    print(\"Your reversed string is:\\n\" + reversedText)\r\n\r\ndef reverse(text):\r\n    return \"Nope\"\r\n\r\nrun()\r\n"
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 1/Omdraaien van tekst/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 2/Steen.... papier.... schaar!/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 2/Steen.... papier.... schaar!/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 2/Steen.... papier.... schaar!/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "def run():\r\n    p1Weapon = pickWeapon()\r\n    p2Weapon = pickWeapon()\r\n    winnerAndWeapon = RockPaperScissors(p1Weapon, p2Weapon)\r\n    print(\"The winner is: \"+winnerAndWeapon[0] +\"\\n With the weapon: \"+ winnerAndWeapon[1])\r\n\r\ndef pickWeapon():\r\n    print(\"Pick one of the following weapons (select the number):\")\r\n    print(\"[1] - Rock\")\r\n    print(\"[2] - Paper\")\r\n    print(\"[3] - Scissor\")\r\n    weaponNumber = input(\"Your choice: \\n\")\r\n    if(weaponNumber == \"1\"):\r\n        return \"Rock\"\r\n    elif(weaponNumber == \"2\"):\r\n        return \"Paper\"\r\n    elif(weaponNumber == \"3\"):\r\n        return \"Scissor\"\r\n    else:\r\n        return pickWeapon()\r\n\r\n## input1: String, input2: String\r\n## output: Array of two string elements\r\n### example output: [\"Player1\", \"Rock\"]\r\ndef RockPaperScissors(player1Weapon, player2Weapon):\r\n    return \"Nope\"\r\n\r\nrun()\r\n"
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 2/Steen.... papier.... schaar!/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 3/Ceasar cypher/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 3/Ceasar cypher/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 3/Ceasar cypher/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "def run():\r\n    toBeCyphered = input(\"Enter the phrase you would like to hide:\\n\")\r\n    amountOfStepsToChange = int(input(\"Enter a number:\\n\"))\r\n    returnValue = ceasarCypher(toBeCyphered, amountOfStepsToChange)\r\n    print(\"Your ceasar cyphered message is:\\n\"+returnValue)\r\n\r\n## Input1: String, input2: Integer\r\n## Return: String\r\ndef ceasarCypher(stringInput, steps):\r\n    return \"Nope\"\r\n\r\nrun()\r\n"
+    },
+    {
+      "name" : "Eindopdrachten - Python/Opdracht 3/Ceasar cypher/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Aanmaken/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Aanmaken/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Aanmaken/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "emptyArray = []\r\n\r\nintegerArray = [1, 2, 3]\r\n\r\nstringArray = [\"1\", \"2\", \"3\"]\r\n\r\narrayOfArrays = [emptyArray, integerArray, stringArray]\r\n\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Aanmaken/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data aanroepen/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data aanroepen/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data aanroepen/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "emptyArray = []\r\n\r\nintegerArray = [1, 2, 3]\r\n\r\nstringArray = [\"1\", \"2\", \"3\"]\r\n\r\narrayOfArrays = [emptyArray, integerArray, stringArray]\r\n\r\na = integerArray[2]\r\n#Variabele naam: a\r\n#Variabele waarde: 3\r\n#Variabele type: integer\r\n\r\nb = integerArray[2-1]\r\n#Variabele naam: b\r\n#Variabele waarde: 2\r\n#Variabele type: integer\r\n\r\nc = stringArray[4//2]\r\n#Variabele naam: c\r\n#Variabele waarde: \"3\"\r\n#Variabele type: string\r\n\r\nd = stringArray[0]\r\n#Variabele naam: d\r\n#Variabele waarde: \"1\"\r\n#Variabele type: string\r\n\r\ne = arrayOfArrays[2]\r\n#Variabele naam: e\r\n#Variabele waarde: [\"1\", \"2\", \"3\"]\r\n#Variabele type: array\r\n\r\nf = arrayOfArrays[1][0]\r\n#Variabele naam: f\r\n#Variabele waarde: 1\r\n#Variabele type: integer\r\n\r\ng = arrayOfArrays[2][2]\r\n#Variabele naam: g\r\n#Variabele waarde: \"3\"\r\n#Variabele type: string\r\n\r\nh = arrayOfArrays[0]\r\n#Variabele naam: h\r\n#Variabele waarde: []\r\n#Variabele type: array\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data aanroepen/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data toevoegen/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data toevoegen/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data toevoegen/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "emptyArray = []\r\n\r\nintegerArray = [1, 2, 3]\r\n\r\nstringArray = [\"1\", \"2\", \"3\"]\r\n\r\narrayOfArrays = [emptyArray, integerArray, stringArray]\r\n\r\nemptyArray.append(\"first\")\r\n#Variabele naam: emptyArray\r\n#Variabele waarde: [\"first\"]\r\n#Variabele type: array\r\n\r\nemptyArray.append(\"second\")\r\n#Variabele naam: emptyArray\r\n#Variabele waarde: [\"first\", \"second\"]\r\n#Variabele type: array\r\n\r\nintegerArray.append(1)\r\n#Variabele naam: integerArray\r\n#Variabele waarde: [1, 2, 3, 1]\r\n#Variabele type: array\r\n\r\nstringArray.append(\"4\")\r\n#Variabele naam: stringArray\r\n#Variabele waarde: [\"1\", \"2\", \"3\", \"4\"]\r\n#Variabele type: array\r\n\r\nintegerArray.append(13)\r\n#Variabele naam: integerArray\r\n#Variabele waarde: [1, 2, 3, 1, 13]\r\n#Variabele type: array\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data toevoegen/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data verwijderen/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data verwijderen/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data verwijderen/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "emptyArray = []\r\n\r\nintegerArray = [1, 2, 3]\r\n\r\nstringArray = [\"1\", \"2\", \"3\"]\r\n\r\nintegerArray.remove(3)\r\n#Variabele naam: integerArray\r\n#Variabele waarde: [1, 2]\r\n#Variabele type: array\r\n\r\nintegerArray.remove(1)\r\n#Variabele naam: integerArray\r\n#Variabele waarde: [2]\r\n#Variabele type: array\r\n\r\nstringArray.remove(\"2\")\r\n#Variabele naam: stringArray\r\n#Variabele waarde: [\"1\", \"3\"]\r\n#Variabele type: array\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data verwijderen/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data overschrijven/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data overschrijven/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data overschrijven/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "emptyArray = []\r\n\r\nintegerArray = [1, 2, 3]\r\n\r\nstringArray = [\"1\", \"2\", \"3\"]\r\n\r\narrayOfArrays = [emptyArray, integerArray, stringArray]\r\n\r\nintegerArray[0] = integerArray[0] + 6\r\na = integerArray[0]\r\n#Variabele naam: a\r\n#Variabele waarde: 7\r\n#Variabele type: integer\r\n\r\nintegerArray[1] = integerArray[1] * 2\r\nb = integerArray[1]\r\n#Variabele naam: b\r\n#Variabele waarde: 4\r\n#Variabele type: integer\r\n\r\nstringArray[2] = stringArray[2] + stringArray[0]\r\nc = stringArray[2]\r\n#Variabele naam: c\r\n#Variabele waarde: \"31\"\r\n#Variabele type: string\r\n\r\nstringArray[0] = \"abc\"\r\nd = stringArray[0]\r\n#Variabele naam: d\r\n#Variabele waarde: \"abc\"\r\n#Variabele type: string\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Arrays/Data overschrijven/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Len/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Len/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Len/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "array1 = [1, 2, 3]\r\narray2 = [\"ab\", \"bcd\", \"efgh\"]\r\n\r\n#Task 1\r\narray1Len = len(array1)\r\nprint(array1Len)\r\n\r\narray2Len = len(array2)\r\nprint(array1Len)\r\n\r\n#Task 2\r\narray2Index0Len = len(array2[0])\r\nprint(array2Index0Len)\r\narray2Index2Len = len(array2[2])\r\nprint(array2Index2Len)\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Len/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Input/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Input/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Input/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "userInput = input(\"Enter a number\")\r\n#Functie naam: input\r\n#Variabele naam: userInput\r\n#Variabele waarde: unknown\r\n#Variabele type: string\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Input/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Print/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Print/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Print/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "# TODO: type solution here\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Print/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Range/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Range/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Range/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "conditionVariable = 0\r\n\r\nwhile(conditionVariable <= 4):\r\n    print(conditionVariable)\r\n    conditionVariable = conditionVariable + 1\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Range/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Casting/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Casting/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Casting/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "string = \"123\"\r\ninteger = 123\r\n\r\nstring = int(string)\r\n#Functie naam: int\r\n#Functie input waarde: \"123\"\r\n#Variabele naam: string\r\n#Variabele waarde: 123\r\n#Variabele type: integer\r\n\r\ninteger = str(integer)\r\n#Functie naam: str\r\n#Functie input waarde: 123\r\n#Variabele naam: integer\r\n#Variabele waarde: \"123\"\r\n#Variabele type: string\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Casting/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Extra - Try Except/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Extra - Try Except/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Extra - Try Except/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "intInput = input(\"Enter a number:\\n\")\r\n\r\ntry:\r\n    intInput = int(intInput)\r\nexcept:\r\n    print(\"Please enter a number... try it once more...\")\r\n    intInput = int(input(\"Enter a number:\\n\"))\r\n\r\nprint(intInput)\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Functies/Extra - Try Except/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Cash register/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Cash register/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Cash register/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "products = [[\"Apple\", 2], [\"Bread\", 1], [\"Melon\", 3]]\r\namounts = [0, 0, 0]\r\n\r\namounts[0] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\r\namounts[1] = int(input(\"How much \"+products[1][0]+ \" would you like?\\n\"))\r\namounts[2] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\r\n\r\ntotal = products[0][1] * amounts[0] + products[1][1] * amounts[1] + products[2][1] * amounts[2]\r\n\r\nprint(\"You have to pay: \"+ str(total))\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Cash register/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Totale leeftijd/tests/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Totale leeftijd/tests/test_task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "import unittest\r\n\r\n\r\nclass TestCase(unittest.TestCase):\r\n    def test(self):\r\n        self.assertEqual(1, 0, msg=\"Implement tests\")\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Totale leeftijd/task.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "persons = [[\"p1\", 19], [\"p2\", 18], [\"p3\", 22], [\"p4\", 21]]\r\n\r\nperson1Age = persons[0][1]\r\nperson3Name = persons[2][0]\r\n\r\nprint(\"person 1: \" + persons[0][0] +\" with age: \" + str(person1Age))\r\nprint(\"person 2: \" + persons[1][0] +\" with age: \" + str(persons[1][1]))\r\nprint(\"person 3: \" + person3Name +\" with age: \" + str(persons[2][1]))\r\nprint(\"person 4: \" + persons[3][0] +\" with age: \" + str(persons[3][1]))\r\n\r\nprint(\"The combined age of all persons is: \" + str(persons[0][1] + persons[1][1] + persons[2][1] + persons[3][1]))\r\n"
+    },
+    {
+      "name" : "Week 4 - Arrays en functies/Opdrachten/Totale leeftijd/__init__.py",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
     }
   ],
   "version" : 11

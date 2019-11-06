@@ -173,7 +173,7 @@ def get_answer_placeholders():
     import os
 
     file_name_without_extension = os.path.splitext(path)[0]
-    windows_path = file_name_without_extension + "_windows"
+    windows_path = file_name_without_extension + ".py"
     windows = []
     f = open(windows_path, "r")
     window_text = ""

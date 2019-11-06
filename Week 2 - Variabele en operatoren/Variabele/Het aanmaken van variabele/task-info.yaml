@@ -3,9 +3,45 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 90
+  - offset: 114
     length: 1
-    placeholder_text: Vul in
+    placeholder_text: 1. Wat is de naam
+  - offset: 139
+    length: 1
+    placeholder_text: 2. Wat is de waarde
+  - offset: 204
+    length: 1
+    placeholder_text: 3. Wat is de naam
+  - offset: 254
+    length: 7
+    placeholder_text: 4. Wat is het type
+  - offset: 297
+    length: 1
+    placeholder_text: 5. Wat is de naam
+  - offset: 322
+    length: 4
+    placeholder_text: 6. Wat is de waarde
+  - offset: 348
+    length: 7
+    placeholder_text: 7. Wat is het type
+  - offset: 377
+    length: 1
+    placeholder_text: 8. Vul de juiste waarde in
+  - offset: 469
+    length: 18
+    placeholder_text: 9. Vul de juiste naam in
+  - offset: 585
+    length: 20
+    placeholder_text: 10. Creeër de juiste variabele
+  - offset: 695
+    length: 15
+    placeholder_text: 11. Creeër de juiste variabele
+  - offset: 795
+    length: 14
+    placeholder_text: 12  Creeër de juiste variabele
+  - offset: 893
+    length: 15
+    placeholder_text: 13.  Creeër de juiste variabele
 - name: tests/test_task.py
   visible: true
 - name: __init__.py
