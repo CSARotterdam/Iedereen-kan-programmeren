@@ -3,24 +3,24 @@ from regex_helper import *
 
 class Helper:
     def __init__(self):
-        self.helper = regex_helper()
+        self.re = regex_helper()
         self.answers = get_answer_placeholders()
 
     def CheckBaseType(self, index, type):
         answer = self.GetInput(index)
         outcome = False
         if(type=="boolean"):
-            outcome = self.helper.execute(answer, self.helper.BOOLEAN)
+            outcome = self.re.execute(answer, self.re.BOOLEAN)
         elif(type=="float"):
-            outcome = self.helper.execute(answer, self.helper.FLOAT)
+            outcome = self.re.execute(answer, self.re.FLOAT)
         elif(type=="string"):
-            outcome = self.helper.execute(answer, self.helper.STRING)
+            outcome = self.re.execute(answer, self.re.STRING)
         elif(type=="integer"):
-            outcome = self.helper.execute(answer, self.helper.INTEGER)
+            outcome = self.re.execute(answer, self.re.INTEGER)
         return outcome
 
     def CheckInput(self, index, regexString):
-        return self.helper.execute(self.GetInput(index), regexString)
+        return self.re.execute(self.GetInput(index), regexString)
 
     def GetInput(self, index):
         return self.answers[index]

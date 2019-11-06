@@ -28,11 +28,11 @@ def test_answer_placeholders():
         elif(answerNumber == 9):
             outcome = helper.CheckInput(answerNumber, "integer|Integer")
         elif(answerNumber == 10):
-            outcome = helper.CheckInput(answerNumber, helper.helper.expressionToRegex("varA = -342"))
+            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex("varA = -342"))
         elif(answerNumber == 11):
-            outcome = helper.CheckInput(answerNumber, helper.helper.expressionToRegex("varB = 244"))
+            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex("varB = 244"))
         elif(answerNumber == 12):
-            outcome = helper.CheckInput(answerNumber, helper.helper.expressionToRegex("varC = 8942"))
+            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex("varC = 8942"))
         CheckOutcome(outcome, answerNumber, backupText)
 
 def CheckOutcome(outcome, answerNumber, backupText):
