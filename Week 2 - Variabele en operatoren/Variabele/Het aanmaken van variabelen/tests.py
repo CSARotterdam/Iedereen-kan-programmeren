@@ -1,6 +1,6 @@
-from test_helper import run_common_tests, failed, passed, get_answer_placeholders
-from regex_helper import *
 from UserInputHelper import *
+from test_helper import run_common_tests, failed, passed
+
 
 def test_answer_placeholders():
     helper = Helper()

@@ -89,14 +89,24 @@ class regex_helper:
 
         return self.createExpressionPattern(operands, operators)
 
-    def ifRegex(self,condition):
+    def ifRegex(self,conditionStr):
         ifRegex = "if *(\( *"
         ifRegex2 = " *\)| *"
         ifRegex3 = " *):"
-        condRegex = self.expressionToRegex(condition)[1:-1]
-        return ifRegex + condRegex + ifRegex2 + condRegex + ifRegex3;
+        condRegex = self.expressionToRegex(conditionStr)[1:-1]
+        return ifRegex + condRegex + ifRegex2 + condRegex + ifRegex3
 
-    def splitspace(self, stringIn):
+    def whileRegex(self,conditionStr):
+        whileRegex = "while *(\( *"
+        whileRegex2 = " *\)| *"
+        whileRegex3 = " *):"
+        condRegex = self.expressionToRegex(conditionStr)[1:-1]
+        return whileRegex + condRegex + whileRegex2 + condRegex + whileRegex3
+
+    def forRegex(self,iteratorStr,collectionStr):
+        return f"^for\s*(({iteratorStr})|(\({iteratorStr}\)))\s*in\s*(({collectionStr})|(\({collectionStr}\))):\s*$"
+
+    def splitSpace(self, stringIn):
         PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\+|\*|\+=|\*=|\|=|\^=|\||\^|\*\*|\*\*=)''')
         arrout = []
         for el in PATTERN.split(stringIn):

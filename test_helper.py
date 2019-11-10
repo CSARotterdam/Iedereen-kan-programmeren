@@ -136,7 +136,7 @@ def test_answer_placeholders_text_deleted(error_text="Don't just delete task tex
     """
         Checks that all answer placeholders are not empty
     """
-    windows = get_answer_placeholders()
+    windows = PlaceHolder.get_answer_placeholders()
 
     for window in windows:
         if len(window) == 0:
@@ -164,36 +164,36 @@ def passed(name=None):
     print("#educational_plugin " + name + " test OK")
 
 
-def get_answer_placeholders():
-    """
-        Returns all answer placeholders text
-    """
-    prefix = "#educational_plugin_window = "
-    path = sys.argv[-1]
-    import os
-
-    file_name_without_extension = os.path.splitext(path)[0]
-    windows_path = file_name_without_extension + ".py"
-    windows = []
-    f = open(windows_path, "r")
-    window_text = ""
-    first = True
-    for line in f.readlines():
-        if line.startswith(prefix):
-            if not first:
-                windows.append(window_text.strip())
-            else:
-                first = False
-            window_text = line[len(prefix):]
-        else:
-            window_text += line
-
-    if window_text:
-        windows.append(window_text.strip())
-
-    f.close()
-    return windows
-
+# def get_answer_placeholders():
+#     """
+#         Returns all answer placeholders text
+#     """
+#     prefix = "#educational_plugin_window = "
+#     print(sys.argv)
+#     path = sys.argv[-1]
+#     import os
+#
+#     file_name_without_extension = os.path.splitext(path)[0]
+#     windows_path = file_name_without_extension + ".py"
+#     windows = []
+#     f = open(windows_path, "r")
+#     window_text = ""
+#     first = True
+#     for line in f.readlines():
+#         if line.startswith(prefix):
+#             if not first:
+#                 windows.append(window_text.strip())
+#             else:
+#                 first = False
+#             window_text = line[len(prefix):]
+#         else:
+#             window_text += line
+#
+#     if window_text:
+#         windows.append(window_text.strip())
+#
+#     f.close()
+#     return windows
 
 def check_samples(samples=()):
     """
@@ -221,3 +221,48 @@ def run_common_tests(error_text="Please, reload file and try again"):
     test_is_not_empty()
     test_answer_placeholders_text_deleted()
     test_file_importable()
+
+class PlaceHolder:
+    def __init__(self, offset, length, text):
+        self.offset = offset
+        self.length = length
+        self.placeholder_text = text
+
+    def __repr__(self):
+        return str(self.offset) + " " + str(self.length) + " " + self.placeholder_text + "\n"
+
+    @staticmethod
+    def getBasePosition(stringIn):
+        return PlaceHolder(
+            int(stringIn[0][9:]),
+            int(stringIn[1][12:]),
+            stringIn[2][22:])
+
+    @staticmethod
+    def getPositions(path):
+        import re
+        yaml_path = path[0:-7]+"task-info.yaml"
+        yaml_text = get_file_text(yaml_path)
+        begin_pos = re.search("placeholders:", yaml_text).span()[1]
+        end_pos = re.search("- name: tests.py", yaml_text).span()[0]
+        placeholders = yaml_text[begin_pos:end_pos]
+        split = re.split("-", placeholders)[1:]
+
+        placeholder_string_arr = []
+        for el in split:
+            placeholder_string_arr.append(str.split(el, "\n"))
+        placeholder_arr = []
+        for placeholder_string in placeholder_string_arr:
+            placeholder_arr.append(PlaceHolder.getBasePosition(placeholder_string))
+
+        return placeholder_arr
+
+    @staticmethod
+    def get_answer_placeholders():
+        path = sys.argv[-1]
+        positions = PlaceHolder.getPositions(path)
+        file_text = get_file_text(path)
+        answers = []
+        for position in positions:
+            answers.append(file_text[position.offset:position.offset + position.length])
+        return answers

@@ -1,10 +1,10 @@
-from test_helper import get_answer_placeholders
+from test_helper import PlaceHolder
 from regex_helper import *
 
 class Helper:
     def __init__(self):
         self.re = regex_helper()
-        self.answers = get_answer_placeholders()
+        self.answers = PlaceHolder.get_answer_placeholders()
 
     def CheckBaseType(self, index, type):
         answer = self.GetInput(index)
