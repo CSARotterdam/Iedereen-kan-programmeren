@@ -2,5 +2,24 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 143
+    length: 11
+    placeholder_text: '1. Overschrijf x. Nieuwe waarde: "World"'
+  - offset: 257
+    length: 9
+    placeholder_text: 2. Overschrijf y. Verhoog y met 1.
+  - offset: 376
+    length: 8
+    placeholder_text: '3. Overschijf z. Nieuwe waarde: True'
+  - offset: 456
+    length: 5
+    placeholder_text: 4. Zet x op 0
+  - offset: 462
+    length: 5
+    placeholder_text: 5. Zet y op 0
+  - offset: 468
+    length: 5
+    placeholder_text: 6. Zet z op 0
 - name: tests.py
   visible: false
