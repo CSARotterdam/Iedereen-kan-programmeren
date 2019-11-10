@@ -233,10 +233,11 @@ class PlaceHolder:
 
     @staticmethod
     def getBasePosition(stringIn):
-        return PlaceHolder(
-            int(stringIn[0][9:]),
+        p = PlaceHolder(
+            int(stringIn[0][2:]),
             int(stringIn[1][12:]),
             stringIn[2][22:])
+        return p
 
     @staticmethod
     def getPositions(path):
@@ -244,13 +245,13 @@ class PlaceHolder:
         yaml_path = path[0:-7]+"task-info.yaml"
         yaml_text = get_file_text(yaml_path)
         begin_pos = re.search("placeholders:", yaml_text).span()[1]
-        end_pos = re.search("- name: tests.py", yaml_text).span()[0]
+        end_pos = re.search("Unchecked\n  text: \|+", yaml_text).span()[0]
         placeholders = yaml_text[begin_pos:end_pos]
-        split = re.split("-", placeholders)[1:]
+        split = re.split("- offset", placeholders)[1:]
 
         placeholder_string_arr = []
         for el in split:
-            placeholder_string_arr.append(str.split(el, "\n"))
+            placeholder_string_arr.append(str.split(el,"\n"))
         placeholder_arr = []
         for placeholder_string in placeholder_string_arr:
             placeholder_arr.append(PlaceHolder.getBasePosition(placeholder_string))
