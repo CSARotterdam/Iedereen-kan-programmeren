@@ -94,5 +94,5 @@ if __name__ == '__main__':
         passed("Congratulations")
     else:
         for el in res.failures:
-            failed(f"There is an error in {el[0]}")
+            failed(f"There is an error in " + str(el[0])[4:12])
     # test_answer_placeholders()

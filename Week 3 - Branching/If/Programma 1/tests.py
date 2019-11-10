@@ -1,4 +1,4 @@
-from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+from test_helper import run_common_tests, failed, passed
 from regex_helper import *
 from UserInputHelper import *
 
