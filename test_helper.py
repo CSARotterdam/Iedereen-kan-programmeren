@@ -245,7 +245,7 @@ class PlaceHolder:
         yaml_path = path[0:-7]+"task-info.yaml"
         yaml_text = get_file_text(yaml_path)
         begin_pos = re.search("placeholders:", yaml_text).span()[1]
-        end_pos = re.search("Unchecked\n  text: \|+", yaml_text).span()[0]
+        end_pos = re.search("ed\n  text: \|+", yaml_text).span()[0]
         placeholders = yaml_text[begin_pos:end_pos]
         split = re.split("- offset", placeholders)[1:]
 
