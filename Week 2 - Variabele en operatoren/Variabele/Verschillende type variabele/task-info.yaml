@@ -2,5 +2,57 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 99
+    length: 4
+    placeholder_text: 1. Vul in
+  - offset: 123
+    length: 8
+    placeholder_text: 2. Vul in
+  - offset: 220
+    length: 14
+    placeholder_text: 3. Vul in
+  - offset: 252
+    length: 6
+    placeholder_text: 4. Vul in
+  - offset: 286
+    length: 4
+    placeholder_text: 5. Vul in
+  - offset: 310
+    length: 1
+    placeholder_text: 6. Vul in
+  - offset: 329
+    length: 7
+    placeholder_text: 7. Vul in
+  - offset: 364
+    length: 4
+    placeholder_text: 8. Vul in
+  - offset: 388
+    length: 1
+    placeholder_text: 9. Vul in
+  - offset: 407
+    length: 7
+    placeholder_text: 10. Vul in
+  - offset: 416
+    length: 12
+    placeholder_text: 11. Maak de juiste variabele
+  - offset: 556
+    length: 7
+    placeholder_text: 12. Vul in
+  - offset: 581
+    length: 5
+    placeholder_text: 13. Vul in
+  - offset: 588
+    length: 11
+    placeholder_text: 14. Maak de juiste variabele aan
+  - offset: 702
+    length: 4
+    placeholder_text: 15. Vul in
+  - offset: 726
+    length: 5
+    placeholder_text: 16. Vul in
+  - offset: 749
+    length: 7
+    placeholder_text: 17. Vul in
 - name: tests.py
   visible: false
