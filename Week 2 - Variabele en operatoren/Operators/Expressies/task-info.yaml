@@ -2,5 +2,24 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 53
+    length: 2
+    placeholder_text: 1. Vul in
+  - offset: 81
+    length: 3
+    placeholder_text: 2. Vul in
+  - offset: 114
+    length: 5
+    placeholder_text: 3. Vul in
+  - offset: 135
+    length: 13
+    placeholder_text: 4. Maak de juiste expressie
+  - offset: 290
+    length: 26
+    placeholder_text: 5. Maak de juiste expressie
+  - offset: 423
+    length: 31
+    placeholder_text: 6. Maak de juiste expressie
 - name: tests.py
   visible: false

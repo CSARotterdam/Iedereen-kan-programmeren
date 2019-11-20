@@ -2,5 +2,63 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 86
+    length: 4
+    placeholder_text: 1. Vul in
+  - offset: 133
+    length: 7
+    placeholder_text: 2. Vul in
+  - offset: 179
+    length: 4
+    placeholder_text: 3. Vul in
+  - offset: 203
+    length: 4
+    placeholder_text: 4. Vul in
+  - offset: 242
+    length: 5
+    placeholder_text: 5. Vul in
+  - offset: 305
+    length: 4
+    placeholder_text: 6. Vul in
+  - offset: 352
+    length: 4
+    placeholder_text: 7. Vul in
+  - offset: 422
+    length: 7
+    placeholder_text: 8. Vul in
+  - offset: 439
+    length: 7
+    placeholder_text: 9. Vul in
+  - offset: 505
+    length: 5
+    placeholder_text: 10. Vul in
+  - offset: 537
+    length: 7
+    placeholder_text: 11. Vul in
+  - offset: 554
+    length: 4
+    placeholder_text: 12. Vul in
+  - offset: 715
+    length: 4
+    placeholder_text: 13. Vul in
+  - offset: 819
+    length: 4
+    placeholder_text: 14. Vul in
+  - offset: 926
+    length: 4
+    placeholder_text: 15. Vul in
+  - offset: 1025
+    length: 5
+    placeholder_text: 16. Vul in
+  - offset: 1065
+    length: 11
+    placeholder_text: 17. Vul in
+  - offset: 1140
+    length: 4
+    placeholder_text: 18. Vul in
+  - offset: 1246
+    length: 5
+    placeholder_text: 19. Vul in
 - name: tests.py
   visible: false

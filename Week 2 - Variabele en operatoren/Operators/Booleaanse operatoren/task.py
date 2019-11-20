@@ -41,12 +41,12 @@ orD = varB or varB
 #Variabele waarde: False
 #Variabele type: boolean
 
-notA = not(varA)
+notA = not varA
 #Variabele naam: notA
 #Variabele waarde: False
 #Variabele type: boolean
 
-notB = not(varB)
+notB = not varB
 #Variabele naam: notB
-#Variabele waarde: False
+#Variabele waarde: True
 #Variabele type: boolean

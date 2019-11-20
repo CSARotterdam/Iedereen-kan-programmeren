@@ -1,48 +1,79 @@
-from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+import unittest
+
+from test_helper import run_common_tests, failed, passed
 from regex_helper import *
 from UserInputHelper import *
 
-def test_answer_placeholders():
-    helper = Helper()
-    for answerNumber in range(len(helper.answers)):
-        outcome = False
-        backupText = ""
-        if(answerNumber == 0):
-            outcome = helper.CheckInput(answerNumber, "x")
-        elif(answerNumber == 1):
-            outcome = helper.CheckInput(answerNumber, "235")
-        elif(answerNumber == 2):
-            outcome = helper.CheckInput(answerNumber, "integer|Integer")
-        elif(answerNumber == 3):
-            outcome = helper.CheckInput(answerNumber, "stappenteller")
-        elif(answerNumber == 4):
-            outcome = helper.CheckInput(answerNumber, "0")
-        elif(answerNumber == 5):
-            outcome = helper.CheckInput(answerNumber, "45")
-        elif(answerNumber == 6):
-            outcome = helper.CheckInput(answerNumber, "integer|Integer")
-        elif(answerNumber == 7):
-            outcome = helper.CheckInput(answerNumber, "aantalHoeken")
-        elif(answerNumber == 8):
-            outcome = helper.CheckInput(answerNumber, "4")
-        elif(answerNumber == 9):
-            outcome = helper.CheckInput(answerNumber, "integer|Integer")
-        elif(answerNumber == 10):
-            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex("varA = -342"))
-        elif(answerNumber == 11):
-            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex("varB = 244"))
-        elif(answerNumber == 12):
-            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex("varC = 8942"))
-        CheckOutcome(outcome, answerNumber, backupText)
+helper = Helper()
 
-def CheckOutcome(outcome, answerNumber, backupText):
-    if(outcome):
-        passed("Answer #" + str(answerNumber) + " is correct!")
-    else:
-        failed("There is an error in answer #"+ str(answerNumber)+" " + backupText)
+
+class varAanmaken(unittest.TestCase):
+    def testAnswer1(self):
+        self.assertEqual(helper.answers[0], "equA")
+
+    def testAnswer2(self):
+        self.assertRegex(helper.answers[1], "boolean|Boolean")
+
+    def testAnswer3(self):
+        self.assertEqual(helper.answers[2], "equB")
+
+    def testAnswer4(self):
+        self.assertEqual(helper.answers[3], "True")
+
+    def testAnswer5(self):
+        self.assertEqual(helper.answers[4], "uneqA")
+
+    def testAnswer6(self):
+        self.assertEqual(helper.answers[5], "True")
+
+    def testAnswer7(self):
+        self.assertEqual(helper.answers[6], "varD")
+
+    def testAnswer8(self):
+        self.assertRegex(helper.answers[7], "boolean|Boolean")
+
+    def testAnswer9(self):
+        self.assertEqual(helper.answers[8], "largerA")
+
+    def testAnswer10(self):
+        self.assertEqual(helper.answers[9], "False")
+
+    def testAnswer11(self):
+        self.assertEqual(helper.answers[10], "largerB")
+
+    def testAnswer12(self):
+        self.assertEqual(helper.answers[11], "varA")
+
+    def testAnswer13(self):
+        self.assertEqual(helper.answers[12], "True")
+
+    def testAnswer14(self):
+        self.assertEqual(helper.answers[13], "True")
+
+    def testAnswer15(self):
+        self.assertEqual(helper.answers[14], "True")
+
+    def testAnswer16(self):
+        self.assertEqual(helper.answers[15], "False")
+
+    def testAnswer17(self):
+        self.assertEqual(helper.answers[16], "smallerequA")
+
+    def testAnswer18(self):
+        self.assertEqual(helper.answers[17], "True")
+
+    def testAnswer19(self):
+        self.assertEqual(helper.answers[18], "False")
+
+
 
 if __name__ == '__main__':
-    run_common_tests()
-    test_answer_placeholders()
+    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)
+    res = unittest.TextTestRunner().run(suite)
+    if res.wasSuccessful():
+        passed("Congratulations")
+    else:
+        for el in res.failures:
+            failed(f"There is an error in " + str(el[0])[4:12])
 
 

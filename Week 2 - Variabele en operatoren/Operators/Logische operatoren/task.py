@@ -1,7 +1,7 @@
 varA = 4
 varB = 9
 varC = 4.2
-varD = -53.2
+varD = 4.2
 
 #Task 1
 equA = varA == varB
@@ -11,11 +11,6 @@ equA = varA == varB
 
 equB = varC == varD
 #Variabele naam: equB
-#Variabele waarde: False
-#Variabele type: boolean
-
-equC = varB == varB
-#Variabele naam: equC
 #Variabele waarde: True
 #Variabele type: boolean
 
@@ -27,32 +22,24 @@ uneqA = varA != varB
 
 uneqB = varC != varD
 #Variabele naam: uneqB
-#Variabele waarde: True
-#Variabele type: boolean
-
-uneqC = varB != varB
-#Variabele naam: uneqC
 #Variabele waarde: False
 #Variabele type: boolean
 
+#Task 3
 largerA = varA > varC
 #Variabele naam: largerA
 #Variabele waarde: False
 #Variabele type: boolean
 
-largerB = varB > varD
+largerB = varC > varA
 #Variabele naam: largerB
 #Variabele waarde: True
 #Variabele type: boolean
 
-largerC = varA > varA
-#Variabele naam: largerC
-#Variabele waarde: False
-#Variabele type: boolean
-
-largerequA = varA >= varC
+#Task 4
+largerequA = varD >= varC
 #Variabele naam: largerequA
-#Variabele waarde: False
+#Variabele waarde: True
 #Variabele type: boolean
 
 largerequB = varB >= varD
@@ -60,25 +47,18 @@ largerequB = varB >= varD
 #Variabele waarde: True
 #Variabele type: boolean
 
-largerequC = varA >= varA
-#Variabele naam: largerequC
-#Variabele waarde: True
-#Variabele type: boolean
-
+#Task 5
 smallerA = varA < varC
 #Variabele naam: smallerA
 #Variabele waarde: True
 #Variabele type: boolean
+
 smallerB = varB < varD
 #Variabele naam: smallerC
 #Variabele waarde: False
 #Variabele type: boolean
 
-smallerC = varA < varA
-#Variabele naam: smallerC
-#Variabele waarde: False
-#Variabele type: boolean
-
+#Task 6
 smallerequA = varA <= varC
 #Variabele naam: smallerequA
 #Variabele waarde: True
@@ -89,7 +69,3 @@ smallerequB = varB <= varD
 #Variabele waarde: False
 #Variabele type: boolean
 
-smallerequC = varA <= varA
-#Variabele naam: smallerequC
-#Variabele waarde: True
-#Variabele type: boolean
