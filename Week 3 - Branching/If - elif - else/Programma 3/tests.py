@@ -9,34 +9,34 @@ helper = Helper()
 
 class varAanmaken(unittest.TestCase):
     def testAnswer1(self):
-        self.assertEqual(helper.answers[0], "if")
+        self.assertRegex(helper.answers[0], helper.re.argsRegex("if", "elif", "else"))
 
     def testAnswer2(self):
         self.assertRegex(helper.answers[1], "Ja|ja")
 
     def testAnswer3(self):
-        self.assertEqual(helper.answers[2], "x")
+         self.assertEqual(helper.answers[2], helper.re.argsRegex("y"))
 
     def testAnswer4(self):
-        self.assertRegex(helper.answers[3], helper.re.expressionToRegex("x > 0"))
+        self.assertRegex(helper.answers[3], helper.re.expressionToRegex("y > 20"))
 
     def testAnswer5(self):
         self.assertEqual(helper.answers[4], "True")
 
     def testAnswer6(self):
-        self.assertEqual(helper.answers[5], "if")
+        self.assertRegex(helper.answers[5], helper.re.argsRegex("2"))
 
     def testAnswer7(self):
-        self.assertRegex(helper.answers[6], "Ja|ja")
+         self.assertEqual(helper.answers[6], "Nee|nee")
 
     def testAnswer8(self):
-        self.assertRegex(helper.answers[7], helper.re.argsRegex("x", "y"))
+       self.assertEqual(helper.answers[7], helper.re.argsRegex("z", "y"))
 
     def testAnswer9(self):
-        self.assertRegex(helper.answers[8], helper.re.expressionToRegex("y / x >= 4"))
+        self.assertRegex(helper.answers[8], helper.re.expressionToRegex("z == y"))
 
     def testAnswer10(self):
-        self.assertEqual(helper.answers[9], "True")
+        self.assertRegex(helper.answers[9], helper.re.argsRegex("True"))
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)

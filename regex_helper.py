@@ -106,6 +106,13 @@ class regex_helper:
     def forRegex(self,iteratorStr,collectionStr):
         return f"^for\s*(({iteratorStr})|(\({iteratorStr}\)))\s*in\s*(({collectionStr})|(\({collectionStr}\))):\s*$"
 
+    def argsRegex(self, *args):
+        out = "^" + args[0] + "\s*"
+        for string in args[1:]:
+            out += ",\s*" + string + "\s*"
+        out += "$"
+        return out
+
     def splitSpace(self, stringIn):
         PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\+|\*|\+=|\*=|\|=|\^=|\||\^|\*\*|\*\*=)''')
         arrout = []

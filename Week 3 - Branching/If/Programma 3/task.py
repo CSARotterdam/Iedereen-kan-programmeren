@@ -10,9 +10,9 @@ if(x > 0):
     #Keyword: if
     #Uitgevoerd: Ja
     #Conditie variabele(n): x, y
-    #Conditie: x * 2 <= 14
-    #Conditie uitkomst: False
-    if(y / x <= 4):
+    #Conditie: y / x >= 4
+    #Conditie uitkomst: True
+    if(y / x >= 4):
         print("Stap 2.")
-print("Stap 3.")
+print("Stap 4.")
 print("Einde programma.")

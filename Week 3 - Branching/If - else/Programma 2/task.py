@@ -3,9 +3,9 @@ x = 5
 #Keyword(s): if, else
 #Uitgevoerd: Ja
 #Conditie variabele(n): x
-#Conditie: x != 0
+#Conditie: x != 55/11
 #Conditie uitkomst: False
-#Uitgevoerd pad(en): 1
+#uitgevoerd pad(en): 1
 if(x != 55/11):
     print("Pad 1.")
 else:

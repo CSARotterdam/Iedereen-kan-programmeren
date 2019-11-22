@@ -1,0 +1,37 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 44
+    length: 14
+    placeholder_text: 1. Vul in (Gescheiden door komma's)
+  - offset: 72
+    length: 2
+    placeholder_text: 2. Vul in
+  - offset: 99
+    length: 1
+    placeholder_text: 3. Vul in (Gescheiden door komma's)
+  - offset: 112
+    length: 5
+    placeholder_text: 4. Vul in
+  - offset: 138
+    length: 5
+    placeholder_text: 5. Vul in
+  - offset: 165
+    length: 1
+    placeholder_text: 6. Vul in (Gescheiden door komma's)
+  - offset: 211
+    length: 2
+    placeholder_text: 7. Vul in
+  - offset: 238
+    length: 3
+    placeholder_text: 8. Vul in (Gescheiden door komma's)
+  - offset: 253
+    length: 6
+    placeholder_text: 9. Vul in
+  - offset: 280
+    length: 4
+    placeholder_text: 10. Vul in
+- name: tests.py
+  visible: false

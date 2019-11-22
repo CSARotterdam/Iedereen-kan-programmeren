@@ -4,25 +4,23 @@ z = 24
 #Keyword(s): if, else
 #Uitgevoerd: Ja
 #Conditie variabele(n): z
-#Conditie: x < 15
-#Conditie uitkomst: True
-#Uitgevoerd pad: 1
-if(z > 20):
+#Conditie: z < 20
+#Conditie uitkomst: False
+#Uitgevoerd pad(en): 6
+if(z < 20):
     print("Pad 1.")
     #Keyword(s): if, else
-    #Uitgevoerd: Ja
+    #Uitgevoerd: Nee
     #Conditie variabele(n): y
     #Conditie: 10 >= y
     #Conditie uitkomst: False
-    #Uitgevoerd pad: 2
     if(5 <= y):
         print("Pad 2.")
         #Keyword(s): if, else
-        #Uitgevoerd: JA
+        #Uitgevoerd: Nee
         #Conditie variabele(n): x, y
         #Conditie: 10 >= y
         #Conditie uitkomst: False
-        #Uitgevoerd pad: 4
         if(50 >= x * y):
             print("Pad 3.")
         else:

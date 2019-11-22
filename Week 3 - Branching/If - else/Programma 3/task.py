@@ -5,7 +5,7 @@ y = x * 2
 #Conditie variabele(n): x
 #Conditie: x != 0
 #Conditie uitkomst: True
-#Uitgevoerd pad: 1
+#Uitgevoerd pad(en): 1, 2
 if(x != 0):
     print("Pad 1.")
     #Keyword(s): if

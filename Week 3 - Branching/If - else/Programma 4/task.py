@@ -5,7 +5,7 @@ y = x * 2
 #Conditie variabele(n): x
 #Conditie: x < 15
 #Conditie uitkomst: True
-#Uitgevoerd pad: 1
+#Uitgevoerde pad(en): 1
 if(x < 15):
     print("Pad 1.")
     #Keyword(s): if

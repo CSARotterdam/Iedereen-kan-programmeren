@@ -5,7 +5,7 @@ x = 5
 #Conditie variabele(n): x
 #Conditie: x != 0
 #Conditie uitkomst: True
-#Uitgevoerd pad(en): 1
+#uitgevoerd pad(en): 1
 if(x != 0):
     print("Pad 1.")
 else:
