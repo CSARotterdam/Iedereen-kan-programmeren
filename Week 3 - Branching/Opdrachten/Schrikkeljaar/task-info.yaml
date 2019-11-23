@@ -2,5 +2,13 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 473
+    length: 118
+    placeholder_text: Maak een constructie van if/else statements die kijken of een
+      jaar een schrikkeljaar is. Zo ja, zet de waarde van de boolean isLeapYear op
+      True.
 - name: tests.py
+  visible: false
+- name: testoutput.txt
   visible: false

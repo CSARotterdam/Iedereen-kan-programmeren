@@ -2093,26 +2093,32 @@
                   "name" : "task.py",
                   "placeholders" : [
                     {
-                      "offset" : 198,
+                      "offset" : 269,
                       "length" : 26,
-                      "possible_answer" : "Age <= 18",
+                      "possible_answer" : "Age < 18",
                       "placeholder_text" : "1. Maak de juiste conditie"
                     },
                     {
-                      "offset" : 269,
+                      "offset" : 332,
                       "length" : 26,
-                      "possible_answer" : "Age <=65",
+                      "possible_answer" : "Age <= 65",
                       "placeholder_text" : "2. Maak de juiste conditie"
                     }
                   ],
                   "is_visible" : true,
-                  "text" : "Name = \"Aron\"\nAge = 70\n\n# Create a program so that people under or at 18 get 10% reduction,\n# and people above or at 65 get 25% reduction.\n# Do not remove the following line.\ndef main(Age):\n\n    if(1. Maak de juiste conditie):\n        print(\"Reduction = 10%\")\n    elif(2. Maak de juiste conditie):\n        print(\"Reduction = 0%\")\n    else:\n        print(\"Reduction = 25%\")\n\n\n\n\n\n#Do not remove the following code\nmain(70)\n"
+                  "text" : "# Create a program so that people under 18 get 10% reduction,\n# and people above 65 get 25% reduction.\n# Edit the value of age, then press the green arrow to test your code.\n# DO NOT EDIT THE FOLLOWING LINE\nif __name__ == '__main__':\n    Name = \"Aron\"\n    Age = 70\n\nif(1. Maak de juiste conditie):\n    print(\"Reduction = 10%\")\nelif(2. Maak de juiste conditie):\n    print(\"Reduction = 0%\")\nelse:\n    print(\"Reduction = 25%\")\n\n\n\n\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\nfrom task import main\nimport subprocess\nimport sys\nfrom test_helper import failed, passed\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testCondition1(self):\n        proc = subprocess.run([sys.executable, \"-c\", \"import task; task.main(17)\"], stdout=subprocess.PIPE)\n        arr = []\n        with proc.stdout():\n            for line in iter(proc.stdout.readline, b''):\n                arr.append(line)\n        proc.wait()\n        self.assertEqual(arr, [b'Reduction = 10%\\r\\n'])\n\n    def testCondition2(self):\n        pass\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:14])\n\n\n\n\n"
+                  "text" : "import unittest\nimport runpy\nimport sys\nfrom test_helper import failed, passed\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testLessThan18ShouldGive10(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'Age': 17}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'Reduction = 10%\\n')\n\n    def test18ShouldGive0(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'Age': 18}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'Reduction = 0%\\n')\n\n    def testBetween18And65ShouldGive0(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'Age': 19}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'Reduction = 0%\\n')\n\n    def test65ShouldGive0(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'Age': 65}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'Reduction = 0%\\n')\n\n    def testOver65ShouldGive25(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'Age': 66}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'Reduction = 25%\\n')\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"The following condition is not met: \" + str(el[0])[4:-23])\n\n\n\n\n"
+                },
+                "testoutput.txt" : {
+                  "name" : "testoutput.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2127,15 +2133,46 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 406,
+                      "length" : 26,
+                      "possible_answer" : "number < 0",
+                      "placeholder_text" : "1. Maak de juiste conditie"
+                    },
+                    {
+                      "offset" : 474,
+                      "length" : 26,
+                      "possible_answer" : "number < randomNumber",
+                      "placeholder_text" : "2. Maak de juiste conditie"
+                    },
+                    {
+                      "offset" : 560,
+                      "length" : 26,
+                      "possible_answer" : "number == randomNumber",
+                      "placeholder_text" : "3. Maak de juiste conditie"
+                    },
+                    {
+                      "offset" : 649,
+                      "length" : 25,
+                      "possible_answer" : "number > randomNumber and number <= 100",
+                      "placeholder_text" : "4. Maak de juist conditie"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "import random\n\nnumber = int(input(\"Enter a number:\\n\"))\nrandomNumber = random.randint(0, 100)\n\nif(number < 0):\n    print(\"No negative numbers!\")\nelif(number < randomNumber):\n    print(\"The number is below the random number.\")\nelif(number == randomNumber):\n    print(\"The number is equal to the random number!\")\nelif(number > randomNumber and number <= 100):\n    print(\"The number is above the random number.\")\nelse:\n    print(\"No numbers higher than 100!\")\n"
+                  "text" : "import random\n\n# Create a program that checks if the number the user put in is higher or lower than\n# a randomly generated number.\n\n# The inputted number may not be below 0, nor may it be above 100.\n# DO NOT EDIT THE FOLLOWING LINE\nif __name__ == \"__main__\":\n    number = int(input(\"Enter a number:\\n\"))\n    randomNumber = random.randint(0, 100)\n    print(\"The random number is: \" + str(randomNumber))\n\nif(1. Maak de juiste conditie):\n    print(\"No negative numbers!\")\nelif(2. Maak de juiste conditie):\n    print(\"The number is below the random number.\")\nelif(3. Maak de juiste conditie):\n    print(\"The number is equal to the random number!\")\nelif(4. Maak de juist conditie):\n    print(\"The number is above the random number.\")\nelse:\n    print(\"No numbers higher than 100!\")\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    placeholder = placeholders[0]\n    if placeholder == \"\":       # TODO: your condition here\n        passed()\n    else:\n        failed()\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    # test_answer_placeholders()       # TODO: uncomment test call\n\n\n"
+                  "text" : "import unittest\nimport runpy\nimport sys\nfrom test_helper import failed, passed\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testNumberUnder0ShouldGiveOption1(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'number': -1, 'randomNumber': 50}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'No negative numbers!\\n')\n\n    def testNumberUnderRandomShouldGiveOption2(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'number': 1, 'randomNumber': 50}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'The number is below the random number.\\n')\n\n    def testNumberEqualToRandomShouldGiveOption3(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'number': 50, 'randomNumber': 50}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'The number is equal to the random number!\\n')\n\n    def testNumberAboveRandomShouldGiveOption4(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'number': 51, 'randomNumber': 50}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'The number is above the random number.\\n')\n\n    def testNumberAbove100ShouldGiveOption5(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'number': 101, 'randomNumber': 50}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), 'No numbers higher than 100!\\n')\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"The following condition is not met: \" + str(el[0])[4:-23])\n\n\n\n\n"
+                },
+                "testoutput.txt" : {
+                  "name" : "testoutput.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2150,15 +2187,28 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 473,
+                      "length" : 144,
+                      "possible_answer" : "\nif(year % 400 == 0):\n    isLeapYear = True\nelse:\n    if(year % 4 == 0 and year % 100 != 0):\n        isLeapYear = True",
+                      "placeholder_text" : "Maak een constructie van if/else statements die kijken of een jaar een schrikkeljaar is. Zo ja, zet de waarde van de boolean isLeapYear op True."
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "isLeapYear = False\nyear = int(input(\"Which year do you want to check for a common or leap year?:\\n\"))\n\n\nif(year % 400 == 0):\n    isLeapYear = True\nelse:\n    if(year % 4 == 0 and year % 100 != 0):\n        isLeapYear = True\n\nif(isLeapYear):\n    print(str(year) + \" is a leap year!\")\nelse:\n    print(str(year) + \" is a common year!\")\n"
+                  "text" : "# Create a program that checks if a given year is a leap year or not.\n# A year is a leap year if it is divisible by 4. (HINT: use the modulo operator)\n# A year is NOT a leap year if it is divisible by 100.\n# A year is a leap year if it is divisible by 400. This rule takes precedence over the above rule.\n\n# DO NOT EDIT THE FOLLOWING LINE\nif __name__ == \"__main__\":\n    year = int(input(\"Which year do you want to check for a common or leap year?:\\n\"))\n\nisLeapYear = False\nMaak een constructie van if/else statements die kijken of een jaar een schrikkeljaar is. Zo ja, zet de waarde van de boolean isLeapYear op True.\n\nif(isLeapYear):\n    print(str(year) + \" is a leap year!\")\nelse:\n    print(str(year) + \" is a common year!\")\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\n\n\ndef test_answer_placeholders():\n    placeholders = get_answer_placeholders()\n    placeholder = placeholders[0]\n    if placeholder == \"\":       # TODO: your condition here\n        passed()\n    else:\n        failed()\n\n\nif __name__ == '__main__':\n    run_common_tests()\n    # test_answer_placeholders()       # TODO: uncomment test call\n\n\n"
+                  "text" : "import unittest\nimport runpy\nimport sys\nfrom test_helper import failed, passed\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testYearDivisibleby400ShouldGiveLeapYear(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'year': 2000}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), '2000 is a leap year!\\n')\n\n    def testYearDivisibleBy100ButNot400ShouldGiveCommonYear(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'year': 1900}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), '1900 is a common year!\\n')\n\n    def testYearDivisibleBy4ButNot100ShouldGiveLeapYear(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'year': 2004}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), '2004 is a leap year!\\n')\n\n    def testYearNotDivisibleBy4ShouldGiveCommonYear(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'year': 2003}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readline(), '2003 is a common year!\\n')\n\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"The following condition is not met: \" + str(el[0])[4:-23])\n\n\n\n\n"
+                },
+                "testoutput.txt" : {
+                  "name" : "testoutput.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",

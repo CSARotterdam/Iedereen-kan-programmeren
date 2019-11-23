@@ -3,11 +3,13 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 198
-    length: 9
-    placeholder_text: 1. Maak de juiste conditie
-  - offset: 252
+  - offset: 269
     length: 8
+    placeholder_text: 1. Maak de juiste conditie
+  - offset: 314
+    length: 9
     placeholder_text: 2. Maak de juiste conditie
 - name: tests.py
+  visible: false
+- name: testoutput.txt
   visible: false

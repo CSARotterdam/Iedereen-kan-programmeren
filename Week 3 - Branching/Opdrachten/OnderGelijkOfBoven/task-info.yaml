@@ -2,5 +2,20 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 458
+    length: 21
+    placeholder_text: 2. Maak de juiste conditie
+  - offset: 539
+    length: 22
+    placeholder_text: 3. Maak de juiste conditie
+  - offset: 624
+    length: 39
+    placeholder_text: 4. Maak de juist conditie
+  - offset: 406
+    length: 10
+    placeholder_text: 1. Maak de juiste conditie
 - name: tests.py
+  visible: false
+- name: testoutput.txt
   visible: false
