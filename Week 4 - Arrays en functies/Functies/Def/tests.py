@@ -1,17 +1,34 @@
-from test_helper import run_common_tests, failed, passed, get_answer_placeholders
+import unittest
+
+from test_helper import run_common_tests, failed, passed
+from regex_helper import *
+from UserInputHelper import *
+
+helper = Helper()
 
 
-def test_answer_placeholders():
-    placeholders = get_answer_placeholders()
-    placeholder = placeholders[0]
-    if placeholder == "":       # TODO: your condition here
-        passed()
-    else:
-        failed()
+class varAanmaken(unittest.TestCase):
+    def testAnswer1(self):
+        self.assertEqual(helper.answers[0], "add1Tox")
 
+    def testAnswer2(self):
+        self.assertEqual(helper.answers[1], "21")
+
+    def testAnswer3(self):
+        self.assertEqual(helper.answers[2], "add1Tox")
+
+    def testAnswer4(self):
+        self.assertEqual(helper.answers[3], "25")
 
 if __name__ == '__main__':
-    run_common_tests()
-    # test_answer_placeholders()       # TODO: uncomment test call
+    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)
+    res = unittest.TextTestRunner().run(suite)
+    if res.wasSuccessful():
+        passed("Congratulations")
+    else:
+        for el in res.failures:
+            failed(f"There is an error in " + str(el[0])[4:12])
+
+
 
 

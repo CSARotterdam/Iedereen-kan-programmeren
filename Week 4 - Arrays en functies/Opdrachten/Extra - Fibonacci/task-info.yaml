@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 364
+    length: 86
+    placeholder_text: Implement the fibonacci sequence
+- name: tests.py
+  visible: false

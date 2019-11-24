@@ -29,7 +29,7 @@ d = stringArray[0]
 e = arrayOfArrays[2]
 #Variabele naam: e
 #Variabele waarde: ["1", "2", "3"]
-#Variabele type: array
+#Variabele type: list
 
 f = arrayOfArrays[1][0]
 #Variabele naam: f
@@ -44,4 +44,4 @@ g = arrayOfArrays[2][2]
 h = arrayOfArrays[0]
 #Variabele naam: h
 #Variabele waarde: []
-#Variabele type: array
+#Variabele type: list

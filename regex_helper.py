@@ -113,6 +113,9 @@ class regex_helper:
         out += "$"
         return out
 
+    def listRegex(self, *args):
+        return "^\[\s*" + self.argsRegex(*args)[1:-1] + "\s*\]$"
+
     def splitSpace(self, stringIn):
         PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\+|\*|\+=|\*=|\|=|\^=|\||\^|\*\*|\*\*=)''')
         arrout = []

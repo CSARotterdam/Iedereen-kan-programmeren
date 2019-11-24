@@ -6,7 +6,7 @@ stringArray = ["1", "2", "3"]
 
 arrayOfArrays = [emptyArray, integerArray, stringArray]
 
-integerArray[0] = integerArray[0] + 6
+integerArray[0] = integerArray[0]
 a = integerArray[0]
 #Variabele naam: a
 #Variabele waarde: 7

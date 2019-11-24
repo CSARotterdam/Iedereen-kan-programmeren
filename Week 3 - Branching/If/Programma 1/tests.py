@@ -9,19 +9,19 @@ helper = Helper()
 
 class varAanmaken(unittest.TestCase):
     def testAnswer1(self):
-        self.assertRegex(helper.answers[0], "if")
+        self.assertRegex(helper.answers[0], "while")
 
     def testAnswer2(self):
         self.assertRegex(helper.answers[1], "Ja|ja")
 
     def testAnswer3(self):
-        self.assertEqual(helper.answers[2], "x")
+        self.assertEqual(helper.answers[2], "conditionVariable")
 
     def testAnswer4(self):
-        self.assertRegex(helper.answers[3], helper.re.expressionToRegex("x == 5"))
+        self.assertRegex(helper.answers[3], helper.re.expressionToRegex("conditionVariable <= 4"))
 
     def testAnswer5(self):
-        self.assertEqual(helper.answers[4], "True")
+        self.assertEqual(helper.answers[4], "5")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)

@@ -2,5 +2,19 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 47
+    length: 6
+    placeholder_text: 1. Vul de juiste conditie in
+  - offset: 197
+    length: 16
+    placeholder_text: 2. Vul de juiste conditie in
+  - offset: 285
+    length: 16
+    placeholder_text: 4. Vul de juiste conditie in
+  - offset: 257
+    length: 14
+    placeholder_text: 3. Zorg ervoor dat het programma stopt wanneer dit pad gekozen
+      wordt
 - name: tests.py
   visible: false

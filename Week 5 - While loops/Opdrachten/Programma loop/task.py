@@ -1,15 +1,16 @@
 def programLoop():
     active = True
     while(active):
-        print("Doing stuff")
+        print("This loop will continue forever unless you stop it")
         userInput = input("Do you want to continue? [y/n]\n")
         if(userInput == "n"):
             print("quiting")
             active = False
         elif(userInput == "y"):
-            print("continueing")
+            print("continuing")
             continue
         else:
             print("Please enter \"y\" or \"n\"")
+
 
 programLoop()

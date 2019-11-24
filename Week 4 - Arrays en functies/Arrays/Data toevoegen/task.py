@@ -9,24 +9,26 @@ arrayOfArrays = [emptyArray, integerArray, stringArray]
 emptyArray.append("first")
 #Variabele naam: emptyArray
 #Variabele waarde: ["first"]
-#Variabele type: array
+#Variabele type: list
 
 emptyArray.append("second")
 #Variabele naam: emptyArray
 #Variabele waarde: ["first", "second"]
-#Variabele type: array
+#Variabele type: list
 
 integerArray.append(1)
 #Variabele naam: integerArray
 #Variabele waarde: [1, 2, 3, 1]
-#Variabele type: array
+#Variabele type: list
 
 stringArray.append("4")
 #Variabele naam: stringArray
 #Variabele waarde: ["1", "2", "3", "4"]
-#Variabele type: array
+#Variabele type: list
 
-integerArray.append(13)
+# The insert function inserts the value of the second argument
+# at the index specified by the first argument
+integerArray.insert(0, 13)
 #Variabele naam: integerArray
-#Variabele waarde: [1, 2, 3, 1, 13]
-#Variabele type: array
+#Variabele waarde: [13, 1, 2, 3, 1]
+#Variabele type: list

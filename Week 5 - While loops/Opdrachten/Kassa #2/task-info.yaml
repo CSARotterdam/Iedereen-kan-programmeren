@@ -2,5 +2,15 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 381
+    length: 21
+    placeholder_text: 1. Maak de juiste conditie
+  - offset: 409
+    length: 44
+    placeholder_text: '2. Bereken de totale prijs (Hint: Doe dit voor 1 product tegelijk)'
+  - offset: 458
+    length: 17
+    placeholder_text: 3. Zorg dat de iterator verhoogd wordt
 - name: tests.py
   visible: false

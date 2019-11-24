@@ -2,5 +2,32 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 181
+    length: 13
+    placeholder_text: 1. Roep de naam van de eerste person op uit de array
+  - offset: 251
+    length: 13
+    placeholder_text: 2. Roep de naam van de tweede person op uit de array
+  - offset: 283
+    length: 18
+    placeholder_text: 3. Roep de leeftijd van de tweede person op uit de array (Let
+      op type)
+  - offset: 354
+    length: 18
+    placeholder_text: 4. Roep de leeftijd van de derde person op uit de array (let
+      op type)
+  - offset: 395
+    length: 13
+    placeholder_text: 5. Roep de naam van de vierde person op uit de array
+  - offset: 427
+    length: 18
+    placeholder_text: 6. Roep de leeftijd van de vierde person op uit de array (Let
+      op type)
+  - offset: 495
+    length: 66
+    placeholder_text: Tel de leeftijden van alle persons bij elkaar op. (Let op type)
 - name: tests.py
+  visible: false
+- name: testoutput.txt
   visible: false

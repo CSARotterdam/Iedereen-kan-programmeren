@@ -817,7 +817,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"if\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"Ja|ja\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"x\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"x == 5\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"True\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"Ja|ja\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"conditionVariable\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"conditionVariable <= 4\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"5\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -1099,7 +1099,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"if\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"Ja|ja\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"x\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"x == 5\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"True\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"Ja|ja\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"conditionVariable\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"conditionVariable <= 4\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"5\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2235,18 +2235,67 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 33,
+                      "length" : 9,
+                      "possible_answer" : "emptyArray",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 69,
+                      "length" : 66,
+                      "possible_answer" : "leeg",
+                      "placeholder_text" : "2. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)"
+                    },
+                    {
+                      "offset" : 240,
+                      "length" : 66,
+                      "possible_answer" : "1,2,3",
+                      "placeholder_text" : "3. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)"
+                    },
+                    {
+                      "offset" : 324,
+                      "length" : 9,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 420,
+                      "length" : 66,
+                      "possible_answer" : "\"1\",\"2\",\"3\"",
+                      "placeholder_text" : "5. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)"
+                    },
+                    {
+                      "offset" : 504,
+                      "length" : 9,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 588,
+                      "length" : 9,
+                      "possible_answer" : "arrayOfArrays",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 624,
+                      "length" : 66,
+                      "possible_answer" : "emptyArray, integerArray, stringArray",
+                      "placeholder_text" : "8. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\n"
+                  "text" : "emptyArray = []\n#Variabele naam: 1. Vul in\n#Variabele waarde/inhoud: 2. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)\n#Variabele type: list\n\nintegerArray = [1, 2, 3]\n#Variabele naam: integerArray\n#Variabele waarde/inhoud: 3. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)\n#Variabele type: 4. Vul in\n\nstringArray = [\"1\", \"2\", \"3\"]\n#Variabele naam: stringArray\n#Variabele waarde/inhoud: 5. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)\n#Variabele type: 6. Vul in\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n#Variabele naam: 7. Vul in\n#Variabele waarde/inhoud: 8. Vul in (Gescheiden door komma's, of leeg als er geen inhoud is)\n#Variabele type: list\n\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"emptyArray\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"leeg|Leeg\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.argsRegex(\"1\", \"2\", \"3\"))\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], \"list|List\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.argsRegex(\"\\\"1\\\"\", \"\\\"2\\\"\", \"\\\"3\\\"\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"list|List\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"arrayOfArrays\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], helper.re.argsRegex(\"emptyArray\", \"integerArray\", \"stringArray\"))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_text" : "<html>\r\nIn Python heten arrays lists.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>\r\n",
               "description_format" : "HTML",
               "feedback_link" : {
                 "link_type" : "STEPIK"
@@ -2258,15 +2307,106 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 168,
+                      "length" : 9,
+                      "possible_answer" : "a",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 197,
+                      "length" : 9,
+                      "possible_answer" : "3",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 293,
+                      "length" : 9,
+                      "possible_answer" : "2",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 320,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 391,
+                      "length" : 9,
+                      "possible_answer" : "\"3\"",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 418,
+                      "length" : 9,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 486,
+                      "length" : 9,
+                      "possible_answer" : "\"1\"",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 513,
+                      "length" : 9,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 583,
+                      "length" : 9,
+                      "possible_answer" : "[\"1\", \"2\", \"3\"]",
+                      "placeholder_text" : "9. Vul in"
+                    },
+                    {
+                      "offset" : 610,
+                      "length" : 10,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "10. Vul in"
+                    },
+                    {
+                      "offset" : 663,
+                      "length" : 10,
+                      "possible_answer" : "f",
+                      "placeholder_text" : "11. Vul in"
+                    },
+                    {
+                      "offset" : 693,
+                      "length" : 10,
+                      "possible_answer" : "1",
+                      "placeholder_text" : "12. Vul in"
+                    },
+                    {
+                      "offset" : 792,
+                      "length" : 10,
+                      "possible_answer" : "\"3\"",
+                      "placeholder_text" : "13. Vul in"
+                    },
+                    {
+                      "offset" : 887,
+                      "length" : 10,
+                      "possible_answer" : "[]",
+                      "placeholder_text" : "14. Vul in"
+                    },
+                    {
+                      "offset" : 915,
+                      "length" : 10,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "15. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\na = integerArray[2]\n#Variabele naam: a\n#Variabele waarde: 3\n#Variabele type: integer\n\nb = integerArray[2-1]\n#Variabele naam: b\n#Variabele waarde: 2\n#Variabele type: integer\n\nc = stringArray[4//2]\n#Variabele naam: c\n#Variabele waarde: \"3\"\n#Variabele type: string\n\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: \"1\"\n#Variabele type: string\n\ne = arrayOfArrays[2]\n#Variabele naam: e\n#Variabele waarde: [\"1\", \"2\", \"3\"]\n#Variabele type: array\n\nf = arrayOfArrays[1][0]\n#Variabele naam: f\n#Variabele waarde: 1\n#Variabele type: integer\n\ng = arrayOfArrays[2][2]\n#Variabele naam: g\n#Variabele waarde: \"3\"\n#Variabele type: string\n\nh = arrayOfArrays[0]\n#Variabele naam: h\n#Variabele waarde: []\n#Variabele type: array\n"
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\na = integerArray[2]\n#Variabele naam: 1. Vul in\n#Variabele waarde: 2. Vul in\n#Variabele type: integer\n\nb = integerArray[2-1]\n#Variabele naam: b\n#Variabele waarde: 3. Vul in\n#Variabele type: 4. Vul in\n\nc = stringArray[4//2]\n#Variabele naam: c\n#Variabele waarde: 5. Vul in\n#Variabele type: 6. Vul in\n\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: 7. Vul in\n#Variabele type: 8. Vul in\n\ne = arrayOfArrays[2]\n#Variabele naam: e\n#Variabele waarde: 9. Vul in\n#Variabele type: 10. Vul in\n\nf = arrayOfArrays[1][0]\n#Variabele naam: 11. Vul in\n#Variabele waarde: 12. Vul in\n#Variabele type: integer\n\ng = arrayOfArrays[2][2]\n#Variabele naam: g\n#Variabele waarde: 13. Vul in\n#Variabele type: string\n\nh = arrayOfArrays[0]\n#Variabele naam: h\n#Variabele waarde: 14. Vul in\n#Variabele type: 15. Vul in\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"a\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"3\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"2\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], \"integer|Integer\")\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"\\\"3\\\"\")\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"string|String\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"\\\"1\\\"\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], \"String|string\")\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], helper.re.listRegex(\"\\\"1\\\"\", \"\\\"2\\\"\", \"\\\"3\\\"\"))\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"list|List\")\n\n    def testAnswer11(self):\n        self.assertEqual(helper.answers[10], \"f\")\n\n    def testAnswer12(self):\n        self.assertEqual(helper.answers[11], \"1\")\n\n    def testAnswer13(self):\n        self.assertEqual(helper.answers[12], \"\\\"3\\\"\")\n\n    def testAnswer14(self):\n        self.assertRegex(helper.answers[13], helper.re.listRegex())\n\n    def testAnswer15(self):\n        self.assertRegex(helper.answers[14], \"list|List\")\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2281,15 +2421,64 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 223,
+                      "length" : 9,
+                      "possible_answer" : "7",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 250,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 357,
+                      "length" : 9,
+                      "possible_answer" : "4",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 384,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 501,
+                      "length" : 9,
+                      "possible_answer" : "\"31\"",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 528,
+                      "length" : 9,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 619,
+                      "length" : 9,
+                      "possible_answer" : "\"abc\"",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 646,
+                      "length" : 9,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "8. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nintegerArray[0] = integerArray[0] + 6\na = integerArray[0]\n#Variabele naam: a\n#Variabele waarde: 7\n#Variabele type: integer\n\nintegerArray[1] = integerArray[1] * 2\nb = integerArray[1]\n#Variabele naam: b\n#Variabele waarde: 4\n#Variabele type: integer\n\nstringArray[2] = stringArray[2] + stringArray[0]\nc = stringArray[2]\n#Variabele naam: c\n#Variabele waarde: \"31\"\n#Variabele type: string\n\nstringArray[0] = \"abc\"\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: \"abc\"\n#Variabele type: string\n"
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nintegerArray[0] = integerArray[0]\na = integerArray[0]\n#Variabele naam: a\n#Variabele waarde: 1. Vul in\n#Variabele type: 2. Vul in\n\nintegerArray[1] = integerArray[1] * 2\nb = integerArray[1]\n#Variabele naam: b\n#Variabele waarde: 3. Vul in\n#Variabele type: 4. Vul in\n\nstringArray[2] = stringArray[2] + stringArray[0]\nc = stringArray[2]\n#Variabele naam: c\n#Variabele waarde: 5. Vul in\n#Variabele type: 6. Vul in\n\nstringArray[0] = \"abc\"\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: 7. Vul in\n#Variabele type: 8. Vul in\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"7\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"integer|Integer\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"4\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], \"integer|Integer\")\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"\\\"31\\\"\")\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"string|String\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"\\\"abc\\\"\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], \"string|String\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2304,15 +2493,58 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 205,
+                      "length" : 9,
+                      "possible_answer" : "[\"first\"]",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 232,
+                      "length" : 9,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 288,
+                      "length" : 9,
+                      "possible_answer" : "emptyArray",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 317,
+                      "length" : 9,
+                      "possible_answer" : "[\"first\", \"second\"]",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 422,
+                      "length" : 9,
+                      "possible_answer" : "[1, 2, 3, 1]",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 527,
+                      "length" : 9,
+                      "possible_answer" : "[\"1\", \"2\", \"3\", \"4\"]",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 746,
+                      "length" : 9,
+                      "possible_answer" : "[13, 1, 2, 3, 1]",
+                      "placeholder_text" : "7. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nemptyArray.append(\"first\")\n#Variabele naam: emptyArray\n#Variabele waarde: [\"first\"]\n#Variabele type: array\n\nemptyArray.append(\"second\")\n#Variabele naam: emptyArray\n#Variabele waarde: [\"first\", \"second\"]\n#Variabele type: array\n\nintegerArray.append(1)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2, 3, 1]\n#Variabele type: array\n\nstringArray.append(\"4\")\n#Variabele naam: stringArray\n#Variabele waarde: [\"1\", \"2\", \"3\", \"4\"]\n#Variabele type: array\n\nintegerArray.append(13)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2, 3, 1, 13]\n#Variabele type: array\n"
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nemptyArray.append(\"first\")\n#Variabele naam: emptyArray\n#Variabele waarde: 1. Vul in\n#Variabele type: 2. Vul in\n\nemptyArray.append(\"second\")\n#Variabele naam: 3. Vul in\n#Variabele waarde: 4. Vul in\n#Variabele type: list\n\nintegerArray.append(1)\n#Variabele naam: integerArray\n#Variabele waarde: 5. Vul in\n#Variabele type: list\n\nstringArray.append(\"4\")\n#Variabele naam: stringArray\n#Variabele waarde: 6. Vul in\n#Variabele type: list\n\n# The insert function inserts the value of the second argument\n# at the index specified by the first argument\nintegerArray.insert(0, 13)\n#Variabele naam: integerArray\n#Variabele waarde: 7. Vul in\n#Variabele type: list\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], helper.re.listRegex(\"\\\"first\\\"\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"list|List\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"emptyArray\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.listRegex(\"\\\"first\\\"\", \"\\\"second\\\"\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], helper.re.listRegex(\"1\", \"2\", \"3\", \"1\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], helper.re.listRegex(\"\\\"1\\\"\", \"\\\"2\\\"\", \"\\\"3\\\"\", \"\\\"1\\\"\"))\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.listRegex(\"13\", \"1\", \"2\", \"3\", \"1\"))\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2327,15 +2559,46 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 146,
+                      "length" : 9,
+                      "possible_answer" : "[1, 2]",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 173,
+                      "length" : 9,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 256,
+                      "length" : 9,
+                      "possible_answer" : "[2]",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 361,
+                      "length" : 9,
+                      "possible_answer" : "[\"1\", \"3\"]",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 510,
+                      "length" : 9,
+                      "possible_answer" : "[\"3\"]",
+                      "placeholder_text" : "5. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\nintegerArray.remove(3)\n#Variabele naam: integerArray\n#Variabele waarde: [1, 2]\n#Variabele type: array\n\nintegerArray.remove(1)\n#Variabele naam: integerArray\n#Variabele waarde: [2]\n#Variabele type: array\n\nstringArray.remove(\"2\")\n#Variabele naam: stringArray\n#Variabele waarde: [\"1\", \"3\"]\n#Variabele type: array\n"
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\nintegerArray.remove(3)\n#Variabele naam: integerArray\n#Variabele waarde: 1. Vul in\n#Variabele type: 2. Vul in\n\nintegerArray.remove(1)\n#Variabele naam: integerArray\n#Variabele waarde: 3. Vul in\n#Variabele type: list\n\nstringArray.remove(\"2\")\n#Variabele naam: stringArray\n#Variabele waarde: 4. Vul in\n#Variabele type: list\n\n# Pop removes the element at the specified index\nstringArray.pop(0)\n#Variabele naam: stringArray\n#Variabele waarde: 5. Vul in\n#Variabele type: list\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], helper.re.listRegex(\"1\", \"2\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"list|List\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.listRegex(\"2\"))\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.listRegex(\"\\\"1\\\"\", \"\\\"3\\\"\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], helper.re.listRegex(\"\\\"3\\\"\"))\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2356,15 +2619,34 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 51,
+                      "length" : 9,
+                      "possible_answer" : "input",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 78,
+                      "length" : 9,
+                      "possible_answer" : "userInput",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 132,
+                      "length" : 9,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "3. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "userInput = input(\"Enter a number\")\n#Functie naam: input\n#Variabele naam: userInput\n#Variabele waarde: unknown\n#Variabele type: string\n"
+                  "text" : "userInput = input(\"Enter a number\")\n#Functie naam: 1. Vul in\n#Variabele naam: 2. Vul in\n#Variabele waarde: unknown\n#Variabele type: 3. Vul in\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"input\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"userInput\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"string|String\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2379,15 +2661,76 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 66,
+                      "length" : 9,
+                      "possible_answer" : "int",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 99,
+                      "length" : 9,
+                      "possible_answer" : "\"123\"",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 126,
+                      "length" : 9,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 155,
+                      "length" : 9,
+                      "possible_answer" : "123",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 182,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 231,
+                      "length" : 9,
+                      "possible_answer" : "str",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 264,
+                      "length" : 9,
+                      "possible_answer" : "123",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 291,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 320,
+                      "length" : 9,
+                      "possible_answer" : "\"123\"",
+                      "placeholder_text" : "9. Vul in"
+                    },
+                    {
+                      "offset" : 347,
+                      "length" : 10,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "10. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "string = \"123\"\ninteger = 123\n\nstring = int(string)\n#Functie naam: int\n#Functie input waarde: \"123\"\n#Variabele naam: string\n#Variabele waarde: 123\n#Variabele type: integer\n\ninteger = str(integer)\n#Functie naam: str\n#Functie input waarde: 123\n#Variabele naam: integer\n#Variabele waarde: \"123\"\n#Variabele type: string\n"
+                  "text" : "string = \"123\"\ninteger = 123\n\nstring = int(string)\n#Functie naam: 1. Vul in\n#Functie input waarde: 2. Vul in\n#Variabele naam: 3. Vul in\n#Variabele waarde: 4. Vul in\n#Variabele type: 5. Vul in\n\ninteger = str(integer)\n#Functie naam: 6. Vul in\n#Functie input waarde: 7. Vul in\n#Variabele naam: 8. Vul in\n#Variabele waarde: 9. Vul in\n#Variabele type: 10. Vul in\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"int\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"\\\"123\\\"\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"string\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"123\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], \"integer|Integer\")\n\n    def testAnswer6(self):\n        self.assertEqual(helper.answers[5], \"str\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"123\")\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"integer\")\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"\\\"123\\\"\")\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"string|String\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2402,15 +2745,70 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 64,
+                      "length" : 9,
+                      "possible_answer" : "print",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 97,
+                      "length" : 9,
+                      "possible_answer" : "5",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 128,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 192,
+                      "length" : 9,
+                      "possible_answer" : "\"5\"",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 223,
+                      "length" : 9,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 287,
+                      "length" : 9,
+                      "possible_answer" : "True",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 318,
+                      "length" : 9,
+                      "possible_answer" : "boolean",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 384,
+                      "length" : 9,
+                      "possible_answer" : "[5, \"5\", True]",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 415,
+                      "length" : 9,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "9. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "# TODO: type solution here\n"
+                  "text" : "x = 5\ny = \"5\"\nz = True\narr = [x, y, z]\n\nprint(x)\n#Functie naam: 1. Vul in\n#Functie input waarde: 2. Vul in\n#Functie input type: 3. Vul in\n\nprint(y)\n#Functie naam: print\n#Functie input waarde: 4. Vul in\n#Functie input type: 5. Vul in\n\nprint(z)\n#Functie naam: print\n#Functie input waarde: 6. Vul in\n#Functie input type: 7. Vul in\n\nprint(arr)\n#Functie naam: print\n#Functie input waarde: 8. Vul in\n#Functie input type: 9. Vul in\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"print\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"5\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"integer|Integer\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"\\\"5\\\"\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], \"string|String\")\n\n    def testAnswer6(self):\n        self.assertEqual(helper.answers[5], \"True\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], \"boolean|Boolean\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], helper.re.listRegex(\"5\", \"\\\"5\\\"\", \"True\"))\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], \"list|List\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2425,15 +2823,100 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 98,
+                      "length" : 9,
+                      "possible_answer" : "len",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 131,
+                      "length" : 9,
+                      "possible_answer" : "[1, 2, 3]",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 162,
+                      "length" : 9,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 218,
+                      "length" : 9,
+                      "possible_answer" : "3",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 337,
+                      "length" : 9,
+                      "possible_answer" : "[\"ab\", \"bcd\", \"efgh\"]",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 368,
+                      "length" : 9,
+                      "possible_answer" : "list",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 424,
+                      "length" : 9,
+                      "possible_answer" : "3",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 451,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 562,
+                      "length" : 9,
+                      "possible_answer" : "\"ab\"",
+                      "placeholder_text" : "9. Vul in"
+                    },
+                    {
+                      "offset" : 593,
+                      "length" : 10,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "10. Vul in"
+                    },
+                    {
+                      "offset" : 656,
+                      "length" : 10,
+                      "possible_answer" : "2",
+                      "placeholder_text" : "11. Vul in"
+                    },
+                    {
+                      "offset" : 791,
+                      "length" : 10,
+                      "possible_answer" : "\"efgh\"",
+                      "placeholder_text" : "12. Vul in"
+                    },
+                    {
+                      "offset" : 823,
+                      "length" : 10,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "13. Vul in"
+                    },
+                    {
+                      "offset" : 886,
+                      "length" : 10,
+                      "possible_answer" : "4",
+                      "placeholder_text" : "14. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "array1 = [1, 2, 3]\narray2 = [\"ab\", \"bcd\", \"efgh\"]\n\n#Task 1\narray1Len = len(array1)\nprint(array1Len)\n\narray2Len = len(array2)\nprint(array1Len)\n\n#Task 2\narray2Index0Len = len(array2[0])\nprint(array2Index0Len)\narray2Index2Len = len(array2[2])\nprint(array2Index2Len)\n"
+                  "text" : "array1 = [1, 2, 3]\narray2 = [\"ab\", \"bcd\", \"efgh\"]\n\n#Task 1\narray1Len = len(array1)\n#Functie naam: 1. Vul in\n#Functie input waarde: 2. Vul in\n#Functie input type: 3. Vul in\n#Variabele naam: array1Len\n#Variabele waarde: 4. Vul in\n#Variabele Type: integer\nprint(array1Len)\n\narray2Len = len(array2)\n#Functie naam: len\n#Functie input waarde: 5. Vul in\n#Functie input type: 6. Vul in\n#Variabele naam: array2Len\n#Variabele waarde: 7. Vul in\n#Variabele Type: 8. Vul in\nprint(array1Len)\n\n#Task 2\narray2Index0Len = len(array2[0])\n#Functie naam: len\n#Functie input waarde: 9. Vul in\n#Functie input type: 10. Vul in\n#Variabele naam: array2Index0Len\n#Variabele waarde: 11. Vul in\n#Variabele Type: integer\nprint(array2Index0Len)\n\narray2Index2Len = len(array2[2])\n#Functie naam: len\n#Functie input waarde: 12. Vul in\n#Functie input type: 13. Vul in\n#Variabele naam: array2Index2Len\n#Variabele waarde: 14. Vul in\n#Variabele Type: integer\nprint(array2Index2Len)\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"len\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.listRegex(\"1\", \"2\", \"3\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"list|List\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"3\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.listRegex(\"\\\"ab\\\"\", \"\\\"bcd\\\"\", \"\\\"efgh\\\"\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"list|List\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"3\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], \"integer|Integer\")\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"\\\"ab\\\"\")\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"string|String\")\n\n    def testAnswer11(self):\n        self.assertEqual(helper.answers[10], \"2\")\n\n    def testAnswer12(self):\n        self.assertEqual(helper.answers[11], \"\\\"efgh\\\"\")\n\n    def testAnswer13(self):\n        self.assertRegex(helper.answers[12], \"string|String\")\n\n    def testAnswer14(self):\n        self.assertEqual(helper.answers[13], \"4\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2444,22 +2927,155 @@
               "task_type" : "edu"
             },
             {
-              "name" : "Range",
+              "name" : "Def",
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 77,
+                      "length" : 9,
+                      "possible_answer" : "add1Tox",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 102,
+                      "length" : 9,
+                      "possible_answer" : "21",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 177,
+                      "length" : 9,
+                      "possible_answer" : "add1Tox",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 202,
+                      "length" : 9,
+                      "possible_answer" : "25",
+                      "placeholder_text" : "4. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "conditionVariable = 0\n\nwhile(conditionVariable <= 4):\n    print(conditionVariable)\n    conditionVariable = conditionVariable + 1\n"
+                  "text" : "x = 20\n\n\ndef add1Tox():\n    global x\n    x = x + 1\n\nadd1Tox()\n#Functie naam: 1. Vul in\n#Waarde van x: 2. Vul in\nprint(x)\n\nadd1Tox()\nadd1Tox()\nadd1Tox()\nadd1Tox()\n#Functie naam: 3. Vul in\n#Waarde van x: 4. Vul in\nprint(x)\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"add1Tox\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"21\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"add1Tox\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"25\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
-              "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Return",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [
+                    {
+                      "offset" : 97,
+                      "length" : 9,
+                      "possible_answer" : "sum",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 133,
+                      "length" : 35,
+                      "possible_answer" : "5, 10",
+                      "placeholder_text" : "2. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 190,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 238,
+                      "length" : 9,
+                      "possible_answer" : "15",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 342,
+                      "length" : 35,
+                      "possible_answer" : "10, 5",
+                      "placeholder_text" : "5. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 399,
+                      "length" : 9,
+                      "possible_answer" : "integer",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 447,
+                      "length" : 9,
+                      "possible_answer" : "15",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 518,
+                      "length" : 9,
+                      "possible_answer" : "str",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 620,
+                      "length" : 9,
+                      "possible_answer" : "\"5\"",
+                      "placeholder_text" : "9. Vul in"
+                    },
+                    {
+                      "offset" : 647,
+                      "length" : 10,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "10. Vul in"
+                    },
+                    {
+                      "offset" : 697,
+                      "length" : 10,
+                      "possible_answer" : "sum",
+                      "placeholder_text" : "10. Vul in"
+                    },
+                    {
+                      "offset" : 734,
+                      "length" : 36,
+                      "possible_answer" : "\"5\", \"Hello, World!\"",
+                      "placeholder_text" : "11. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 792,
+                      "length" : 10,
+                      "possible_answer" : "string",
+                      "placeholder_text" : "12. Vul in"
+                    },
+                    {
+                      "offset" : 841,
+                      "length" : 10,
+                      "possible_answer" : "\"5Hello, World!\"",
+                      "placeholder_text" : "13. Vul in"
+                    }
+                  ],
+                  "is_visible" : true,
+                  "text" : "x = 5\ny = 10\nz = \"Hello, World!\"\n\n\ndef sum(a, b):\n    return a + b\n\na = sum(x, y)\n#Functie naam: 1. Vul in\n#Functie input waarde(n): 2. Vul in (Gescheiden door komma's)\n#Functie input type: 3. Vul in\n#Variabele naam: a\n#Variabele waarde: 4. Vul in\n#Variabele Type: integer\nprint(a)\n\nb = sum(y, x)\n#Functie naam: sum\n#Functie input waarde(n): 5. Vul in (Gescheiden door komma's)\n#Functie input type: 6. Vul in\n#Variabele naam: b\n#Variabele waarde: 7. Vul in\n#Variabele Type: integer\nprint(b)\n\nc = str(x)\n#Functie naam: 8. Vul in\n#Functie input waarde: 5\n#Functie input type: integer\n#Variabele naam: c\n#Variabele waarde: 9. Vul in\n#Variabele Type: 10. Vul in\nprint(c)\n\nd = sum(c, z)\n#Functie naam: 10. Vul in\n#Functie input waarde(n): 11. Vul in (Gescheiden door komma's)\n#Functie input type: 12. Vul in\n#Variabele naam: d\n#Variabele waarde: 13. Vul in\n#Variabele Type: string\nprint(d)\n"
+                },
+                "tests.py" : {
+                  "name" : "tests.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"sum\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.argsRegex(\"5\",\"10\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"integer|Integer\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"15\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.argsRegex(\"10\", \"5\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"integer|Integer\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"15\")\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"str\")\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"\\\"5\\\"\")\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"string|String\")\n\n    def testAnswer11(self):\n        self.assertEqual(helper.answers[10], \"sum\")\n\n    def testAnswer12(self):\n        self.assertRegex(helper.answers[11], helper.re.argsRegex(\"\\\"5\\\"\", \"\\\"Hello, World!\\\"\"))\n\n    def testAnswer13(self):\n        self.assertRegex(helper.answers[12], \"string|String\")\n\n    def testAnswer14(self):\n        self.assertEqual(helper.answers[13], \"\\\"5Hello, World\\\"\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
               "description_format" : "HTML",
               "feedback_link" : {
                 "link_type" : "STEPIK"
@@ -2500,15 +3116,64 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 181,
+                      "length" : 52,
+                      "possible_answer" : "persons[0][0]",
+                      "placeholder_text" : "1. Roep de naam van de eerste person op uit de array"
+                    },
+                    {
+                      "offset" : 290,
+                      "length" : 52,
+                      "possible_answer" : "persons[1][0]",
+                      "placeholder_text" : "2. Roep de naam van de tweede person op uit de array"
+                    },
+                    {
+                      "offset" : 361,
+                      "length" : 70,
+                      "possible_answer" : "str(persons[1][1])",
+                      "placeholder_text" : "3. Roep de leeftijd van de tweede person op uit de array (Let op type)"
+                    },
+                    {
+                      "offset" : 484,
+                      "length" : 69,
+                      "possible_answer" : "str(persons[2][1])",
+                      "placeholder_text" : "4. Roep de leeftijd van de derde person op uit de array (let op type)"
+                    },
+                    {
+                      "offset" : 576,
+                      "length" : 52,
+                      "possible_answer" : "persons[3][0]",
+                      "placeholder_text" : "5. Roep de naam van de vierde person op uit de array"
+                    },
+                    {
+                      "offset" : 647,
+                      "length" : 70,
+                      "possible_answer" : "str(persons[3][1])",
+                      "placeholder_text" : "6. Roep de leeftijd van de vierde person op uit de array (Let op type)"
+                    },
+                    {
+                      "offset" : 767,
+                      "length" : 63,
+                      "possible_answer" : "str(persons[0][1] + persons[1][1] + persons[2][1] + persons[3][1])",
+                      "placeholder_text" : "Tel de leeftijden van alle persons bij elkaar op. (Let op type)"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "persons = [[\"p1\", 19], [\"p2\", 18], [\"p3\", 22], [\"p4\", 21]]\n\nperson1Age = persons[0][1]\nperson3Name = persons[2][0]\n\nprint(\"person 1: \" + persons[0][0] +\" with age: \" + str(person1Age))\nprint(\"person 2: \" + persons[1][0] +\" with age: \" + str(persons[1][1]))\nprint(\"person 3: \" + person3Name +\" with age: \" + str(persons[2][1]))\nprint(\"person 4: \" + persons[3][0] +\" with age: \" + str(persons[3][1]))\n\nprint(\"The combined age of all persons is: \" + str(persons[0][1] + persons[1][1] + persons[2][1] + persons[3][1]))\n"
+                  "text" : "if __name__ == \"__main__\":\n    persons = [[\"Henk\", 19], [\"Karel\", 18], [\"Jan\", 22], [\"Beelzebub\", 21]]\n\nperson1Age = persons[0][1]\nperson3Name = persons[2][0]\n\nprint(\"person 1: \" + 1. Roep de naam van de eerste person op uit de array + \" with age: \" + str(person1Age))\nprint(\"person 2: \" + 2. Roep de naam van de tweede person op uit de array + \" with age: \" + 3. Roep de leeftijd van de tweede person op uit de array (Let op type))\nprint(\"person 3: \" + person3Name + \" with age: \" + 4. Roep de leeftijd van de derde person op uit de array (let op type))\nprint(\"person 4: \" + 5. Roep de naam van de vierde person op uit de array + \" with age: \" + 6. Roep de leeftijd van de vierde person op uit de array (Let op type))\n\nprint(\"The combined age of all persons is: \" + Tel de leeftijden van alle persons bij elkaar op. (Let op type))\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\nimport runpy\nimport sys\nfrom test_helper import failed, passed\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    persons = []\n    @classmethod\n    def setUpClass(cls) -> None:\n        global persons\n        persons = [['test1', 0], ['test2', 500], ['test3', -50], ['test4', 20]]\n\n    def testPerson1NameShouldBeRetrievedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'persons': persons}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[0][10:15], 'test1')\n\n    def testPerson2NameShouldBeRetrievedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'persons': persons}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[1][10:15], 'test2')\n\n    def testPerson2AgeShouldBeRetrievedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'persons': persons}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[1][26:29], '500')\n\n    def testPerson3AgeShouldBeRetrievedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'persons': persons}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[2][26:29], '-50')\n\n    def testPerson4NameShouldBeRetrievedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'persons': persons}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[3][10:15], 'test4')\n\n    def testPerson4AgeShouldBeRetrievedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'persons': persons}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[3][26:28], '20')\n\n    def testTotalAgeShouldBeRetrievedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'persons': persons}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[4][36:39], '470')\n\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"The following condition is not met: \" + str(el[0])[4:-23])\n\n\n\n\n"
+                },
+                "testoutput.txt" : {
+                  "name" : "testoutput.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2523,18 +3188,79 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 151,
+                      "length" : 41,
+                      "possible_answer" : "products[0][0]",
+                      "placeholder_text" : "1. Roep de naam van het eerste product op"
+                    },
+                    {
+                      "offset" : 259,
+                      "length" : 41,
+                      "possible_answer" : "products[1][0]",
+                      "placeholder_text" : "2. Roep de naam van het tweede product op"
+                    },
+                    {
+                      "offset" : 367,
+                      "length" : 41,
+                      "possible_answer" : "products[2][0]",
+                      "placeholder_text" : "3. Roep de naam van het derde product op."
+                    },
+                    {
+                      "offset" : 443,
+                      "length" : 52,
+                      "possible_answer" : "products[0][1] * amounts[0] + \\\n        products[1][1] * amounts[1] + \\\n        products[2][1] * amounts[2]",
+                      "placeholder_text" : "4. Bereken het totale bedrag dat betaalt moet worden"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "products = [[\"Apple\", 2], [\"Bread\", 1], [\"Melon\", 3]]\namounts = [0, 0, 0]\n\namounts[0] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\namounts[1] = int(input(\"How much \"+products[1][0]+ \" would you like?\\n\"))\namounts[2] = int(input(\"How much \"+products[0][0]+ \" would you like?\\n\"))\n\ntotal = products[0][1] * amounts[0] + products[1][1] * amounts[1] + products[2][1] * amounts[2]\n\nprint(\"You have to pay: \"+ str(total))\n"
+                  "text" : "if __name__ == \"__main__\":\n    products = [[\"Apple\", 2], [\"Bread\", 1], [\"Melon\", 3]]\n    amounts = [0, 0, 0]\n\n    amounts[0] = int(input(\"How much \" + 1. Roep de naam van het eerste product op + \" would you like?\\n\"))\n    amounts[1] = int(input(\"How much \" + 2. Roep de naam van het tweede product op + \" would you like?\\n\"))\n    amounts[2] = int(input(\"How much \" + 3. Roep de naam van het derde product op. + \" would you like?\\n\"))\n\ntotal = 4. Bereken het totale bedrag dat betaalt moet worden\n\nprint(\"You have to pay: \" + str(total))\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\nimport runpy\nimport sys\nfrom test_helper import failed, passed\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    products, amounts = [], []\n    @classmethod\n    def setUpClass(cls) -> None:\n        global products, amounts\n        products = [['test1', 1], ['test2', -2], ['test3', 4]]\n        amounts = [20, 500, 3]\n\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"products[0][0]\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"products[1][0]\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"products[2][0]\")\n\n    def testTotalShouldBeCalculatedCorrectly(self):\n        sys.stdout = open('testoutput.txt', 'w')\n        print(runpy.run_module('task', init_globals={'products': products, 'amounts':amounts}))\n        sys.stdout = sys.__stdout__\n        self.assertEqual(open('testoutput.txt','r').readlines()[0][17:21], '-968')\n\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"The following condition is not met: \" + str(el[0])[4:-23])\n\n\n\n\n"
+                },
+                "testoutput.txt" : {
+                  "name" : "testoutput.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
+              "description_format" : "HTML",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "Extra - Fibonacci",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [
+                    {
+                      "offset" : 364,
+                      "length" : 32,
+                      "possible_answer" : "if n <= 1:\n        return n;\n    else:\n        return(Fibonacci(n-1) + Fibonacci(n-2))",
+                      "placeholder_text" : "Implement the fibonacci sequence"
+                    }
+                  ],
+                  "is_visible" : true,
+                  "text" : "# The fibonacci sequence is defined as follows: Fibo(n) = Fibo(n-1) + Fibo(n-2)\n# Where Fibo(0) = 0 and Fibo(1) = 1\n# This leads to a sequence that grows as follows: 0,1,1,2,3,5,8,13,21... etc.\n# Create a function that for any given integer n, returns the nth element of the fibonacci sequence.\n# Do not edit the function name or arguments.\n\ndef Fibonacci(n):\n    Implement the fibonacci sequence\n\n\n# Run or edit this code to test your function\nprint(Fibonacci(0))     #Should be 0\nprint(Fibonacci(1))     #Should be 1\nprint(Fibonacci(2))     #Should be 1\nprint(Fibonacci(10))    #Should be 55\n"
+                },
+                "tests.py" : {
+                  "name" : "tests.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\nimport task\nfrom test_helper import failed, passed\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    @staticmethod\n    def fibo(n):\n        if n <= 1:\n            return n\n        else:\n            return varAanmaken.fibo(n - 1) + varAanmaken.fibo(n - 2)\n\n    def testFibonacciSequenceShouldBeImplementedCorrectly(self):\n        for n in range(30):\n            self.assertEqual(varAanmaken.fibo(n), task.Fibonacci(n))\n\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"The following condition is not met: \" + str(el[0])[4:-23])\n\n\n\n\n"
+                }
+              },
+              "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
               "description_format" : "HTML",
               "feedback_link" : {
                 "link_type" : "STEPIK"
@@ -2558,15 +3284,46 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 33,
+                      "length" : 9,
+                      "possible_answer" : "while",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 56,
+                      "length" : 9,
+                      "possible_answer" : "Ja",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 90,
+                      "length" : 35,
+                      "possible_answer" : "conditionVariable",
+                      "placeholder_text" : "3. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 137,
+                      "length" : 9,
+                      "possible_answer" : "conditionVariable <= 4",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 172,
+                      "length" : 9,
+                      "possible_answer" : "5",
+                      "placeholder_text" : "5. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "conditionVariable = 0\n\nwhile(conditionVariable <= 4):\n    print(conditionVariable)\n    conditionVariable = conditionVariable + 1\n"
+                  "text" : "conditionVariable = 0\n\n#Keyword: 1. Vul in\n#Uitgevoerd: 2. Vul in\n#Conditie variabele(n): 3. Vul in (Gescheiden door komma's)\n#Conditie: 4. Vul in\n#Aantal keer uitgevoerd: 5. Vul in\nwhile(conditionVariable <= 4):\n    print(conditionVariable)\n    conditionVariable = conditionVariable + 1\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"if\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"Ja|ja\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"x\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"x == 5\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"True\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2581,15 +3338,70 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 40,
+                      "length" : 9,
+                      "possible_answer" : "while",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 90,
+                      "length" : 35,
+                      "possible_answer" : "condition",
+                      "placeholder_text" : "2. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 137,
+                      "length" : 9,
+                      "possible_answer" : "condition",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 172,
+                      "length" : 9,
+                      "possible_answer" : "5",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 217,
+                      "length" : 35,
+                      "possible_answer" : "if, else",
+                      "placeholder_text" : "5. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 270,
+                      "length" : 9,
+                      "possible_answer" : "Ja",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 308,
+                      "length" : 35,
+                      "possible_answer" : "counter",
+                      "placeholder_text" : "6. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 359,
+                      "length" : 9,
+                      "possible_answer" : "counter <= 4",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 398,
+                      "length" : 9,
+                      "possible_answer" : "5",
+                      "placeholder_text" : "9. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "condition = True\ncounter = 0\n\nwhile(condition):\n    if(counter <= 4):\n        print(counter)\n        counter = counter + 1\n    else:\n        condition = False\n"
+                  "text" : "condition = True\ncounter = 0\n\n#Keyword: 1. Vul in\n#Uitgevoerd: Ja\n#Conditie variabele(n): 2. Vul in (Gescheiden door komma's)\n#Conditie: 3. Vul in\n#Aantal keer uitgevoerd: 4. Vul in\nwhile(condition):\n    #Keyword(s): 5. Vul in (Gescheiden door komma's)\n    #Uitgevoerd: 5. Vul in\n    #Conditie variabele(n): 6. Vul in (Gescheiden door komma's)\n    #Conditie: 8. Vul in\n    #Aantal keer uitgevoerd: 9. Vul in\n    if(counter <= 4):\n        print(counter)\n        counter = counter + 1\n    else:\n        condition = False\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"condition\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"condition\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"5\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.argsRegex('if', 'else'))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"Ja|ja\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"counter\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], helper.re.expressionToRegex(\"counter <= 4\"))\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"5\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2604,15 +3416,64 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 45,
+                      "length" : 9,
+                      "possible_answer" : "while",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 95,
+                      "length" : 35,
+                      "possible_answer" : "OuterCounter",
+                      "placeholder_text" : "2. Vul in (Gescheiden door komma's)"
+                    },
+                    {
+                      "offset" : 142,
+                      "length" : 9,
+                      "possible_answer" : "OuterCounter <= 4",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 177,
+                      "length" : 9,
+                      "possible_answer" : "5",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 230,
+                      "length" : 9,
+                      "possible_answer" : "while",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 288,
+                      "length" : 9,
+                      "possible_answer" : "InnerCounter",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 313,
+                      "length" : 9,
+                      "possible_answer" : "InnerCounter <= 5",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 352,
+                      "length" : 9,
+                      "possible_answer" : "30",
+                      "placeholder_text" : "8. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : ""
+                  "text" : "OuterCounter = 0\nInnerCounter = 0\n\n#Keyword: 1. Vul in\n#Uitgevoerd: Ja\n#Conditie variabele(n): 2. Vul in (Gescheiden door komma's)\n#Conditie: 3. Vul in\n#Aantal keer uitgevoerd: 4. Vul in\nwhile(OuterCounter <= 4):\n    #Keyword(s): 5. Vul in\n    #Uitgevoerd: Ja\n    #Conditie variabele(n): 6. Vul in\n    #Conditie: 7. Vul in\n    #Aantal keer uitgevoerd: 8. Vul in\n    while(InnerCounter <= 5):\n        print(InnerCounter)\n        InnerCounter = InnerCounter + 1\n\n    InnerCounter = 0\n    OuterCounter = OuterCounter + 1\n\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"OuterCounter\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"OuterCounter <= 4\"))\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"5\")\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"while\")\n\n    def testAnswer6(self):\n        self.assertEqual(helper.answers[5], \"InnerCounter\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.expressionToRegex(\"InnerCounter <= 5\"))\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"30\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2627,15 +3488,76 @@
               "files" : {
                 "task.py" : {
                   "name" : "task.py",
-                  "placeholders" : [ ],
+                  "placeholders" : [
+                    {
+                      "offset" : 41,
+                      "length" : 9,
+                      "possible_answer" : "while",
+                      "placeholder_text" : "1. Vul in"
+                    },
+                    {
+                      "offset" : 75,
+                      "length" : 9,
+                      "possible_answer" : "conditionVariable1",
+                      "placeholder_text" : "2. Vul in"
+                    },
+                    {
+                      "offset" : 96,
+                      "length" : 9,
+                      "possible_answer" : "conditionVariable1",
+                      "placeholder_text" : "3. Vul in"
+                    },
+                    {
+                      "offset" : 131,
+                      "length" : 9,
+                      "possible_answer" : "10",
+                      "placeholder_text" : "4. Vul in"
+                    },
+                    {
+                      "offset" : 374,
+                      "length" : 9,
+                      "possible_answer" : "conditionVariable2 > -1",
+                      "placeholder_text" : "5. Vul in"
+                    },
+                    {
+                      "offset" : 409,
+                      "length" : 9,
+                      "possible_answer" : "10",
+                      "placeholder_text" : "6. Vul in"
+                    },
+                    {
+                      "offset" : 664,
+                      "length" : 9,
+                      "possible_answer" : "conditionVariable3 >= 0",
+                      "placeholder_text" : "7. Vul in"
+                    },
+                    {
+                      "offset" : 699,
+                      "length" : 9,
+                      "possible_answer" : "8",
+                      "placeholder_text" : "8. Vul in"
+                    },
+                    {
+                      "offset" : 963,
+                      "length" : 9,
+                      "possible_answer" : "conditionVariable4 < len(array)",
+                      "placeholder_text" : "9. Vul in"
+                    },
+                    {
+                      "offset" : 998,
+                      "length" : 10,
+                      "possible_answer" : "4",
+                      "placeholder_text" : "10. Vul in"
+                    }
+                  ],
                   "is_visible" : true,
-                  "text" : "#Task 1\nconditionVariable1 = 0\n\nwhile(conditionVariable1 < 10):\n    print(conditionVariable1 + 1)\n    conditionVariable1 = conditionVariable1 + 1\n\n#Task 2\nconditionVariable2 = 10\n\nwhile(conditionVariable2>-1):\n    conditionVariable2 = conditionVariable2 - 1\n\n#Task 3\nconditionVariable3 = len(\"aString\")\nwhile(conditionVariable3>=0):\n    conditionVariable3 =conditionVariable3 - 1\n\n#Task 4\narray=[4, 7, 123, 556]\nconditionVariable4 = 0\n\nwhile(conditionVariable4 < len(array)):\n    print(conditionVariable4)\n    conditionVariable4 = conditionVariable4 + 1\n"
+                  "text" : "#Task 1\nconditionVariable1 = 0\n#Keyword: 1. Vul in\n#Conditie variabele(n): 2. Vul in\n#Conditie: 3. Vul in\n#Aantal keer uitgevoerd: 4. Vul in\nwhile(conditionVariable1 < 10):\n    print(\"var1: \" + str(conditionVariable1 + 1))\n    conditionVariable1 = conditionVariable1 + 1\n\n#Task 2\nconditionVariable2 = 10\n#Keyword: while\n#Conditie variabele(n): conditionVariable2\n#Conditie: 5. Vul in\n#Aantal keer uitgevoerd: 6. Vul in\nwhile(conditionVariable2 > -1):\n    print(\"var2: \" + str(conditionVariable2 - 1))\n    conditionVariable2 = conditionVariable2 - 1\n\n#Task 3\nconditionVariable3 = len(\"aString\")\n#Keyword: while\n#Conditie variabele(n): conditionVariable3\n#Conditie: 7. Vul in\n#Aantal keer uitgevoerd: 8. Vul in\nwhile(conditionVariable3 >= 0):\n    print(\"var3: \" + str(conditionVariable3 - 1))\n    conditionVariable3 =conditionVariable3 - 1\n\n#Task 4\narray=[4, 7, 123, 556]\nconditionVariable4 = 0\n#Keyword: while\n#Conditie variabele(n): conditionVariable4\n#Conditie: 9. Vul in\n#Aantal keer uitgevoerd: 10. Vul in\nwhile(conditionVariable4 < len(array)):\n    print(\"var4: \" + str(conditionVariable4 + 1))\n    conditionVariable4 = conditionVariable4 + 1\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "from test_helper import run_common_tests, failed, passed, get_answer_placeholders\nfrom regex_helper import *\nfrom UserInputHelper import *\n\ndef test_answer_placeholders():\n    helper = Helper()\n    for answerNumber in range(len(helper.answers)):\n        outcome = False\n        backupText = \"\"\n        if(answerNumber == 0):\n            outcome = helper.CheckInput(answerNumber, \"x\")\n        elif(answerNumber == 1):\n            outcome = helper.CheckInput(answerNumber, \"235\")\n        elif(answerNumber == 2):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 3):\n            outcome = helper.CheckInput(answerNumber, \"stappenteller\")\n        elif(answerNumber == 4):\n            outcome = helper.CheckInput(answerNumber, \"0\")\n        elif(answerNumber == 5):\n            outcome = helper.CheckInput(answerNumber, \"45\")\n        elif(answerNumber == 6):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 7):\n            outcome = helper.CheckInput(answerNumber, \"aantalHoeken\")\n        elif(answerNumber == 8):\n            outcome = helper.CheckInput(answerNumber, \"4\")\n        elif(answerNumber == 9):\n            outcome = helper.CheckInput(answerNumber, \"integer|Integer\")\n        elif(answerNumber == 10):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varA = -342\"))\n        elif(answerNumber == 11):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varB = 244\"))\n        elif(answerNumber == 12):\n            outcome = helper.CheckInput(answerNumber, helper.re.expressionToRegex(\"varC = 8942\"))\n        CheckOutcome(outcome, answerNumber, backupText)\n\ndef CheckOutcome(outcome, answerNumber, backupText):\n    if(outcome):\n        passed(\"Answer #\" + str(answerNumber) + \" is correct!\")\n    else:\n        failed(\"There is an error in answer #\"+ str(answerNumber)+\" \" + backupText)\n\nif __name__ == '__main__':\n    run_common_tests()\n    test_answer_placeholders()\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"conditionVariable1\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"conditionVariable1 < 10\"))\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"10\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.expressionToRegex(\"conditionVariable2 > -1\"))\n\n    def testAnswer6(self):\n       self.assertEqual(helper.answers[5], \"10\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.expressionToRegex(\"conditionVariable3 >= 0\"))\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"8\")\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], helper.re.expressionToRegex(\"conditionVariable4 < len\\(array\\)\"))\n\n    def testAnswer10(self):\n        self.assertEqual(helper.answers[9], \"4\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2899,7 +3821,7 @@
       "name" : "regex_helper.py",
       "placeholders" : [ ],
       "is_visible" : true,
-      "text" : "import re\r\n\r\nclass regex_helper:\r\n    VAR_STRUCTURE = \"^[_|a-zA-Z]\\w*\\s*=\\s*(\\\".*\\\"|\\'.*\\'|\\d+|\\d+\\.\\d+|True|False)$\"\r\n    FLOAT = \"^\\d*\\.\\d*$\"\r\n    STRING = \"^[\\\"\\'].*[\\\"\\']$\"\r\n    INTEGER = \"^(?<!\\d\\.)(-)*\\d+(?!\\.\\d)$\"\r\n    BOOLEAN = \"(True|False)$\"\r\n    COMMENT = \"#.*$\"\r\n    opArrNoEscape = [\"-\", \"/\", \"//\", \"%\",\r\n                     \"=\", \"-=\", \"/=\", \"//=\", \"&=\", \">>=\", \"<<=\",\r\n                     \"==\", \"!=\", \">\", \"<\", \">=\", \"<=\",\r\n                     \"and\", \"or\",\r\n                     \"is\", \"is not\",\r\n                     \"in\", \"not in\",\r\n                     \"&\", \"~\", \"<<\", \">>\", ]\r\n    opArrMustBeEscaped = [\"+\", \"*\", \"+=\", \"*=\", \"|=\", \"^=\", \"|\", \"^\", ]\r\n    opArrMustBeEscapedTwice = [\"**\", \"**=\", ]\r\n    opArrArity1 = [\"not\", ]\r\n    ifLine1 = \"if()\"\r\n\r\n    opArr = opArrNoEscape + opArrMustBeEscaped + opArrMustBeEscapedTwice + opArrArity1\r\n\r\n    # Create a regex matching any applicable operands being applied to any given operator\r\n    def createOperatorPattern(self, operator, *operands):\r\n        if operator in self.opArrMustBeEscaped:\r\n            return f\"^{operands[0]}\\s*\\{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrMustBeEscapedTwice:\r\n            return f\"^{operands[0]}\\s*\\{operator[0]}\\{operator[1:]}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrNoEscape:\r\n            return f\"^{operands[0]}\\s*{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrArity1:\r\n            return f\"^{operator}\\s*{operands[0]}$\"\r\n        else:\r\n            return \"^$\"\r\n\r\n    # Create a regex matching a given expression\r\n    # Param: operands - Indexable collection containing all operands in left to right order\r\n    # Param: operators - Indexable collection containing all operators in left to right order\r\n    def createExpressionPattern(self, operands, operators):\r\n        regexOut = \"^\"\r\n\r\n        # sanitizing String operands\r\n        escOperands = []\r\n        for operand in operands:\r\n            escOperands.append(operand.translate(str.maketrans({\"\\\"\": r\"\\\"\"})))\r\n\r\n        print(escOperands)\r\n        count = 0\r\n        loopOps = escOperands[0:-1]\r\n\r\n        # Looping through Operators and operands 0 through N-1\r\n        # Because of the structure of expressions, we can encounter up to two operators between each operand.\r\n        for operand in loopOps:\r\n            if operators[count] in self.opArrArity1 and count < len(operators) - 1:\r\n                regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n            regexOut += operand + \"\\s*\"\r\n\r\n            if count < len(operators):\r\n                if operators[count] in self.opArrMustBeEscaped:\r\n                    regexOut += f\"\\{operators[count]}\\s*\"\r\n                elif operators[count] in self.opArrMustBeEscapedTwice:\r\n                    regexOut += f\"\\{operators[count][0]}\\{operators[count][1:]}\\s*\"\r\n                else:\r\n                    regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n        # Adding final operand and optionally operator\r\n        if operators[-1] in self.opArrArity1:\r\n            regexOut += f\"{operators[-1]}\\s*{escOperands[-1]}\"\r\n        else:\r\n            regexOut += f\"{escOperands[-1]}$\"\r\n\r\n        return regexOut\r\n\r\n    # Takes in an expression as it would be typed in regular python, and returns a regex matching that expression.\r\n    def expressionToRegex(self, stringIn):\r\n        operands = []\r\n        operators = []\r\n\r\n        PATTERN = re.compile(r'''((?:[^ \"']|\"[^\"]*\"|'[^']*')+)''')\r\n        for word in PATTERN.split(stringIn)[1::2]:\r\n            if word in self.opArr:\r\n                operators.append(word)\r\n            else:\r\n                operands.append(word)\r\n\r\n        return self.createExpressionPattern(operands, operators)\r\n\r\n    def ifRegex(self,conditionStr):\r\n        ifRegex = \"if *(\\( *\"\r\n        ifRegex2 = \" *\\)| *\"\r\n        ifRegex3 = \" *):\"\r\n        condRegex = self.expressionToRegex(conditionStr)[1:-1]\r\n        return ifRegex + condRegex + ifRegex2 + condRegex + ifRegex3\r\n\r\n    def whileRegex(self,conditionStr):\r\n        whileRegex = \"while *(\\( *\"\r\n        whileRegex2 = \" *\\)| *\"\r\n        whileRegex3 = \" *):\"\r\n        condRegex = self.expressionToRegex(conditionStr)[1:-1]\r\n        return whileRegex + condRegex + whileRegex2 + condRegex + whileRegex3\r\n\r\n    def forRegex(self,iteratorStr,collectionStr):\r\n        return f\"^for\\s*(({iteratorStr})|(\\({iteratorStr}\\)))\\s*in\\s*(({collectionStr})|(\\({collectionStr}\\))):\\s*$\"\r\n\r\n    def argsRegex(self, *args):\r\n        out = \"^\" + args[0] + \"\\s*\"\r\n        for string in args[1:]:\r\n            out += \",\\s*\" + string + \"\\s*\"\r\n        out += \"$\"\r\n        return out\r\n\r\n    def splitSpace(self, stringIn):\r\n        PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\\+|\\*|\\+=|\\*=|\\|=|\\^=|\\||\\^|\\*\\*|\\*\\*=)''')\r\n        arrout = []\r\n        for el in PATTERN.split(stringIn):\r\n            arrout.append(el.strip())\r\n        return arrout\r\n\r\n    def CheckAbstractAbstraction(self, input):\r\n        self.baseExecute(input, )\r\n\r\n    def setupRegex(self):\r\n        pass\r\n\r\n    def baseExecute(self, input, structure):\r\n        pattern = re.compile(structure)\r\n        matches = pattern.findall(input)\r\n        return matches\r\n\r\n    def execute(self, input, structure):\r\n        return len(self.baseExecute(input, structure)) > 0\r\n\r\n    def varStructureCheck(self, input):\r\n        return self.execute(input, self.VAR_STRUCTURE)\r\n\r\n    def customVarMatch(self, input, varName, varData):\r\n        return self.execute(input, varName + \"\\s*=\\s*\" + varData)\r\n\r\n    def typeCheck(self, input, type):\r\n        structure = \"\"\r\n        if type == \"string\":\r\n            structure = self.STRING\r\n        elif type == \"integer\":\r\n            structure = self.INTEGER\r\n        elif type == \"float\":\r\n            structure = self.FLOAT\r\n        elif type == \"boolean\":\r\n            structure = self.BOOLEAN\r\n        else:\r\n            pass\r\n        return self.execute(input, structure)\r\n"
+      "text" : "import re\r\n\r\nclass regex_helper:\r\n    VAR_STRUCTURE = \"^[_|a-zA-Z]\\w*\\s*=\\s*(\\\".*\\\"|\\'.*\\'|\\d+|\\d+\\.\\d+|True|False)$\"\r\n    FLOAT = \"^\\d*\\.\\d*$\"\r\n    STRING = \"^[\\\"\\'].*[\\\"\\']$\"\r\n    INTEGER = \"^(?<!\\d\\.)(-)*\\d+(?!\\.\\d)$\"\r\n    BOOLEAN = \"(True|False)$\"\r\n    COMMENT = \"#.*$\"\r\n    opArrNoEscape = [\"-\", \"/\", \"//\", \"%\",\r\n                     \"=\", \"-=\", \"/=\", \"//=\", \"&=\", \">>=\", \"<<=\",\r\n                     \"==\", \"!=\", \">\", \"<\", \">=\", \"<=\",\r\n                     \"and\", \"or\",\r\n                     \"is\", \"is not\",\r\n                     \"in\", \"not in\",\r\n                     \"&\", \"~\", \"<<\", \">>\", ]\r\n    opArrMustBeEscaped = [\"+\", \"*\", \"+=\", \"*=\", \"|=\", \"^=\", \"|\", \"^\", ]\r\n    opArrMustBeEscapedTwice = [\"**\", \"**=\", ]\r\n    opArrArity1 = [\"not\", ]\r\n    ifLine1 = \"if()\"\r\n\r\n    opArr = opArrNoEscape + opArrMustBeEscaped + opArrMustBeEscapedTwice + opArrArity1\r\n\r\n    # Create a regex matching any applicable operands being applied to any given operator\r\n    def createOperatorPattern(self, operator, *operands):\r\n        if operator in self.opArrMustBeEscaped:\r\n            return f\"^{operands[0]}\\s*\\{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrMustBeEscapedTwice:\r\n            return f\"^{operands[0]}\\s*\\{operator[0]}\\{operator[1:]}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrNoEscape:\r\n            return f\"^{operands[0]}\\s*{operator}\\s*{operands[1]}$\"\r\n        elif operator in self.opArrArity1:\r\n            return f\"^{operator}\\s*{operands[0]}$\"\r\n        else:\r\n            return \"^$\"\r\n\r\n    # Create a regex matching a given expression\r\n    # Param: operands - Indexable collection containing all operands in left to right order\r\n    # Param: operators - Indexable collection containing all operators in left to right order\r\n    def createExpressionPattern(self, operands, operators):\r\n        regexOut = \"^\"\r\n\r\n        # sanitizing String operands\r\n        escOperands = []\r\n        for operand in operands:\r\n            escOperands.append(operand.translate(str.maketrans({\"\\\"\": r\"\\\"\"})))\r\n\r\n        print(escOperands)\r\n        count = 0\r\n        loopOps = escOperands[0:-1]\r\n\r\n        # Looping through Operators and operands 0 through N-1\r\n        # Because of the structure of expressions, we can encounter up to two operators between each operand.\r\n        for operand in loopOps:\r\n            if operators[count] in self.opArrArity1 and count < len(operators) - 1:\r\n                regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n            regexOut += operand + \"\\s*\"\r\n\r\n            if count < len(operators):\r\n                if operators[count] in self.opArrMustBeEscaped:\r\n                    regexOut += f\"\\{operators[count]}\\s*\"\r\n                elif operators[count] in self.opArrMustBeEscapedTwice:\r\n                    regexOut += f\"\\{operators[count][0]}\\{operators[count][1:]}\\s*\"\r\n                else:\r\n                    regexOut += f\"{operators[count]}\\s*\"\r\n                count = count + 1 if count < len(operators) - 1 else count\r\n\r\n        # Adding final operand and optionally operator\r\n        if operators[-1] in self.opArrArity1:\r\n            regexOut += f\"{operators[-1]}\\s*{escOperands[-1]}\"\r\n        else:\r\n            regexOut += f\"{escOperands[-1]}$\"\r\n\r\n        return regexOut\r\n\r\n    # Takes in an expression as it would be typed in regular python, and returns a regex matching that expression.\r\n    def expressionToRegex(self, stringIn):\r\n        operands = []\r\n        operators = []\r\n\r\n        PATTERN = re.compile(r'''((?:[^ \"']|\"[^\"]*\"|'[^']*')+)''')\r\n        for word in PATTERN.split(stringIn)[1::2]:\r\n            if word in self.opArr:\r\n                operators.append(word)\r\n            else:\r\n                operands.append(word)\r\n\r\n        return self.createExpressionPattern(operands, operators)\r\n\r\n    def ifRegex(self,conditionStr):\r\n        ifRegex = \"if *(\\( *\"\r\n        ifRegex2 = \" *\\)| *\"\r\n        ifRegex3 = \" *):\"\r\n        condRegex = self.expressionToRegex(conditionStr)[1:-1]\r\n        return ifRegex + condRegex + ifRegex2 + condRegex + ifRegex3\r\n\r\n    def whileRegex(self,conditionStr):\r\n        whileRegex = \"while *(\\( *\"\r\n        whileRegex2 = \" *\\)| *\"\r\n        whileRegex3 = \" *):\"\r\n        condRegex = self.expressionToRegex(conditionStr)[1:-1]\r\n        return whileRegex + condRegex + whileRegex2 + condRegex + whileRegex3\r\n\r\n    def forRegex(self,iteratorStr,collectionStr):\r\n        return f\"^for\\s*(({iteratorStr})|(\\({iteratorStr}\\)))\\s*in\\s*(({collectionStr})|(\\({collectionStr}\\))):\\s*$\"\r\n\r\n    def argsRegex(self, *args):\r\n        out = \"^\" + args[0] + \"\\s*\"\r\n        for string in args[1:]:\r\n            out += \",\\s*\" + string + \"\\s*\"\r\n        out += \"$\"\r\n        return out\r\n\r\n    def listRegex(self, *args):\r\n        return \"^\\[\\s*\" + self.argsRegex(*args)[1:-1] + \"\\s*\\]$\"\r\n\r\n    def splitSpace(self, stringIn):\r\n        PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\\+|\\*|\\+=|\\*=|\\|=|\\^=|\\||\\^|\\*\\*|\\*\\*=)''')\r\n        arrout = []\r\n        for el in PATTERN.split(stringIn):\r\n            arrout.append(el.strip())\r\n        return arrout\r\n\r\n    def CheckAbstractAbstraction(self, input):\r\n        self.baseExecute(input, )\r\n\r\n    def setupRegex(self):\r\n        pass\r\n\r\n    def baseExecute(self, input, structure):\r\n        pattern = re.compile(structure)\r\n        matches = pattern.findall(input)\r\n        return matches\r\n\r\n    def execute(self, input, structure):\r\n        return len(self.baseExecute(input, structure)) > 0\r\n\r\n    def varStructureCheck(self, input):\r\n        return self.execute(input, self.VAR_STRUCTURE)\r\n\r\n    def customVarMatch(self, input, varName, varData):\r\n        return self.execute(input, varName + \"\\s*=\\s*\" + varData)\r\n\r\n    def typeCheck(self, input, type):\r\n        structure = \"\"\r\n        if type == \"string\":\r\n            structure = self.STRING\r\n        elif type == \"integer\":\r\n            structure = self.INTEGER\r\n        elif type == \"float\":\r\n            structure = self.FLOAT\r\n        elif type == \"boolean\":\r\n            structure = self.BOOLEAN\r\n        else:\r\n            pass\r\n        return self.execute(input, structure)\r\n"
     },
     {
       "name" : "UserInputHelper.py",

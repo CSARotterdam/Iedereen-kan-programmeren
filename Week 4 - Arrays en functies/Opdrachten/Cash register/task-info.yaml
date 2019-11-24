@@ -2,5 +2,20 @@ type: edu
 files:
 - name: task.py
   visible: true
+  placeholders:
+  - offset: 151
+    length: 14
+    placeholder_text: 1. Roep de naam van het eerste product op
+  - offset: 232
+    length: 14
+    placeholder_text: 2. Roep de naam van het tweede product op
+  - offset: 313
+    length: 14
+    placeholder_text: 3. Roep de naam van het derde product op.
+  - offset: 362
+    length: 107
+    placeholder_text: 4. Bereken het totale bedrag dat betaalt moet worden
 - name: tests.py
   visible: false
+- name: testoutput.txt
+  visible: true

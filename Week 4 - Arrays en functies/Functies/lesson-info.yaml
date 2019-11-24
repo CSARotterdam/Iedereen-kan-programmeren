@@ -3,5 +3,6 @@ content:
 - Casting
 - Print
 - Len
-- Range
+- Def
+- Return
 - Extra - Try Except
