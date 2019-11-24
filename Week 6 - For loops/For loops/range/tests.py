@@ -12,28 +12,19 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[0], "20")
 
     def testAnswer2(self):
-        self.assertEqual(helper.answers[1], "0")
+        self.assertEqual(helper.answers[1], "19")
 
     def testAnswer3(self):
-        self.assertEqual(helper.answers[2], "19")
+        self.assertEqual(helper.answers[2], "0")
 
     def testAnswer4(self):
-        self.assertEqual(helper.answers[3], "y")
+        self.assertEqual(helper.answers[0], "10")
 
     def testAnswer5(self):
-        self.assertRegex(helper.answers[4], helper.re.rangeRegex("10", helper.re.expressionToRegex("40 // 4 + 3")[1:-1]))
+        self.assertEqual(helper.answers[1], "19")
 
-    def testAnswer6(self):
-        self.assertEqual(helper.answers[5], "3")
-
-    def testAnswer7(self):
-        self.assertEqual(helper.answers[6], "12")
-
-    def testAnswer8(self):
-        self.assertRegex(helper.answers[7], helper.re.rangeRegex("0"))
-
-    def testAnswer9(self):
-        self.assertEqual(helper.answers[8], "0")
+    def testAnswer(self):
+        self.assertEqual(helper.answers[2], "10")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)

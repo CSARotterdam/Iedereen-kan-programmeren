@@ -116,6 +116,16 @@ class regex_helper:
     def listRegex(self, *args):
         return "^\[\s*" + self.argsRegex(*args)[1:-1] + "\s*\]$"
 
+    def rangeRegex(self, *args):
+        out =  "^range\(\s*" + args[0]
+        range2 = "\s*,\s*"
+        range3 = "\s*\)$"
+
+        for el in args[1:]:
+            out += range2 + el
+
+        return out + range3
+
     def splitSpace(self, stringIn):
         PATTERN = re.compile(r'''(-|/|//|%|==|=|-=|/=|//=|&=|>>=|<<=|!=|>|<|>=|<=|&|~|<<|>>|\+|\*|\+=|\*=|\|=|\^=|\||\^|\*\*|\*\*=)''')
         arrout = []

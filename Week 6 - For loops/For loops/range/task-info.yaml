@@ -3,26 +3,23 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 11
-    length: 1
+  - offset: 214
+    length: 2
     placeholder_text: 1. Vul in
-  - offset: 117
-    length: 1
+  - offset: 243
+    length: 2
     placeholder_text: 2. Vul in
-  - offset: 171
-    length: 8
-    placeholder_text: 3. Vul in
-  - offset: 203
+  - offset: 272
     length: 1
+    placeholder_text: 3. Vul in
+  - offset: 382
+    length: 2
     placeholder_text: 4. Vul in
-  - offset: 305
+  - offset: 411
     length: 2
     placeholder_text: 5. Vul in
-  - offset: 407
-    length: 1
+  - offset: 440
+    length: 2
     placeholder_text: 6. Vul in
-  - offset: 521
-    length: 3
-    placeholder_text: 7. Vul in
 - name: tests.py
   visible: false

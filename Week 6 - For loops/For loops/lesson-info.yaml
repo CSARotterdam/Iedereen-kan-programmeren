@@ -1,6 +1,6 @@
 content:
+- range
 - 'Structuur #1'
 - 'Structuur #2'
 - 'Structuur #3'
 - For loop variabele
-- For element in array
