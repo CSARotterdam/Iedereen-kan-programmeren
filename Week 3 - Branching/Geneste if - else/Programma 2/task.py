@@ -13,7 +13,7 @@ if(z < 20):
     #Uitgevoerd: Nee
     #Conditie variabele(n): y
     #Conditie: 5 <= y
-    #Conditie uitkomst: False
+    #Conditie uitkomst: True
     if(5 <= y):
         print("Pad 2.")
         #Keyword(s): if, else
