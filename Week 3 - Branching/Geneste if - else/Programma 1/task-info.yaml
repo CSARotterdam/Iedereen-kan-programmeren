@@ -19,28 +19,28 @@ files:
     length: 4
     placeholder_text: 5. Vul in
   - offset: 159
-    length: 5
+    length: 3
     placeholder_text: 6. Vul in (Gescheiden door komma's)
-  - offset: 217
+  - offset: 215
     length: 8
     placeholder_text: 7. Vul in (Gescheiden door komma's)
-  - offset: 243
+  - offset: 241
     length: 2
     placeholder_text: 8. Vul in
-  - offset: 274
+  - offset: 272
     length: 1
     placeholder_text: 9. Vul in (Gescheiden door komma's)
-  - offset: 291
+  - offset: 289
     length: 7
     placeholder_text: 10. Vul in
-  - offset: 323
-    length: 4
+  - offset: 321
+    length: 5
     placeholder_text: 11. Vul in
-  - offset: 390
+  - offset: 389
     length: 8
     placeholder_text: 12. Vul in (Gescheiden door komma's)
-  - offset: 420
-    length: 2
+  - offset: 419
+    length: 3
     placeholder_text: 13. Vul in
   - offset: 455
     length: 4

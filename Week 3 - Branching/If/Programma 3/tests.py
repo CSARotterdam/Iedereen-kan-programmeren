@@ -30,13 +30,15 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[6], "Ja|ja")
 
     def testAnswer8(self):
-        self.assertRegex(helper.answers[7], helper.re.argsRegex("x", "y"))
+        self.assertRegex(helper.answers[7], helper.re.argsRegex("x", "y") + "|" +
+                         helper.re.argsRegex("y", "x"))
 
     def testAnswer9(self):
         self.assertRegex(helper.answers[8], helper.re.expressionToRegex("y / x >= 4"))
 
     def testAnswer10(self):
         self.assertEqual(helper.answers[9], "True")
+
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)
@@ -46,7 +48,3 @@ if __name__ == '__main__':
     else:
         for el in res.failures:
             failed(f"There is an error in " + str(el[0])[4:12])
-
-
-
-

@@ -11,9 +11,9 @@ if(x > 1):
     print("Pad 1.")
 #Uitgevoerd: Ja
 #Conditie variabele(n): z,y
-#Conditie: z <= y
+#Conditie: z >= y
 #Conditie uitkomst: True
-elif(z <= y):
+elif(z >= y):
     print("Pad 2.")
 else:
     print("Pad 3.")

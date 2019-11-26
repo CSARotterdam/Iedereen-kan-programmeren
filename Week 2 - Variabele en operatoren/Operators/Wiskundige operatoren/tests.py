@@ -15,7 +15,7 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[1], "9")
 
     def testAnswer3(self):
-        self.assertRegex(helper.answers[2], "integer|Integer")
+        self.assertRegex(helper.answers[2], "integer|Integer|int")
 
     def testAnswer4(self):
         self.assertRegex(helper.answers[3], "varA|varC")
@@ -24,7 +24,7 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[4], "sumB")
 
     def testAnswer6(self):
-        self.assertRegex(helper.answers[2], "integer|Integer")
+        self.assertRegex(helper.answers[2], "integer|Integer|int")
 
     def testAnswer7(self):
         self.assertRegex(helper.answers[6], "varA|varC")
@@ -33,7 +33,7 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[7], "subA")
 
     def testAnswer9(self):
-        self.assertRegex(helper.answers[8], "integer|Integer")
+        self.assertRegex(helper.answers[8], "integer|Integer|int")
 
     def testAnswer10(self):
         self.assertRegex(helper.answers[9], helper.re.expressionToRegex("sumB - varB"))
@@ -42,7 +42,7 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[10], "subB")
 
     def testAnswer12(self):
-        self.assertRegex(helper.answers[11], "integer|Integer")
+        self.assertRegex(helper.answers[11], "integer|Integer|int")
 
     def testAnswer13(self):
         self.assertEqual(helper.answers[12], "varB")
@@ -60,7 +60,7 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[16], "6")
 
     def testAnswer18(self):
-        self.assertRegex(helper.answers[17], helper.re.expressionToRegex("varC **  varD") +
+        self.assertRegex(helper.answers[17], helper.re.expressionToRegex("varC ** varD") +
                          "|" + helper.re.expressionToRegex("varA ** varD"))
 
 

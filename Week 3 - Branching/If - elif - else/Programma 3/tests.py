@@ -15,7 +15,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[1], "Ja|ja")
 
     def testAnswer3(self):
-         self.assertEqual(helper.answers[2], helper.re.argsRegex("y"))
+         self.assertRegex(helper.answers[2], helper.re.argsRegex("y"))
 
     def testAnswer4(self):
         self.assertRegex(helper.answers[3], helper.re.expressionToRegex("y > 20"))
@@ -24,13 +24,14 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[4], "True")
 
     def testAnswer6(self):
-        self.assertRegex(helper.answers[5], helper.re.argsRegex("2"))
+        self.assertRegex(helper.answers[5], helper.re.argsRegex("1"))
 
     def testAnswer7(self):
-         self.assertEqual(helper.answers[6], "Nee|nee")
+        self.assertRegex(helper.answers[6], "Nee|nee")
 
     def testAnswer8(self):
-       self.assertEqual(helper.answers[7], helper.re.argsRegex("z", "y"))
+        self.assertRegex(helper.answers[7], helper.re.argsRegex("z", "y") + "|" +
+                         helper.re.argsRegex("y", "z"))
 
     def testAnswer9(self):
         self.assertRegex(helper.answers[8], helper.re.expressionToRegex("z == y"))

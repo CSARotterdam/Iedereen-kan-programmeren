@@ -30,7 +30,8 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[6], "Nee|nee")
 
     def testAnswer8(self):
-        self.assertRegex(helper.answers[7], helper.re.argsRegex("x", "y"))
+        self.assertRegex(helper.answers[7], helper.re.argsRegex("x", "y") + "|"
+                         + helper.re.argsRegex("y", "x"))
 
     def testAnswer9(self):
         self.assertRegex(helper.answers[8], helper.re.expressionToRegex("y ** x >= 4000000"))

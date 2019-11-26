@@ -10,10 +10,10 @@ z = 6 * 4
 #Uitgevoerd pad(en): 1
 if(y > 20):
     print("Pad 1.")
-#Uitgevoerd: Nee
-#Conditie variabele(n): z,y
-#Conditie: z == y
-#Conditie uitkomst: True
+    #Uitgevoerd: Nee
+    #Conditie variabele(n): z,y
+    #Conditie: z == y
+    #Conditie uitkomst: True
 elif(z == y):
     print("Pad 2.")
 else:

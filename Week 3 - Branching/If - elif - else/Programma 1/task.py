@@ -10,10 +10,10 @@ z = 90/6
 #Uitgevoerd pad(en): 1
 if(x >= y and x >= z):
     print("Pad 1.")
-#Uitgevoerd: Nee
-#Conditie variabele(n): x,y,z
-#Conditie: y >= x and y >= z
-#Conditie uitkomst: False
+    #Uitgevoerd: Nee
+    #Conditie variabele(n): x,y,z
+    #Conditie: y >= x and y >= z
+    #Conditie uitkomst: False
 elif(y >= x and y >=z):
     print("Pad 2.")
 else:

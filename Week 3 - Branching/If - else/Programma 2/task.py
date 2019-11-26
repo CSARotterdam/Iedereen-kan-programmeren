@@ -5,7 +5,7 @@ x = 5
 #Conditie variabele(n): x
 #Conditie: x != 55/11
 #Conditie uitkomst: False
-#uitgevoerd pad(en): 1
+#uitgevoerd pad(en): 2
 if(x != 55/11):
     print("Pad 1.")
 else:

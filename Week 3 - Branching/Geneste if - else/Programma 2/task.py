@@ -12,14 +12,14 @@ if(z < 20):
     #Keyword(s): if, else
     #Uitgevoerd: Nee
     #Conditie variabele(n): y
-    #Conditie: 10 >= y
+    #Conditie: 5 <= y
     #Conditie uitkomst: False
     if(5 <= y):
         print("Pad 2.")
         #Keyword(s): if, else
         #Uitgevoerd: Nee
         #Conditie variabele(n): x, y
-        #Conditie: 10 >= y
+        #Conditie: 50 >= x * y
         #Conditie uitkomst: False
         if(50 >= x * y):
             print("Pad 3.")

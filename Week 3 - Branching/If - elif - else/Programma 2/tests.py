@@ -15,7 +15,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[1], "Ja|ja")
 
     def testAnswer3(self):
-         self.assertEqual(helper.answers[2], helper.re.argsRegex("x"))
+        self.assertRegex(helper.answers[2], helper.re.argsRegex("x"))
 
     def testAnswer4(self):
         self.assertRegex(helper.answers[3], helper.re.expressionToRegex("x > 1"))
@@ -27,16 +27,17 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[5], helper.re.argsRegex("2"))
 
     def testAnswer7(self):
-         self.assertEqual(helper.answers[6], "Ja|ja")
+        self.assertRegex(helper.answers[6], "Ja|ja")
 
     def testAnswer8(self):
-       self.assertEqual(helper.answers[7], helper.re.argsRegex("z","y"))
+        self.assertRegex(helper.answers[7], helper.re.argsRegex("z", "y") + "|" +
+                         helper.re.argsRegex("y", "z"))
 
     def testAnswer9(self):
-        self.assertRegex(helper.answers[8], helper.re.expressionToRegex("z <= y"))
+        self.assertRegex(helper.answers[8], helper.re.expressionToRegex("z >= y"))
 
     def testAnswer10(self):
-        self.assertRegex(helper.answers[9], helper.re.argsRegex("True"))
+        self.assertEqual(helper.answers[9], "True")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)

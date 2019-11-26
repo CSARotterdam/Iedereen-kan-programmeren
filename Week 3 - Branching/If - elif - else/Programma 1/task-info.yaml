@@ -21,16 +21,16 @@ files:
   - offset: 177
     length: 1
     placeholder_text: 6. Vul in (Gescheiden door komma's)
-  - offset: 235
+  - offset: 239
     length: 3
     placeholder_text: 7. Vul in
-  - offset: 263
+  - offset: 271
     length: 5
     placeholder_text: 8. Vul in (Gescheiden door komma's)
-  - offset: 280
+  - offset: 292
     length: 17
     placeholder_text: 9. Vul in
-  - offset: 318
+  - offset: 334
     length: 5
     placeholder_text: 10. Vul in
 - name: tests.py

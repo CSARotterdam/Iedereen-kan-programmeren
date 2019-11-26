@@ -24,7 +24,7 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[4], "False")
 
     def testAnswer6(self):
-        self.assertEqual(helper.answers[5], "1")
+        self.assertEqual(helper.answers[5], "2")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)

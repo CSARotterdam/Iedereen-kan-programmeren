@@ -14,5 +14,5 @@ if(x > 0):
     #Conditie uitkomst: True
     if(y / x >= 4):
         print("Stap 2.")
-print("Stap 4.")
+print("Stap 3.")
 print("Einde programma.")

@@ -6,18 +6,18 @@ z = 24
 #Conditie variabele(n): z
 #Conditie: z > 7 * 3
 #Conditie uitkomst: True
-#Uitgevoerd pad(en): 1,2,4
+#Uitgevoerd pad(en): 1,5
 if(z > 7 * 3):
     print("Pad 1.")
     #Keyword(s): if, else
     #Uitgevoerd: Ja
     #Conditie variabele(n): y
     #Conditie: 10 <= y
-    #Conditie uitkomst: True
+    #Conditie uitkomst: False
     if(10 <= y):
         print("Pad 2.")
         #Keyword(s): if, else
-        #Uitgevoerd: Ja
+        #Uitgevoerd: Nee
         #Conditie variabele(n): x, y
         #Conditie: 50 >= x * y
         #Conditie uitkomst: False
