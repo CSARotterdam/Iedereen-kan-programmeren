@@ -17,8 +17,9 @@ class varAanmaken(unittest.TestCase):
     def testAnswer2(self):
         self.assertRegex(helper.answers[1],
                          helper.re.expressionToRegex("total = total + products\[index\]\[1\] * amounts\[index\]") +
-                         "|" +
-                         helper.re.expressionToRegex("total += products\[index\]\[1\] * amounts\[index\]"))
+                         "|" + helper.re.expressionToRegex("total += products\[index\]\[1\] * amounts\[index\]") +
+                         "|" + helper.re.expressionToRegex("total = total + amounts\[index\] * products\[index\]\[1\]") +
+                         "|" + helper.re.expressionToRegex("total += amounts\[index\] * products\[index\]\[1\]"))
 
     def testAnswer3(self):
         self.assertRegex(helper.answers[2], helper.re.expressionToRegex("index = index + 1") +

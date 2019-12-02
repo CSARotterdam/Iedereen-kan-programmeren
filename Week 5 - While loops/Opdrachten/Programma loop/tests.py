@@ -16,7 +16,8 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[1], helper.re.expressionToRegex("userInput == \"n\""))
 
     def testAnswer3(self):
-        self.assertRegex(helper.answers[2], helper.re.expressionToRegex("active = False"))
+        self.assertRegex(helper.answers[2], helper.re.expressionToRegex("active = False") + "|" +
+                         helper.re.expressionToRegex("active = not active"))
 
     def testAnswer4(self):
         self.assertRegex(helper.answers[3], helper.re.expressionToRegex("userInput == \"y\""))

@@ -24,7 +24,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[4], helper.re.expressionToRegex("conditionVariable2 > -1"))
 
     def testAnswer6(self):
-       self.assertEqual(helper.answers[5], "10")
+        self.assertEqual(helper.answers[5], "11")
 
     def testAnswer7(self):
         self.assertRegex(helper.answers[6], helper.re.expressionToRegex("conditionVariable3 >= 0"))

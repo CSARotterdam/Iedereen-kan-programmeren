@@ -38,7 +38,7 @@ class varAanmaken(unittest.TestCase):
     def testAnswer10(self):
         self.assertRegex(helper.answers[9], helper.re.argsRegex("index","array2"))
 
-    def testAnser11(self):
+    def testAnswer11(self):
         self.assertRegex(helper.answers[10], helper.re.expressionToRegex("index < len\(array2\)"))
 
     def testAnswer12(self):

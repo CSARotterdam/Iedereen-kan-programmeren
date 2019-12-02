@@ -2185,7 +2185,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"a\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"3\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"2\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], \"integer|Integer\")\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"\\\"3\\\"\")\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"string|String\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"\\\"1\\\"\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], \"String|string\")\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], helper.re.listRegex(\"\\\"1\\\"\", \"\\\"2\\\"\", \"\\\"3\\\"\"))\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"list|List\")\n\n    def testAnswer11(self):\n        self.assertEqual(helper.answers[10], \"f\")\n\n    def testAnswer12(self):\n        self.assertEqual(helper.answers[11], \"1\")\n\n    def testAnswer13(self):\n        self.assertEqual(helper.answers[12], \"\\\"3\\\"\")\n\n    def testAnswer14(self):\n        self.assertRegex(helper.answers[13], helper.re.listRegex())\n\n    def testAnswer15(self):\n        self.assertRegex(helper.answers[14], \"list|List\")\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"a\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"3\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"2\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], \"integer|Integer\")\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"\\\"3\\\"\")\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"string|String\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"\\\"1\\\"\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], \"String|string\")\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], helper.re.listRegex(\"\\\"1\\\"\", \"\\\"2\\\"\", \"\\\"3\\\"\"))\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"list|List\")\n\n    def testAnswer11(self):\n        self.assertEqual(helper.answers[10], \"f\")\n\n    def testAnswer12(self):\n        self.assertEqual(helper.answers[11], \"1\")\n\n    def testAnswer13(self):\n        self.assertEqual(helper.answers[12], \"\\\"3\\\"\")\n\n    def testAnswer14(self):\n        self.assertRegex(helper.answers[13], \"\\[\\s*\\]\")\n\n    def testAnswer15(self):\n        self.assertRegex(helper.answers[14], \"list|List\")\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2202,56 +2202,56 @@
                   "name" : "task.py",
                   "placeholders" : [
                     {
-                      "offset" : 223,
+                      "offset" : 209,
                       "length" : 9,
                       "possible_answer" : "7",
                       "placeholder_text" : "1. Vul in"
                     },
                     {
-                      "offset" : 250,
+                      "offset" : 236,
                       "length" : 9,
                       "possible_answer" : "integer",
                       "placeholder_text" : "2. Vul in"
                     },
                     {
-                      "offset" : 357,
+                      "offset" : 343,
                       "length" : 9,
                       "possible_answer" : "4",
                       "placeholder_text" : "3. Vul in"
                     },
                     {
-                      "offset" : 384,
+                      "offset" : 370,
                       "length" : 9,
                       "possible_answer" : "integer",
                       "placeholder_text" : "4. Vul in"
                     },
                     {
-                      "offset" : 501,
+                      "offset" : 487,
                       "length" : 9,
                       "possible_answer" : "\"31\"",
                       "placeholder_text" : "5. Vul in"
                     },
                     {
-                      "offset" : 528,
+                      "offset" : 514,
                       "length" : 9,
                       "possible_answer" : "string",
                       "placeholder_text" : "6. Vul in"
                     },
                     {
-                      "offset" : 619,
+                      "offset" : 605,
                       "length" : 9,
                       "possible_answer" : "\"abc\"",
                       "placeholder_text" : "7. Vul in"
                     },
                     {
-                      "offset" : 646,
+                      "offset" : 632,
                       "length" : 9,
                       "possible_answer" : "string",
                       "placeholder_text" : "8. Vul in"
                     }
                   ],
                   "is_visible" : true,
-                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nintegerArray[0] = integerArray[0]\na = integerArray[0]\n#Variabele naam: a\n#Variabele waarde: 1. Vul in\n#Variabele type: 2. Vul in\n\nintegerArray[1] = integerArray[1] * 2\nb = integerArray[1]\n#Variabele naam: b\n#Variabele waarde: 3. Vul in\n#Variabele type: 4. Vul in\n\nstringArray[2] = stringArray[2] + stringArray[0]\nc = stringArray[2]\n#Variabele naam: c\n#Variabele waarde: 5. Vul in\n#Variabele type: 6. Vul in\n\nstringArray[0] = \"abc\"\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: 7. Vul in\n#Variabele type: 8. Vul in\n"
+                  "text" : "emptyArray = []\n\nintegerArray = [1, 2, 3]\n\nstringArray = [\"1\", \"2\", \"3\"]\n\narrayOfArrays = [emptyArray, integerArray, stringArray]\n\nintegerArray[0] = 7\na = integerArray[0]\n#Variabele naam: a\n#Variabele waarde: 1. Vul in\n#Variabele type: 2. Vul in\n\nintegerArray[1] = integerArray[1] * 2\nb = integerArray[1]\n#Variabele naam: b\n#Variabele waarde: 3. Vul in\n#Variabele type: 4. Vul in\n\nstringArray[2] = stringArray[2] + stringArray[0]\nc = stringArray[2]\n#Variabele naam: c\n#Variabele waarde: 5. Vul in\n#Variabele type: 6. Vul in\n\nstringArray[0] = \"abc\"\nd = stringArray[0]\n#Variabele naam: d\n#Variabele waarde: 7. Vul in\n#Variabele type: 8. Vul in\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
@@ -2323,7 +2323,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], helper.re.listRegex(\"\\\"first\\\"\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"list|List\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"emptyArray\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.listRegex(\"\\\"first\\\"\", \"\\\"second\\\"\"))\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.listRegex(\"1\", \"2\", \"3\", \"1\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], helper.re.listRegex(\"\\\"1\\\"\", \"\\\"2\\\"\", \"\\\"3\\\"\", \"\\\"1\\\"\"))\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.listRegex(\"13\", \"1\", \"2\", \"3\", \"1\"))\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], helper.re.listRegex(\"\\\"first\\\"\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"list|List\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"emptyArray\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.listRegex(\"\\\"first\\\"\", \"\\\"second\\\"\"))\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.listRegex(\"1\", \"2\", \"3\", \"1\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], helper.re.listRegex(\"\\\"1\\\"\", \"\\\"2\\\"\", \"\\\"3\\\"\", \"\\\"4\\\"\"))\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.listRegex(\"13\", \"1\", \"2\", \"3\", \"1\"))\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2587,7 +2587,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"print\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"5\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"integer|Integer\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"\\\"5\\\"\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], \"string|String\")\n\n    def testAnswer6(self):\n        self.assertEqual(helper.answers[5], \"True\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], \"boolean|Boolean\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], helper.re.listRegex(\"5\", \"\\\"5\\\"\", \"True\"))\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], \"list|List\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"print\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"5\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"integer|Integer\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"\\\"5\\\"\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], \"string|String\")\n\n    def testAnswer6(self):\n        self.assertEqual(helper.answers[5], \"True\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], \"boolean|Boolean\")\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7],\n                         helper.re.listRegex(\"5\", \"\\\"5\\\"\", \"True\") + \"|\" +\n                         helper.re.listRegex(\"x\", \"y\", \"z\"))\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], \"list|List\")\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -2851,7 +2851,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"sum\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.argsRegex(\"5\",\"10\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"integer|Integer\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"15\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.argsRegex(\"10\", \"5\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"integer|Integer\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"15\")\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"str\")\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"\\\"5\\\"\")\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"string|String\")\n\n    def testAnswer11(self):\n        self.assertEqual(helper.answers[10], \"sum\")\n\n    def testAnswer12(self):\n        self.assertRegex(helper.answers[11], helper.re.argsRegex(\"\\\"5\\\"\", \"\\\"Hello, World!\\\"\"))\n\n    def testAnswer13(self):\n        self.assertRegex(helper.answers[12], \"string|String\")\n\n    def testAnswer14(self):\n        self.assertEqual(helper.answers[13], \"\\\"5Hello, World\\\"\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"sum\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.argsRegex(\"5\",\"10\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], \"integer|Integer\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"15\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.argsRegex(\"10\", \"5\"))\n\n    def testAnswer6(self):\n        self.assertRegex(helper.answers[5], \"integer|Integer\")\n\n    def testAnswer7(self):\n        self.assertEqual(helper.answers[6], \"15\")\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"str\")\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"\\\"5\\\"\")\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], \"string|String\")\n\n    def testAnswer11(self):\n        self.assertEqual(helper.answers[10], \"sum\")\n\n    def testAnswer12(self):\n        self.assertRegex(helper.answers[11], helper.re.argsRegex(\"\\\"5\\\"\", \"\\\"Hello, World!\\\"\"))\n\n    def testAnswer13(self):\n        self.assertRegex(helper.answers[12], \"string|String\")\n\n    def testAnswer14(self):\n        self.assertEqual(helper.answers[13], \"\\\"5Hello, World!\\\"\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\nWrite your task text here.\n<div class=\"hint\">\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\n</div>\n</html>",
@@ -3079,7 +3079,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"if\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"Ja|ja\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"x\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"x == 5\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"True\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], \"Ja|ja\")\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"conditionVariable\")\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"conditionVariable <= 4\"))\n\n    def testAnswer5(self):\n        self.assertEqual(helper.answers[4], \"5\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -3260,7 +3260,7 @@
                     {
                       "offset" : 96,
                       "length" : 9,
-                      "possible_answer" : "conditionVariable1",
+                      "possible_answer" : "conditionVariable1 < 10",
                       "placeholder_text" : "3. Vul in"
                     },
                     {
@@ -3278,48 +3278,48 @@
                     {
                       "offset" : 409,
                       "length" : 9,
-                      "possible_answer" : "10",
+                      "possible_answer" : "11",
                       "placeholder_text" : "6. Vul in"
                     },
                     {
-                      "offset" : 664,
+                      "offset" : 660,
                       "length" : 9,
                       "possible_answer" : "conditionVariable3 >= 0",
                       "placeholder_text" : "7. Vul in"
                     },
                     {
-                      "offset" : 699,
+                      "offset" : 695,
                       "length" : 9,
                       "possible_answer" : "8",
                       "placeholder_text" : "8. Vul in"
                     },
                     {
-                      "offset" : 933,
+                      "offset" : 925,
                       "length" : 35,
                       "possible_answer" : "conditionVariable4, array",
                       "placeholder_text" : "9. Vul in (Gescheiden door komma's)"
                     },
                     {
-                      "offset" : 980,
+                      "offset" : 972,
                       "length" : 10,
                       "possible_answer" : "conditionVariable4 < len(array)",
                       "placeholder_text" : "10. Vul in"
                     },
                     {
-                      "offset" : 1016,
+                      "offset" : 1008,
                       "length" : 10,
                       "possible_answer" : "4",
                       "placeholder_text" : "11. Vul in"
                     }
                   ],
                   "is_visible" : true,
-                  "text" : "#Task 1\nconditionVariable1 = 0\n#Keyword: 1. Vul in\n#Conditie variabele(n): 2. Vul in\n#Conditie: 3. Vul in\n#Aantal keer uitgevoerd: 4. Vul in\nwhile(conditionVariable1 < 10):\n    print(\"var1: \" + str(conditionVariable1 + 1))\n    conditionVariable1 = conditionVariable1 + 1\n\n#Task 2\nconditionVariable2 = 10\n#Keyword: while\n#Conditie variabele(n): conditionVariable2\n#Conditie: 5. Vul in\n#Aantal keer uitgevoerd: 6. Vul in\nwhile(conditionVariable2 > -1):\n    print(\"var2: \" + str(conditionVariable2 - 1))\n    conditionVariable2 = conditionVariable2 - 1\n\n#Task 3\nconditionVariable3 = len(\"aString\")\n#Keyword: while\n#Conditie variabele(n): conditionVariable3\n#Conditie: 7. Vul in\n#Aantal keer uitgevoerd: 8. Vul in\nwhile(conditionVariable3 >= 0):\n    print(\"var3: \" + str(conditionVariable3 - 1))\n    conditionVariable3 =conditionVariable3 - 1\n\n#Task 4\narray=[4, 7, 123, 556]\nconditionVariable4 = 0\n#Keyword: while\n#Conditie variabele(n): 9. Vul in (Gescheiden door komma's)\n#Conditie: 10. Vul in\n#Aantal keer uitgevoerd: 11. Vul in\nwhile(conditionVariable4 < len(array)):\n    print(\"var4: \" + str(conditionVariable4 + 1))\n    conditionVariable4 = conditionVariable4 + 1\n"
+                  "text" : "#Task 1\nconditionVariable1 = 0\n#Keyword: 1. Vul in\n#Conditie variabele(n): 2. Vul in\n#Conditie: 3. Vul in\n#Aantal keer uitgevoerd: 4. Vul in\nwhile(conditionVariable1 < 10):\n    print(\"var1: \" + str(conditionVariable1 + 1))\n    conditionVariable1 = conditionVariable1 + 1\n\n#Task 2\nconditionVariable2 = 10\n#Keyword: while\n#Conditie variabele(n): conditionVariable2\n#Conditie: 5. Vul in\n#Aantal keer uitgevoerd: 6. Vul in\nwhile(conditionVariable2 > -1):\n    print(\"var2: \" + str(conditionVariable2))\n    conditionVariable2 = conditionVariable2 - 1\n\n#Task 3\nconditionVariable3 = len(\"aString\")\n#Keyword: while\n#Conditie variabele(n): conditionVariable3\n#Conditie: 7. Vul in\n#Aantal keer uitgevoerd: 8. Vul in\nwhile(conditionVariable3 >= 0):\n    print(\"var3: \" + str(conditionVariable3))\n    conditionVariable3 =conditionVariable3 - 1\n\n#Task 4\narray=[4, 7, 123, 556]\nconditionVariable4 = 0\n#Keyword: while\n#Conditie variabele(n): 9. Vul in (Gescheiden door komma's)\n#Conditie: 10. Vul in\n#Aantal keer uitgevoerd: 11. Vul in\nwhile(conditionVariable4 < len(array)):\n    print(\"var4: \" + str(conditionVariable4 + 1))\n    conditionVariable4 = conditionVariable4 + 1\n"
                 },
                 "tests.py" : {
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"conditionVariable1\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"conditionVariable1 < 10\"))\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"10\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.expressionToRegex(\"conditionVariable2 > -1\"))\n\n    def testAnswer6(self):\n       self.assertEqual(helper.answers[5], \"10\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.expressionToRegex(\"conditionVariable3 >= 0\"))\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"8\")\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], helper.re.argsRegex(\"conditionVariable4\", \"array\"))\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], helper.re.expressionToRegex(\"conditionVariable4 < len\\(array\\)\"))\n\n    def testAnser11(self):\n        self.assertEqual(helper.answers[10], \"4\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertEqual(helper.answers[0], \"while\")\n\n    def testAnswer2(self):\n        self.assertEqual(helper.answers[1], \"conditionVariable1\")\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"conditionVariable1 < 10\"))\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"10\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.expressionToRegex(\"conditionVariable2 > -1\"))\n\n    def testAnswer6(self):\n        self.assertEqual(helper.answers[5], \"11\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.expressionToRegex(\"conditionVariable3 >= 0\"))\n\n    def testAnswer8(self):\n        self.assertEqual(helper.answers[7], \"8\")\n\n    def testAnswer9(self):\n        self.assertRegex(helper.answers[8], helper.re.argsRegex(\"conditionVariable4\", \"array\"))\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], helper.re.expressionToRegex(\"conditionVariable4 < len\\(array\\)\"))\n\n    def testAnser11(self):\n        self.assertEqual(helper.answers[10], \"4\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -3415,7 +3415,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], helper.re.argsRegex(\"index\", \"array1\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.expressionToRegex(\"index < len\\(array1\\)\"))\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"3\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"index\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.expressionToRegex(\"index >= 0\"))\n\n    def testAnswer6(self):\n       self.assertEqual(helper.answers[5], \"3\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.argsRegex(\"array1\",\"array2\"))\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], helper.re.expressionToRegex(\"len\\(array1\\) == len\\(array2\\)\"))\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"1\")\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], helper.re.argsRegex(\"index\",\"array2\"))\n\n    def testAnser11(self):\n        self.assertRegex(helper.answers[10], helper.re.expressionToRegex(\"index < len\\(array2\\)\"))\n\n    def testAnswer12(self):\n        self.assertEqual(helper.answers[11], \"3\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], helper.re.argsRegex(\"index\", \"array1\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.expressionToRegex(\"index < len\\(array1\\)\"))\n\n    def testAnswer3(self):\n        self.assertEqual(helper.answers[2], \"3\")\n\n    def testAnswer4(self):\n        self.assertEqual(helper.answers[3], \"index\")\n\n    def testAnswer5(self):\n        self.assertRegex(helper.answers[4], helper.re.expressionToRegex(\"index >= 0\"))\n\n    def testAnswer6(self):\n       self.assertEqual(helper.answers[5], \"3\")\n\n    def testAnswer7(self):\n        self.assertRegex(helper.answers[6], helper.re.argsRegex(\"array1\",\"array2\"))\n\n    def testAnswer8(self):\n        self.assertRegex(helper.answers[7], helper.re.expressionToRegex(\"len\\(array1\\) == len\\(array2\\)\"))\n\n    def testAnswer9(self):\n        self.assertEqual(helper.answers[8], \"1\")\n\n    def testAnswer10(self):\n        self.assertRegex(helper.answers[9], helper.re.argsRegex(\"index\",\"array2\"))\n\n    def testAnswer11(self):\n        self.assertRegex(helper.answers[10], helper.re.expressionToRegex(\"index < len\\(array2\\)\"))\n\n    def testAnswer12(self):\n        self.assertEqual(helper.answers[11], \"3\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -3469,7 +3469,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"active|\" +\n                         helper.re.expressionToRegex(\"active == True\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.expressionToRegex(\"userInput == \\\"n\\\"\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"active = False\"))\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"userInput == \\\"y\\\"\"))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0], \"active|\" +\n                         helper.re.expressionToRegex(\"active == True\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1], helper.re.expressionToRegex(\"userInput == \\\"n\\\"\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"active = False\") + \"|\" +\n                         helper.re.expressionToRegex(\"active = not active\"))\n\n    def testAnswer4(self):\n        self.assertRegex(helper.answers[3], helper.re.expressionToRegex(\"userInput == \\\"y\\\"\"))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n\n\n\n\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",
@@ -3511,7 +3511,7 @@
                   "name" : "tests.py",
                   "placeholders" : [ ],
                   "is_visible" : false,
-                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0],\n                         helper.re.expressionToRegex(\"index < len\\(products\\)\") +\n                         \"|\" +\n                         helper.re.expressionToRegex(\"index != len\\(products\\)\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1],\n                         helper.re.expressionToRegex(\"total = total + products\\[index\\]\\[1\\] * amounts\\[index\\]\") +\n                         \"|\" +\n                         helper.re.expressionToRegex(\"total += products\\[index\\]\\[1\\] * amounts\\[index\\]\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"index = index + 1\") +\n                         \"|\" +\n                         helper.re.expressionToRegex(\"index += 1\"))\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n"
+                  "text" : "import unittest\n\nfrom test_helper import run_common_tests, failed, passed\nfrom regex_helper import *\nfrom UserInputHelper import *\n\nhelper = Helper()\n\n\nclass varAanmaken(unittest.TestCase):\n    def testAnswer1(self):\n        self.assertRegex(helper.answers[0],\n                         helper.re.expressionToRegex(\"index < len\\(products\\)\") +\n                         \"|\" +\n                         helper.re.expressionToRegex(\"index != len\\(products\\)\"))\n\n    def testAnswer2(self):\n        self.assertRegex(helper.answers[1],\n                         helper.re.expressionToRegex(\"total = total + products\\[index\\]\\[1\\] * amounts\\[index\\]\") +\n                         \"|\" + helper.re.expressionToRegex(\"total += products\\[index\\]\\[1\\] * amounts\\[index\\]\") +\n                         \"|\" + helper.re.expressionToRegex(\"total = total + amounts\\[index\\] * products\\[index\\]\\[1\\]\") +\n                         \"|\" + helper.re.expressionToRegex(\"total += amounts\\[index\\] * products\\[index\\]\\[1\\]\"))\n\n    def testAnswer3(self):\n        self.assertRegex(helper.answers[2], helper.re.expressionToRegex(\"index = index + 1\") +\n                         \"|\" +\n                         helper.re.expressionToRegex(\"index += 1\"))\n\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)\n    res = unittest.TextTestRunner().run(suite)\n    if res.wasSuccessful():\n        passed(\"Congratulations\")\n    else:\n        for el in res.failures:\n            failed(f\"There is an error in \" + str(el[0])[4:12])\n"
                 }
               },
               "description_text" : "<html>\r\nWrite your task text here.\r\n<div class=\"hint\">\r\n  Hints can be added anywhere in task text: type \"hint\" and press Tab.\r\n</div>\r\n</html>",

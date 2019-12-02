@@ -12,7 +12,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[0], helper.re.expressionToRegex("conditionVar1 < 5"))
 
     def testAnswer2(self):
-        self.assertRegex(helper.answers[1], helper.re.expressionToRegex("conditionVar2 >= 0"))
+        self.assertRegex(helper.answers[1], helper.re.expressionToRegex("conditionVar2 > 0"))
 
     def testAnswer3(self):
         self.assertRegex(helper.answers[2], helper.re.expressionToRegex("conditionVar3 != 50") +
