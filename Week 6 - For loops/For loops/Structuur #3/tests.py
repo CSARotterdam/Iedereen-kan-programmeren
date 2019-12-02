@@ -9,43 +9,28 @@ helper = Helper()
 
 class varAanmaken(unittest.TestCase):
     def testAnswer1(self):
-        self.assertEqual(helper.answers[0], "element")
+        self.assertEqual(helper.answers[0], "array")
 
     def testAnswer2(self):
-        self.assertEqual(helper.answers[1], "array1")
+        self.assertEqual(helper.answers[1], "5")
 
     def testAnswer3(self):
         self.assertEqual(helper.answers[2], "1")
 
     def testAnswer4(self):
-        self.assertEqual(helper.answers[3], "5")
+        self.assertEqual(helper.answers[3], "False")
 
     def testAnswer5(self):
-        self.assertEqual(helper.answers[4], "symbol")
+        self.assertRegex(helper.answers[4], helper.re.rangeRegex("len\(array\)"))
 
     def testAnswer6(self):
-        self.assertEqual(helper.answers[5], "string1")
+        self.assertEqual(helper.answers[5], "5")
 
     def testAnswer7(self):
-        self.assertEqual(helper.answers[6], "4")
+        self.assertEqual(helper.answers[6], "0")
 
     def testAnswer8(self):
-        self.assertEqual(helper.answers[7], "\"a\"")
-
-    def testAnswer9(self):
-        self.assertEqual(helper.answers[8], "\"d\"")
-
-    def testAnswer10(self):
-        self.assertEqual(helper.answers[9], "\"abc\"")
-
-    def testAnswer11(self):
-        self.assertEqual(helper.answers[10], "True")
-
-    def testAnswer12(self):
-        self.assertEqual(helper.answers[11], "True")
-
-    def testAnswer13(self):
-        self.assertEqual(helper.answers[12], "3")
+        self.assertEqual(helper.answers[7], "4")
 
 
 if __name__ == '__main__':

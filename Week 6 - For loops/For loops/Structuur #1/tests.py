@@ -21,7 +21,8 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[3], "y")
 
     def testAnswer5(self):
-        self.assertRegex(helper.answers[4], helper.re.rangeRegex("10", helper.re.expressionToRegex("40 // 4 + 3")[1:-1]))
+        self.assertRegex(helper.answers[4], helper.re.rangeRegex("10", helper.re.expressionToRegex("40 // 4 + 3")[1:-1])
+                         + "|" + helper.re.rangeRegex("10", "13"))
 
     def testAnswer6(self):
         self.assertEqual(helper.answers[5], "3")

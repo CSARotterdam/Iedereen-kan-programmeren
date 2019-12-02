@@ -18,13 +18,13 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[2], "0")
 
     def testAnswer4(self):
-        self.assertEqual(helper.answers[0], "10")
+        self.assertEqual(helper.answers[3], "10")
 
     def testAnswer5(self):
-        self.assertEqual(helper.answers[1], "19")
+        self.assertEqual(helper.answers[4], "19")
 
-    def testAnswer(self):
-        self.assertEqual(helper.answers[2], "10")
+    def testAnswer6(self):
+        self.assertEqual(helper.answers[5], "10")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)
