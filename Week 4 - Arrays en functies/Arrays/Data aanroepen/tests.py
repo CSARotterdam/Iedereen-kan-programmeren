@@ -48,7 +48,7 @@ class varAanmaken(unittest.TestCase):
         self.assertEqual(helper.answers[12], "\"3\"")
 
     def testAnswer14(self):
-        self.assertRegex(helper.answers[13], helper.re.listRegex())
+        self.assertRegex(helper.answers[13], "\[\s*\]")
 
     def testAnswer15(self):
         self.assertRegex(helper.answers[14], "list|List")

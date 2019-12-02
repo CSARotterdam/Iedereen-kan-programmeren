@@ -48,7 +48,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[12], "string|String")
 
     def testAnswer14(self):
-        self.assertEqual(helper.answers[13], "\"5Hello, World\"")
+        self.assertEqual(helper.answers[13], "\"5Hello, World!\"")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)

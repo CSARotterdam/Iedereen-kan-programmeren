@@ -21,10 +21,10 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[3], helper.re.listRegex("\"first\"", "\"second\""))
 
     def testAnswer5(self):
-        self.assertEqual(helper.answers[4], helper.re.listRegex("1", "2", "3", "1"))
+        self.assertRegex(helper.answers[4], helper.re.listRegex("1", "2", "3", "1"))
 
     def testAnswer6(self):
-        self.assertRegex(helper.answers[5], helper.re.listRegex("\"1\"", "\"2\"", "\"3\"", "\"1\""))
+        self.assertRegex(helper.answers[5], helper.re.listRegex("\"1\"", "\"2\"", "\"3\"", "\"4\""))
 
     def testAnswer7(self):
         self.assertRegex(helper.answers[6], helper.re.listRegex("13", "1", "2", "3", "1"))

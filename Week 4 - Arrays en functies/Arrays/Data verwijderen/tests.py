@@ -21,7 +21,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[3], helper.re.listRegex("\"1\"", "\"3\""))
 
     def testAnswer5(self):
-        self.assertEqual(helper.answers[4], helper.re.listRegex("\"3\""))
+        self.assertRegex(helper.answers[4], helper.re.listRegex("\"3\""))
 
 
 if __name__ == '__main__':

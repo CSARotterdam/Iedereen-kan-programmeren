@@ -30,10 +30,13 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[6], "boolean|Boolean")
 
     def testAnswer8(self):
-        self.assertRegex(helper.answers[7], helper.re.listRegex("5", "\"5\"", "True"))
+        self.assertRegex(helper.answers[7],
+                         helper.re.listRegex("5", "\"5\"", "True") + "|" +
+                         helper.re.listRegex("x", "y", "z"))
 
     def testAnswer9(self):
         self.assertRegex(helper.answers[8], "list|List")
+
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(testCaseClass=varAanmaken)
@@ -43,7 +46,3 @@ if __name__ == '__main__':
     else:
         for el in res.failures:
             failed(f"There is an error in " + str(el[0])[4:12])
-
-
-
-
