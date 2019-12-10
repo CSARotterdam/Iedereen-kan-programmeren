@@ -35,7 +35,7 @@ class varAanmaken(unittest.TestCase):
                          helper.re.listRegex("x", "y", "z"))
 
     def testAnswer9(self):
-        self.assertRegex(helper.answers[8], "list|List")
+        self.assertRegex(helper.answers[8], "list|List|array|Array")
 
 
 if __name__ == '__main__':

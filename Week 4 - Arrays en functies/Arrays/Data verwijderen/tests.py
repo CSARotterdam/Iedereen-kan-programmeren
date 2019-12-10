@@ -12,7 +12,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[0], helper.re.listRegex("1", "2"))
 
     def testAnswer2(self):
-        self.assertRegex(helper.answers[1], "list|List")
+        self.assertRegex(helper.answers[1], "list|List|array|Array")
 
     def testAnswer3(self):
         self.assertRegex(helper.answers[2], helper.re.listRegex("2"))

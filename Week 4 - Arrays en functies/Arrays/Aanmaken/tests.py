@@ -18,13 +18,13 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[2], helper.re.argsRegex("1", "2", "3"))
 
     def testAnswer4(self):
-        self.assertRegex(helper.answers[3], "list|List")
+        self.assertRegex(helper.answers[3], "list|List|array|Array")
 
     def testAnswer5(self):
         self.assertRegex(helper.answers[4], helper.re.argsRegex("\"1\"", "\"2\"", "\"3\""))
 
     def testAnswer6(self):
-        self.assertRegex(helper.answers[5], "list|List")
+        self.assertRegex(helper.answers[5], "list|List|array|Array")
 
     def testAnswer7(self):
         self.assertEqual(helper.answers[6], "arrayOfArrays")

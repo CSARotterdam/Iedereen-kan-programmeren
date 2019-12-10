@@ -15,7 +15,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[1], helper.re.listRegex("1", "2", "3"))
 
     def testAnswer3(self):
-        self.assertRegex(helper.answers[2], "list|List")
+        self.assertRegex(helper.answers[2], "list|List|array|Array")
 
     def testAnswer4(self):
         self.assertEqual(helper.answers[3], "3")
@@ -24,7 +24,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[4], helper.re.listRegex("\"ab\"", "\"bcd\"", "\"efgh\""))
 
     def testAnswer6(self):
-        self.assertRegex(helper.answers[5], "list|List")
+        self.assertRegex(helper.answers[5], "list|List|array|Array")
 
     def testAnswer7(self):
         self.assertEqual(helper.answers[6], "3")

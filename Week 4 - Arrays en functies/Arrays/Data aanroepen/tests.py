@@ -36,7 +36,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[8], helper.re.listRegex("\"1\"", "\"2\"", "\"3\""))
 
     def testAnswer10(self):
-        self.assertRegex(helper.answers[9], "list|List")
+        self.assertRegex(helper.answers[9], "list|List|array|Array")
 
     def testAnswer11(self):
         self.assertEqual(helper.answers[10], "f")
@@ -51,7 +51,7 @@ class varAanmaken(unittest.TestCase):
         self.assertRegex(helper.answers[13], "\[\s*\]")
 
     def testAnswer15(self):
-        self.assertRegex(helper.answers[14], "list|List")
+        self.assertRegex(helper.answers[14], "list|List|array|Array")
 
 
 if __name__ == '__main__':
