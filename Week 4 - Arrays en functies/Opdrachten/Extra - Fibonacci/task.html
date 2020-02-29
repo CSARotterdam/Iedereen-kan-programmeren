@@ -1,6 +1,156 @@
 <html>
-Write your task text here.
+<head>
+  <style>
+    table {
+      text-align: center;
+      width: 100%;
+    }
+    table tr:nth-child(even) {
+      color:black;
+      background-color: silver;
+    }
+    table th {
+      color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+<h3>Vul de juiste antwoorden in de open velden in. Let goed op dat er geen spaties voor of na de antwoorden in de velden staan.
+<br>
+<br>
+Om de task af te ronden, klik op Check.
+<br>
+Als er fouten zijn, wordt er weergegeven in welk veld de fout zit.
+<br>
+<br>
+Om de task te resetten, klik op het pijltje naast Check
+</h3>
 <div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
+  Omdat de fibonacci-reeks gebaseerd is op de voorgaande resultaten in de reeks, is het een goede kandidaat om recursie op toe te passen.
+  Recursie is een onderwerp dat veel dieper is dan de scope van deze lessen, maar voor degenen die extra uitdaging zoeken is het een mooi onderwerp.
+  <br>
+  <br>
+  Recursie is het aanroepen van een functie binnen de functie zelf. Hiervoor zijn er altijd twee cases in de functie:
+  <br>
+  De base case:
+  <br>
+  De case waar de functie een statische waarde teruggeeft
+  <br>
+  De recursive case:
+  <br>
+  De case waar de functie een call naar zichzelf met andere argumenten teruggeeft.
+  De recursive case moet op een manier altijd uiteindelijk terugkomen bij de base case.
+  <br>
+  <a href="https://realpython.com/python-thinking-recursively/">Voor meer info klik hier</a>.
+  <br>
+  LET OP: De informatie op deze website gaat veel dieper in dan wat we tijdens deze lessen behandelen.
+  <h2>Functies</h2>
+  Functies stellen, net als operators, acties voor. We zijn functies al tegengekomen bij het toevoegen en verwijderen van data in een array.
+  <br>
+  <br>
+  We kunnen een functie aanroepen door de naam van de functie te typen, gevolgd door ronde haken:
+  <br>
+  <br>
+  <code>functie()</code>
+  <br>
+  <br>
+  Tussen deze ronde haken kunnen we de argumenten van de functie zetten.
+  De argumenten van een functie zijn de stukken data die we als input meegeven aan die functie.
+  Argumenten worden gescheiden van elkaar door kommas.
+  <br>
+  <br>
+  <code> functie(arg1, arg2)</code>
+  <br>
+  <br>
+  Soms heeft een functie een uitkomst. <b>Niet alle functies hebben een uitkomst.</b>
+  Wanneer een functie een uitkomst heeft, kunnen we deze opslaan in een variabele:
+  <br>
+  <br>
+  <code>var = functie(arg1, arg2)</code>
+  <br>
+  <br>
+   We zullen het nu over een aantal handige functies hebben, en hoe deze in gebruik genomen kunnen worden.
+  <h3>Input</h3>
+  De <b>input</b> functie wordt gebruikt om de gebruiker om input te vragen.
+  Wanneer we deze functie aanroepen, stopt ons programma, en wacht het tot de gebruiker iets in typt en op enter drukt.
+  <br>
+  Deze functie heeft dan als uitkomst hetgene wat de user heeft ingetypt.
+  <br>
+  <b>De uitkomst van input is altijd een string.</b>
+  <br>
+  <br>
+  Deze functie heeft een (optioneel) argument. Het type van dit argument is een string.
+  Deze string wordt aan de gebruiker weergegeven wanneer deze om input wordt gevraagd.
+  Gebruik dit argument om aan de gebruiker uitleg te geven over wat er ge-input moet worden.
+  <h3>Casting</h3>
+  Casting is het veranderen van data van een bepaald type naar een ander type.
+  Casting is niet altijd mogelijk.
+  Het kan alleen gebeuren wanneer Python een waarde van het type waar we <b>naartoe</b> casten in de variabele die we casten kan vinden.
+  <br>
+  <br>
+  Om te casten gebruiken we een andere functie per data type:
+  <table>
+    <tr>
+      <th>Cast naar</th>
+      <th>Functie</th>
+    </tr>
+    <tr>
+      <td>integer</td>
+      <td>int(arg)</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>str(arg)</td>
+    </tr>
+    <tr>
+      <td>float</td>
+      <td>float(arg)</td>
+    </tr>
+    <tr>
+      <td>boolean</td>
+      <td>bool(arg)</td>
+    </tr>
+  </table>
+  <br>
+  Wanneer casting mogelijk is, hebben deze functies als uitkomst de waarde van arg van het type waar we <b>naartoe</b> hebben gecast.
+  <h3>Print</h3>
+  We zijn de print functie al meerdere malen tegengekomen in de lessen.
+  We gebruiken deze functie wanneer we iets in de <b>console</b> weer willen geven.
+  <br>
+  <br>
+  De print functie neemt 1 argument, hetgene wat we willen printen.
+  Dit argument mag ieder type zijn.
+  <br>
+  <br>
+  De print functie heeft <b>geen</b> uitkomst.
+  Het enige wat het doet is het weergeven van een visuele vorm van wat we in de functie stoppen in de <b>console</b>
+  <h3>Len</h3>
+  De len functie geeft ons de lengte van een verzameling.
+  <br>
+  <br>
+  len neemt 1 argument, de verzameling waarvan we de lengte willen weten.
+  Dit argument moet dus een verzameling zijn. <b>LET OP, een string is niets anders dan een verzameling van karakters</b>
+  <br>
+  <br>
+  len heeft als uitkomst de lengte van de verzameling die we als argument meegaven.
+  De uitkomst van len is dus altijd een <b>integer</b>.
+  <br>
+  <br>
+  Tot nu toe hebben we het gehad over bestaande functies. Deze functies zitten al in python.
+  We kunnen natuurlijk ook onze eigen functies maken. Hiervoor gebruiken we het keyword <b>def</b>
+  <h3>def</h3>
+  Het keyword def geeft aan dat er een functie definitie volgt.
+  Def wordt altijd gevolgd door de naam van de functie, en dan ronde haken.
+  Tussen de ronde haken zetten we dan de argumenten die de functie inneemt.
+  <br>
+  <br>
+  Vervolgens is er een dubbele punt. Dit geeft weer aan dat er een code block komt.
+  In dit code block beschrijven we dan wat er gebeurt als de functie aangeroepen wordt.
+  <h3>return</h3>
+  We hebben nu gezien hoe we onze eigen functies maken, maar nog niet hoe we deze een uitkomst geven.
+  Hiervoor gebruiken we het keyword <b>return</b>
+  <br>
+  <br>
+  Wat er volgt achter het keyword <b>return</b> is de uitkomst die wordt teruggegeven wanneer de functie aangeroepen wordt.
 </div>
 </html>
