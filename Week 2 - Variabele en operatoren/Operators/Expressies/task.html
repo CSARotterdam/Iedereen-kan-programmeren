@@ -1,6 +1,225 @@
 <html>
-Write your task text here.
+<head>
+  <style>
+    table {
+      text-align: center;
+      width: 100%;
+    }
+    table tr:nth-child(even) {
+      color:black;
+      background-color: silver;
+    }
+    table th {
+      color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+<h3>Vul de juiste antwoorden in de open velden in. Let goed op dat er geen spaties voor of na de antwoorden in de velden staan.
+<br>
+<br>
+Om de task af te ronden, klik op Check.
+<br>
+Als er fouten zijn, wordt er weergegeven in welk veld de fout zit.
+<br>
+<br>
+Om de task te resetten, klik op het pijltje naast Check
+</h3>
+
+
 <div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
+  <table>
+    <caption><h3>Variabelen</h3></caption>
+    <tr>
+      <th>Data type</th>
+      <th>Waarde type</th>
+      <th>Voorbeeld</th>
+    </tr>
+    <tr>
+      <td>integer</td>
+      <td>Hele getallen</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>float</td>
+      <td>Kommagetallen</td>
+      <td>4.15</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>Tekst</td>
+      <td>"4"</td>
+    </tr>
+    <tr>
+      <td>boolean</td>
+      <td>True of False</td>
+      <td>True</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <caption><h3>Operatoren</h3></caption>
+    <tr>
+      <th>Operator</th>
+      <th>Actie</th>
+      <th>Voorbeeld</th>
+    </tr>
+    <tr>
+      <td>=</td>
+      <td>Aanmaken/Overschrijven van variabele</td>
+      <td>x = 5</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Optellen</td>
+      <td>1 + 1</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Aftrekken</td>
+      <td>1 - 1</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Vermenigvuldigen</td>
+      <td>2 * 2</td>
+    </tr>
+    <tr>
+      <td>**</td>
+      <td>Machtsverheffen</td>
+      <td> 2 ** 3</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Delen</td>
+      <td>1 / 5</td>
+    </tr>
+    <tr>
+      <td>//</td>
+      <td>Delen en naar beneden afronden</td>
+      <td>1 // 5</td>
+    </tr>
+    <tr>
+      <td>==</td>
+      <td>Vergelijken</td>
+      <td>x == y</td>
+    </tr>
+    <tr>
+      <td>!=</td>
+      <td>Niet gelijk aan</td>
+      <td>x != y</td>
+    </tr>
+    <tr>
+      <td> > </td>
+      <td>Groter dan</td>
+      <td>x > y</td>
+    </tr>
+    <tr>
+      <td> >= </td>
+      <td>Groter/Gelijk</td>
+      <td> x >= y</td>
+    </tr>
+    <tr>
+      <td> < </td>
+      <td>Kleiner dan</td>
+      <td>x < y</td>
+    </tr>
+    <tr>
+      <td> <= </td>
+      <td>Kleiner/Gelijk</td>
+      <td>x <= y</td>
+    </tr>
+    <tr>
+      <td> and </td>
+      <td>Kijken of beide operanden true zijn</td>
+      <td>x and y</td>
+    </tr>
+    <tr>
+      <td> or </td>
+      <td>Kijken of een van de operanden true is</td>
+      <td>x or y</td>
+    </tr>
+    <tr>
+      <td> not </td>
+      <td>Inverteren van operand</td>
+      <td>not x</td>
+    </tr>
+  </table>
+
+  <table>
+    <caption> <h3>and</h3> </caption>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A and B</th>
+    </tr>
+    <tr>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </table>
+
+  <table>
+    <caption> <h3>or</h3> </caption>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A or B</th>
+    </tr>
+    <tr>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </table>
+
+  <table>
+    <caption> <h3>not</h3> </caption>
+    <tr>
+      <th>A</th>
+      <th>not A</th>
+    </tr>
+    <tr>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+
+  </table>
+
 </div>
 </html>
