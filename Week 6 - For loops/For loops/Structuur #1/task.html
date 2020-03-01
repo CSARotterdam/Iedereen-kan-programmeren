@@ -1,6 +1,116 @@
 <html>
-Write your task text here.
+<head>
+  <style>
+    table {
+      text-align: center;
+      width: 100%;
+    }
+    table tr:nth-child(even) {
+      color:black;
+      background-color: silver;
+    }
+    table th {
+      color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+<h3>Vul de juiste antwoorden in de open velden in. Let goed op dat er geen spaties voor of na de antwoorden in de velden staan.
+<br>
+<br>
+Om de task af te ronden, klik op Check.
+<br>
+Als er fouten zijn, wordt er weergegeven in welk veld de fout zit.
+<br>
+<br>
+Om de task te resetten, klik op het pijltje naast Check
+</h3>
 <div class="hint">
-  Hints can be added anywhere in task text: type "hint" and press Tab.
+  <h2>For loops</h2>
+  Voordat we met for loops aan de slag gaan, zullen we eerst de <b>range</b> behandelen.
+  <h3>range</h3>
+  <b>range</b> lijkt zeer veel op een <b>array</b>. Het is dan ook een verzameling.
+  Maar waar we bij een <b>array</b> zelf konden bepalen wat we in de verzameling stoppen, is dit bij <b>range</b> al voor ons bepaald.
+  <b>range</b> is een getallenreeks. Het bevat alleen integers, in volgorde. Het bereik van de <b>range</b> (welke getallen er in zitten) geven we aan wanneer we de range aanmaken.
+  <br>
+  <br>
+  We maken een <b>range</b> aan met de <b>range(b,e,s)</b> functie.
+  Deze functie neemt 3 argumenten:
+  <table>
+    <tr>
+      <th>Positie</th>
+      <th>Naam</th>
+      <th>Optioneel ?</th>
+      <th>Default</th>
+    </tr>
+    <tr>
+      <td>1<sup>e</sup></td>
+      <td>Begin</td>
+      <td>Ja</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2<sup>e</sup></td>
+      <td>Eind</td>
+      <td>Nee</td>
+      <td>NvT</td>
+    </tr>
+    <tr>
+      <td>3<sup>e</sup></td>
+      <td>Stap</td>
+      <td>Ja</td>
+      <td>1</td>
+    </tr>
+  </table>
+  <br>
+  We kunnen dus een range aanmaken met 1, 2, of 3 argumenten.
+  <br>
+  <br>
+  Doen we dit met 1 arugment, dan hebben we alleen argument 2.
+  Dan krijgen we dus een getallenreeks vanaf 0, <b>TOT</b> ons argument. dus <b>niet tot en met</b>.
+  <br>
+  <br>
+  Geven we 2 argumenten, dan hebben we argument 1 en 2.
+  In dit geval krijgen we een getallenreeks vanaf argument 1, <b>TOT</b> argument 2.
+  <br>
+  <br>
+  Geven we alle 3 argumenten mee, dan krijgen we een range vanaf argument 1, <b>TOT</b> argument 2, met stapgrootte van argument 3.
+  Stapgrootte houdt in dat we zoveel getallen verder gaan voor ieder volgend element in de reeks. Stapgrootte 2 slaat dus telkens 1 getal over.
+  Stapgrootte 5 gaat 5 getallen verder ieder volgend element.
+  <h3>For loops</h3>
+  De <b>for</b> loop is tot op zekere hoogte te vergelijken met de <b>while</b> loop. Er zijn echter een paar verschillen.
+  De <b>while</b> loop keek telkens of de conditie die erbij hoorde nog <b>True</b> was, en zo ja, voerde deze het code block nogmaals uit.
+  De <b>for</b> loop heeft in plaats van een conditie, een verzameling en een <b>iterator</b>.
+  De <b>iterator</b> is niets anders dan een variabele die bij de <b>for</b> loop hoort.
+  <br>
+  <br>
+  Wanneer we een <b>for</b> loop beginnen, zetten we de waarde van de <b>iterator</b> op het eerste element van de verzameling.
+  We voeren dan het code block van de <b>for</b> loop uit. Daarna wordt de waarde van het volgende element aan de <b>iterator</b> gehangen.
+  We voeren nogmaals het code block uit. Dit doen we voor <b>(for)</b> ieder element van de verzameling.
+  <br>
+  <br>
+  De for <b>loop</b> stopt dus wanneer het code block is uitgevoerd met de laatste waarde van de verzameling in de iterator.
+  De conditie die de for loop dus eigenlijk iedere iteratie bekijkt, is <b>"Is er nog een element over in de verzameling?"</b>.
+  <br>
+  <br>
+  Het maakt voor een <b>for</b> loop niet uit wat voor verzameling deze <b>overheen</b> loopt. Het kan iedere mogelijke verzameling zijn.
+  <table>
+    <tr>
+      <th>Verzameling</th>
+      <th>Van</th>
+    </tr>
+    <tr>
+      <td>array</td>
+      <td>Wat we er in stoppen</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>karakters</td>
+    </tr>
+    <tr>
+      <td>range</td>
+      <td>integers</td>
+    </tr>
+  </table>
 </div>
 </html>
